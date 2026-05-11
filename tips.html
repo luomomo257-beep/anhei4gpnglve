@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>暗黑破坏神4 实用技巧大全 | 新手到进阶完整指南 | Diablo 4 Tips Guide</title>
+  <meta name="description" content="《暗黑破坏神4：憎恨之王》实用技巧大全，从新手到进阶完全指南。涵盖快速升级路线、资源高效利用、词缀优化、巅峰面板计算、钓鱼系统、隐藏成就、组队配合等8大核心技巧。" />
+  <meta name="keywords" content="暗黑破坏神4,技巧,攻略,升级,资源,词缀,巅峰,钓鱼,成就,组队,Diablo 4,Tips,Leveling,Guide,Paragon,Glyph,Fishing,Achievements,Lord of Hatred,2026" />
+  <meta name="author" content="D4 Guide Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/tips.html" />
+
+  <!-- ===== SEO: Open Graph ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="暗黑破坏神4 实用技巧大全 | 新手到进阶完整指南 2026" />
+  <meta property="og:description" content="从新手到进阶的完整技巧指南。快速升级、资源利用、词缀优化、钓鱼系统、隐藏成就等8大核心技巧详解。" />
+  <meta property="og:url" content="https://your-domain.com/tips.html" />
+  <meta property="og:image" content="https://your-domain.com/tips-og.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="D4 Lord of Hatred Guide" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diablo 4 Tips Guide: Beginner to Advanced Complete Tutorial 2026" />
+  <meta name="twitter:description" content="8 core tips covering fast leveling, resource efficiency, affix optimization, Paragon boards, Fishing, hidden achievements, and team play." />
+  <meta name="twitter:image" content="https://your-domain.com/tips-og.jpg" />
+
+  <!-- ===== SEO: Alternate Language Links ===== -->
+  <link rel="alternate" hreflang="zh-CN" href="https://your-domain.com/tips.html" />
+  <link rel="alternate" hreflang="en" href="https://your-domain.com/tips-en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://your-domain.com/tips.html" />
+
+  <!-- ===== SEO: Structured Data (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "暗黑破坏神4 实用技巧大全 | 新手到进阶完整指南",
+    "description": "从新手到进阶的完整技巧指南，涵盖8大核心技巧：快速升级、资源利用、词缀优化、巅峰面板、钓鱼系统、隐藏成就、组队配合、常见误区。",
+    "author": {
+      "@type": "Organization",
+      "name": "D4 Guide Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "D4 Lord of Hatred Guide"
+    },
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-05-07",
+    "inLanguage": ["zh-CN", "en"],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://your-domain.com/tips.html"
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --accent-red: #c41e3a;
+      --accent-gold: #d4a017;
+      --accent-orange: #e8651a;
+      --accent-green: #2ecc71;
+      --accent-blue: #3498db;
+      --text-primary: #e8e0d0;
+      --text-secondary: #9a9088;
+      --text-muted: #5a5058;
+      --border-color: #2a2030;
+      --glow-red: rgba(196, 30, 58, 0.4);
+      --glow-gold: rgba(212, 160, 23, 0.3);
+      --font-title: 'Georgia', 'SimSun', serif;
+      --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --radius: 8px;
+      --transition: 0.25s ease;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-orange); text-decoration: none; }
+
+    /* ===== Layout ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+
+    /* ===== Language Toggle Bar ===== */
+    .lang-toggle-bar {
+      background: rgba(10,10,15,0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+    .lang-toggle-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-mini-brand {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .lang-buttons { display: flex; gap: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #fff;
+    }
+
+    /* ===== Top Navigation ===== */
+    .top-nav {
+      background: rgba(10,10,15,0.98);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+    }
+    .top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo-icon { font-size: 1.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links li a:hover {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+    .nav-links li a.active {
+      background: rgba(196,30,58,0.2);
+      border-color: rgba(196,30,58,0.5);
+      color: var(--text-primary);
+    }
+
+    /* ===== Page Hero ===== */
+    .page-hero {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(196,30,58,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 80% 70%, rgba(212,160,23,0.10) 0%, transparent 60%),
+        linear-gradient(180deg, #0a0008 0%, #0a0a0f 100%);
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 15% 20%, rgba(212,160,23,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 15%, rgba(196,30,58,0.5) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 40% 70%, rgba(212,160,23,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 55%, rgba(232,101,26,0.5) 0%, transparent 100%);
+      animation: twinkle 4s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    .page-hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 100%;
+      padding: 60px 24px;
+    }
+    .page-hero-eyebrow {
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .page-hero-title {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #fff;
+      text-shadow: 0 0 40px var(--glow-red), 0 2px 8px rgba(0,0,0,0.8);
+      margin-bottom: 12px;
+    }
+    .page-hero-title .accent { color: var(--accent-gold); }
+    .page-hero-desc {
+      font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ===== Section Styles ===== */
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-red);
+      border: 1px solid rgba(196,30,58,0.4);
+      padding: 3px 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: #fff;
+      text-shadow: 0 0 30px var(--glow-red);
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+      margin: 12px auto 0;
+      width: 120px;
+    }
+
+    /* ===== Tips Overview ===== */
+    .tips-overview {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, #0d0812 50%, var(--bg-primary) 100%);
+      padding: 48px 0;
+    }
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .overview-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .overview-card:hover {
+      border-color: rgba(196,30,58,0.4);
+      transform: translateY(-3px);
+    }
+    .overview-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    .overview-title {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .overview-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Tip Cards ===== */
+    .tip-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin-bottom: 32px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .tip-card:hover {
+      border-color: rgba(196,30,58,0.4);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .tip-card-header {
+      background: linear-gradient(135deg, rgba(196,30,58,0.15) 0%, rgba(18,18,26,1) 100%);
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .tip-number {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--accent-red), #8b1a2a);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-title);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 0 20px var(--glow-red);
+    }
+    .tip-header-content h3 {
+      font-family: var(--font-title);
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .tip-header-content p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+    .tip-card-body {
+      padding: 28px;
+    }
+
+    /* ===== Sub Sections ===== */
+    .tip-subsection {
+      margin-bottom: 24px;
+    }
+    .tip-subsection:last-child {
+      margin-bottom: 0;
+    }
+    .tip-subsection-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed rgba(212,160,23,0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tip-subsection-title::before {
+      content: '◆';
+      font-size: 0.7rem;
+    }
+
+    /* ===== Leveling Guide ===== */
+    .leveling-path {
+      display: grid;
+      gap: 16px;
+    }
+    .level-phase {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      position: relative;
+    }
+    .level-phase::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: 4px 0 0 4px;
+    }
+    .level-phase.level-1-50::before { background: var(--accent-blue); }
+    .level-phase.level-50-70::before { background: var(--accent-orange); }
+    .level-phase.level-70::before { background: var(--accent-red); }
+    .level-phase-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .level-badge {
+      background: rgba(255,255,255,0.1);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .level-phase-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .level-phase ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .level-phase li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 20px;
+      position: relative;
+    }
+    .level-phase li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+    }
+
+    /* ===== Resource Priority ===== */
+    .resource-priority {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .priority-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+    }
+    .priority-number {
+      width: 32px;
+      height: 32px;
+      background: var(--accent-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #000;
+      flex-shrink: 0;
+    }
+    .priority-content {
+      flex: 1;
+    }
+    .priority-title {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .priority-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Material Management ===== */
+    .material-tips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+    }
+    .material-tip {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .material-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .material-info h4 {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .material-info p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .material-warning {
+      color: var(--accent-orange);
+      font-weight: 600;
+    }
+
+    /* ===== Affix Tables ===== */
+    .affix-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .affix-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .affix-card-header {
+      background: rgba(196,30,58,0.1);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+    }
+    .affix-list {
+      list-style: none;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .affix-list li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 16px;
+      position: relative;
+    }
+    .affix-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-green);
+    }
+
+    /* ===== When to Replace ===== */
+    .replace-guide {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .replace-guide h4 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+    }
+    .replace-rules {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .replace-rules li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .replace-rules li .icon {
+      color: var(--accent-red);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* ===== Paragon Board ===== */
+    .paragon-priority {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .paragon-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .paragon-card h4 {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .paragon-tips {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .paragon-tips li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 16px;
+      position: relative;
+    }
+    .paragon-tips li::before {
+      content: '★';
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+    }
+
+    /* ===== Glyph Guide ===== */
+    .glyph-guide {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .glyph-guide h4 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+    }
+    .glyph-tips {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .glyph-tips li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 16px;
+      position: relative;
+    }
+    .glyph-tips li::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: var(--accent-red);
+    }
+
+    /* ===== Fishing Guide ===== */
+    .fishing-unlock {
+      background: linear-gradient(135deg, rgba(46,204,113,0.1) 0%, rgba(18,18,26,1) 100%);
+      border: 1px solid rgba(46,204,113,0.3);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .fishing-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .fishing-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .step-number {
+      width: 28px;
+      height: 28px;
+      background: var(--accent-blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-content p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Rare Fish List ===== */
+    .fish-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .fish-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: var(--transition);
+    }
+    .fish-card:hover {
+      border-color: rgba(212,160,23,0.4);
+    }
+    .fish-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .fish-info h4 {
+      font-size: 1rem;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .fish-reward {
+      font-size: 0.85rem;
+      color: var(--accent-gold);
+    }
+
+    /* ===== Hidden Achievements ===== */
+    .region-secrets {
+      display: grid;
+      gap: 20px;
+    }
+    .region-secret {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .region-secret-header {
+      background: rgba(196,30,58,0.1);
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .region-secret-header h4 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+    }
+    .region-secret-body {
+      padding: 16px;
+    }
+    .secret-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .secret-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .secret-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .secret-content h5 {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .secret-content p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Team Comp ===== */
+    .team-comp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .class-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+    }
+    .class-icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+    .class-name {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .class-role {
+      font-size: 0.85rem;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+    .class-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Team Compositions ===== */
+    .comp-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .comp-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .comp-card h4 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .comp-slots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .comp-slot {
+      background: rgba(196,30,58,0.1);
+      border: 1px solid rgba(196,30,58,0.3);
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+    }
+    .comp-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    /* ===== Loot Distribution ===== */
+    .loot-rules {
+      display: grid;
+      gap: 12px;
+    }
+    .loot-rule {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .loot-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .loot-content h4 {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .loot-content p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Common Mistakes ===== */
+    .mistakes-section {
+      margin-top: 20px;
+    }
+    .mistakes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .mistake-item, .do-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .mistake-item {
+      border-left: 4px solid var(--accent-red);
+    }
+    .do-item {
+      border-left: 4px solid var(--accent-green);
+    }
+    .mistake-icon, .do-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .mistake-content h4, .do-content h4 {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .mistake-content p, .do-content p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Advanced Tips ===== */
+    .advanced-section {
+      background: linear-gradient(135deg, rgba(196,30,58,0.08) 0%, rgba(212,160,23,0.08) 100%);
+      border: 1px solid rgba(196,30,58,0.3);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 24px;
+    }
+    .advanced-title {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      color: var(--accent-gold);
+      margin-bottom: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .advanced-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .advanced-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .advanced-card h4 {
+      font-family: var(--font-title);
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .advanced-tips {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .advanced-tips li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 16px;
+      position: relative;
+    }
+    .advanced-tips li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #060608;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: var(--text-muted); }
+    .footer-col ul li a:hover { color: var(--accent-gold); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ===== Back to Top Button ===== */
+    #back-to-top {
+      position: fixed; bottom: 30px; right: 30px; width: 46px; height: 46px;
+      background: var(--accent-red); border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      color: #fff; box-shadow: 0 4px 16px rgba(196,30,58,0.4); transition: var(--transition);
+      opacity: 0; pointer-events: none; z-index: 999;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: all; }
+    #back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+    /* ===== Progress Bar ===== */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--accent-red), var(--accent-gold));
+      z-index: 10001; transition: width 0.1s linear;
+    }
+
+    /* ===== i18n hidden by default ===== */
+    [data-en], [data-zh] { display: inline; }
+    html[data-lang="en"] [data-zh] { display: none; }
+    html[data-lang="zh"] [data-en] { display: none; }
+    [data-en-block], [data-zh-block] { display: block; }
+    html[data-lang="en"] [data-zh-block] { display: none; }
+    html[data-lang="zh"] [data-en-block] { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 2px; }
+      .nav-links li a { padding: 4px 8px; font-size: 0.75rem; }
+      .tip-card-header { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- ===== Language Toggle Bar ===== -->
+  <div class="lang-toggle-bar">
+    <div class="container">
+      <span class="site-mini-brand">D4 LORD OF HATRED GUIDE</span>
+      <div class="lang-buttons">
+        <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Top Navigation ===== -->
+  <div class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">⚔️</span>
+        <span data-zh>暗黑4 · 憎恨之王攻略</span>
+        <span data-en>D4 Lord of Hatred Guide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="classes.html">⚔️ <span data-zh>职业</span><span data-en>Classes</span></a></li>
+        <li><a href="region.html">🗺️ <span data-zh>地区</span><span data-en>Region</span></a></li>
+        <li><a href="endgame.html">🏆 <span data-zh>终局</span><span data-en>Endgame</span></a></li>
+        <li><a href="bosses.html">💀 <span data-zh>Boss</span><span data-en>Boss</span></a></li>
+        <li><a href="season.html">📅 <span data-zh>赛季</span><span data-en>Season</span></a></li>
+        <li><a href="mythic.html">🌟 <span data-zh>神话</span><span data-en>Mythic</span></a></li>
+        <li><a href="builds.html">📋 <span data-zh>配装</span><span data-en>Builds</span></a></li>
+        <li><a href="tips.html" class="active">💡 <span data-zh>技巧</span><span data-en>Tips</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">
+        <span data-zh>新手到进阶 · 完整指南</span>
+        <span data-en>Beginner to Advanced · Complete Guide</span>
+      </p>
+      <h1 class="page-hero-title">
+        <span data-zh>暗黑破坏神4 <span class="accent">实用技巧</span>大全</span>
+        <span data-en>Diablo 4 <span class="accent">Tips</span> & Tricks</span>
+      </h1>
+      <p class="page-hero-desc">
+        <span data-zh>从开荒到终局的完整技巧指南，涵盖8大核心主题。无论你是新手还是老玩家，这些实战技巧都能助你事半功倍，在憎恨纪元中脱颖而出。</span>
+        <span data-en>Complete tips guide from leveling to endgame, covering 8 core topics. Whether you're a beginner or veteran, these practical tips will help you succeed in the Age of Hatred.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Tips Overview ===== -->
+  <section class="tips-overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="overview-icon">🎯</div>
+          <h3 class="overview-title"><span data-zh>适合所有玩家</span><span data-en>For All Players</span></h3>
+          <p class="overview-desc">
+            <span data-zh>这些技巧适合所有玩家，无论你是首次接触暗黑系列还是系列老粉</span>
+            <span data-en>Tips suitable for all players, whether you're new to the series or a veteran</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">📊</div>
+          <h3 class="overview-title"><span data-zh>完整内容覆盖</span><span data-en>Complete Coverage</span></h3>
+          <p class="overview-desc">
+            <span data-zh>从开荒到终局的完整覆盖，包含进阶高玩技巧</span>
+            <span data-en>Complete coverage from early game to endgame, including advanced tips</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">⚡</div>
+          <h3 class="overview-title"><span data-zh>效率提升</span><span data-en>Efficiency Boost</span></h3>
+          <p class="overview-desc">
+            <span data-zh>节省大量时间，避免常见误区，快速提升实力</span>
+            <span data-en>Save tons of time, avoid common mistakes, and level up faster</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tip 1: Fast Leveling ===== -->
+  <section id="tip-leveling">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">💡 <span data-zh>核心技巧</span><span data-en>Core Tips</span></span>
+        <h2 class="section-title"><span data-zh>8大核心技巧</span><span data-en>8 Core Tips</span></h2>
+        <p class="section-desc">
+          <span data-zh>全面解析从新手到进阶的实用技巧，助你快速成长</span>
+          <span data-en>Comprehensive analysis of practical tips from beginner to advanced</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">1</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>快速升级路线</span><span data-en>Fast Leveling Routes</span></h3>
+            <p><span data-zh>从1级到70级的最优升级策略</span><span data-en>Optimal leveling strategy from level 1 to 70</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="leveling-path">
+            <!-- Level 1-50 -->
+            <div class="level-phase level-1-50">
+              <div class="level-phase-header">
+                <span class="level-badge"><span data-zh>1-50级</span><span data-en>Lv 1-50</span></span>
+                <h4 class="level-phase-title"><span data-zh>主线剧情为主</span><span data-en>Focus on Main Story</span></h4>
+              </div>
+              <ul>
+                <li><span data-zh>斯科沃斯主线任务线优先</span><span data-en>Prioritize Skovos main questline</span></li>
+                <li><span data-zh>支线任务可选完成</span><span data-en>Side quests are optional</span></li>
+                <li><span data-zh>避免浪费时间刷野外怪</span><span data-en>Avoid grinding open-world mobs</span></li>
+                <li><span data-zh>利用世界事件快速获得经验</span><span data-en>Leverage world events for fast XP</span></li>
+              </ul>
+            </div>
+
+            <!-- Level 50-70 -->
+            <div class="level-phase level-50-70">
+              <div class="level-phase-header">
+                <span class="level-badge"><span data-zh>50-70级</span><span data-en>Lv 50-70</span></span>
+                <h4 class="level-phase-title"><span data-zh>噩梦地下城 + 战争计划</span><span data-en>Nightmare Dungeons + War Plans</span></h4>
+              </div>
+              <ul>
+                <li><span data-zh>优先完成每日战争计划</span><span data-en>Prioritize daily War Plans first</span></li>
+                <li><span data-zh>噩梦地下城选择短路线</span><span data-en>Choose short routes in Nightmare Dungeons</span></li>
+                <li><span data-zh>组队升级效率+30%</span><span data-en>Party grinding gives +30% efficiency</span></li>
+                <li><span data-zh>关注地下城特殊效果词缀</span><span data-en>Pay attention to dungeon affix effects</span></li>
+                <li><span data-zh>使用经验加成药剂</span><span data-en>Use XP boost potions</span></li>
+              </ul>
+            </div>
+
+            <!-- Level 70+ -->
+            <div class="level-phase level-70">
+              <div class="level-phase-header">
+                <span class="level-badge"><span data-zh>70级</span><span data-en>Lv 70</span></span>
+                <h4 class="level-phase-title"><span data-zh>开始终局冲刺</span><span data-en>Start Endgame Sprint</span></h4>
+              </div>
+              <ul>
+                <li><span data-zh>进入回响之憎刷装备</span><span data-en>Enter Echoing Hatred for gear farming</span></li>
+                <li><span data-zh>挑战高级巢穴BOSS</span><span data-en>Challenge Tier-2 Raid bosses</span></li>
+                <li><span data-zh>收集神话碎片升级装备</span><span data-en>Collect Mythic Shards to upgrade gear</span></li>
+                <li><span data-zh>完成赛季旅程目标</span><span data-en>Complete Season Journey objectives</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 2: Resource Management -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">2</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>资源高效利用</span><span data-en>Efficient Resource Management</span></h3>
+            <p><span data-zh>金币与材料的最优分配策略</span><span data-en>Optimal gold and material allocation strategies</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>金币使用优先级</span><span data-en>Gold Spending Priority</span></h4>
+            <div class="resource-priority">
+              <div class="priority-item">
+                <span class="priority-number">1</span>
+                <div class="priority-content">
+                  <div class="priority-title"><span data-zh>购买制作材料</span><span data-en>Buy Crafting Materials</span></div>
+                  <div class="priority-desc"><span data-zh>优先购买制作紫色套装所需的材料</span><span data-en>Prioritize materials for crafting purple set items</span></div>
+                </div>
+              </div>
+              <div class="priority-item">
+                <span class="priority-number">2</span>
+                <div class="priority-content">
+                  <div class="priority-title"><span data-zh>铁匠装备强化</span><span data-en>Blacksmith Equipment Enhancement</span></div>
+                  <div class="priority-desc"><span data-zh>投资强化当前使用的核心装备</span><span data-en>Invest in enhancing your current core gear</span></div>
+                </div>
+              </div>
+              <div class="priority-item">
+                <span class="priority-number">3</span>
+                <div class="priority-content">
+                  <div class="priority-title"><span data-zh>商人刷新寻找好词缀装备</span><span data-en>Refresh Merchants for Good Affix Gear</span></div>
+                  <div class="priority-desc"><span data-zh>在铁匠/商人处刷新寻找关键词缀装备</span><span data-en>Refresh at blacksmith/merchants for key affix gear</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>材料管理技巧</span><span data-en>Material Management Tips</span></h4>
+            <div class="material-tips">
+              <div class="material-tip">
+                <span class="material-icon">📦</span>
+                <div class="material-info">
+                  <h4><span data-zh>赫拉迪姆方块配方材料</span><span data-en>Horadric Cube Recipe Materials</span></h4>
+                  <p><span data-zh>优先保留，用于重铸和套装转换</span><span data-en>Keep these for reforging and set conversion</span></p>
+                </div>
+              </div>
+              <div class="material-tip">
+                <span class="material-icon">🔄</span>
+                <div class="material-info">
+                  <h4><span data-zh>套装材料</span><span data-en>Set Materials</span></h4>
+                  <p><span data-zh>多余套装拆解为套装转换材料</span><span data-en>Dismantle extra sets for conversion materials</span></p>
+                </div>
+              </div>
+              <div class="material-tip">
+                <span class="material-icon">💎</span>
+                <div class="material-info">
+                  <h4><span data-zh class="material-warning">神话碎片</span><span data-en class="material-warning">Mythic Shards</span></h4>
+                  <p class="material-warning"><span data-zh>务必保留！极稀有，不可再生</span><span data-en>Keep them! Extremely rare, non-renewable</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 3: Affix Optimization -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">3</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>词缀优化与辨别</span><span data-en>Affix Optimization & Identification</span></h3>
+            <p><span data-zh>核心词缀识别与装备替换时机</span><span data-en>Core affix identification and gear replacement timing</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>核心词缀识别</span><span data-en>Core Affix Identification</span></h4>
+            <div class="affix-grid">
+              <div class="affix-card">
+                <div class="affix-card-header"><span data-zh>远程职业</span><span data-en>Ranged Classes</span></div>
+                <ul class="affix-list">
+                  <li><span data-zh>攻击速度</span><span data-en>Attack Speed</span></li>
+                  <li><span data-zh>暴击率</span><span data-en>Critical Hit Rate</span></li>
+                  <li><span data-zh>暴击伤害</span><span data-en>Critical Damage</span></li>
+                  <li><span data-zh>伤害加成</span><span data-en>Damage Bonus</span></li>
+                </ul>
+              </div>
+              <div class="affix-card">
+                <div class="affix-card-header"><span data-zh>近战职业</span><span data-en>Melee Classes</span></div>
+                <ul class="affix-list">
+                  <li><span data-zh>护甲穿透</span><span data-en>Armor Penetration</span></li>
+                  <li><span data-zh>力量/意志加成</span><span data-en>Strength/Will Bonus</span></li>
+                  <li><span data-zh>范围伤害</span><span data-en>Area Damage</span></li>
+                  <li><span data-zh>护甲</span><span data-en>Armor</span></li>
+                </ul>
+              </div>
+              <div class="affix-card">
+                <div class="affix-card-header"><span data-zh>坦克职业</span><span data-en>Tank Classes</span></div>
+                <ul class="affix-list">
+                  <li><span data-zh>护甲</span><span data-en>Armor</span></li>
+                  <li><span data-zh>全元素抗性</span><span data-en>All Elemental Resist</span></li>
+                  <li><span data-zh>生命值</span><span data-en>Life</span></li>
+                  <li><span data-zh>生命恢复</span><span data-en>Life Regeneration</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>装备替换时机</span><span data-en>Gear Replacement Timing</span></h4>
+            <div class="replace-guide">
+              <h4><span data-zh>判断标准</span><span data-en>Decision Criteria</span></h4>
+              <ul class="replace-rules">
+                <li>
+                  <span class="icon">📊</span>
+                  <span><span data-zh>新装备比旧装备多2个以上核心词缀时更换</span><span data-en>Replace when new piece has 2+ more core affixes</span></span>
+                </li>
+                <li>
+                  <span class="icon">⭐</span>
+                  <span><span data-zh>物品等级差距超过20点时优先考虑更换</span><span data-en>Consider replacement when Item Level差距 exceeds 20</span></span>
+                </li>
+                <li>
+                  <span class="icon">🎯</span>
+                  <span><span data-zh>当前BD核心词缀有提升时立即更换</span><span data-en>Immediately replace when your BD core affixes improve</span></span>
+                </li>
+                <li>
+                  <span class="icon">⚡</span>
+                  <span><span data-zh>神话/传说装备自带特效优先保留</span><span data-en>Keep Mythic/Legendary items with special effects</span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 4: Paragon Board -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">4</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>巅峰面板计算</span><span data-en>Paragon Board Optimization</span></h3>
+            <p><span data-zh>巅峰雕文插槽选择与升级优先级</span><span data-en>Paragon Glyph socket selection and upgrade priority</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="paragon-priority">
+            <div class="paragon-card">
+              <h4>🛡️ <span data-zh>防御型点数</span><span data-en>Defense Points</span></h4>
+              <ul class="paragon-tips">
+                <li><span data-zh>优先点满核心属性</span><span data-en>Prioritize filling core stats first</span></li>
+                <li><span data-zh>根据职业选择对应抗性</span><span data-en>Choose corresponding resists by class</span></li>
+                <li><span data-zh>生命值加成适合坦克职业</span><span data-en>Life bonus suits tank builds</span></li>
+                <li><span data-zh>护甲加成适合所有职业</span><span data-en>Armor bonus suits all classes</span></li>
+              </ul>
+            </div>
+            <div class="paragon-card">
+              <h4>⚔️ <span data-zh>攻击型点数</span><span data-en>Offense Points</span></h4>
+              <ul class="paragon-tips">
+                <li><span data-zh>暴击率是通用核心词缀</span><span data-en>Critical rate is a universal core affix</span></li>
+                <li><span data-zh>暴击伤害配合高暴击率</span><span data-en>Critical damage pairs with high crit rate</span></li>
+                <li><span data-zh>攻速提升手感与DPS</span><span data-en>Attack speed improves feel and DPS</span></li>
+                <li><span data-zh>优先加成与BD匹配的词缀</span><span data-en>Prioritize affixes matching your BD</span></li>
+              </ul>
+            </div>
+            <div class="paragon-card">
+              <h4>✨ <span data-zh>资源型点数</span><span data-en>Resource Points</span></h4>
+              <ul class="paragon-tips">
+                <li><span data-zh>怒气/法力上限加成</span><span data-en>Rage/Mana cap bonus</span></li>
+                <li><span data-zh>资源再生速度</span><span data-en>Resource regeneration speed</span></li>
+                <li><span data-zh>技能冷却缩减</span><span data-en>Skill cooldown reduction</span></li>
+                <li><span data-zh>根据BD需求分配</span><span data-en>Allocate based on BD needs</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glyph-guide">
+            <h4>💎 <span data-zh>巅峰雕文插槽选择</span><span data-en>Paragon Glyph Socket Selection</span></h4>
+            <ul class="glyph-tips">
+              <li><span data-zh>优先插金色雕文（传说品质）</span><span data-en>Prioritize golden Glyphs (Legendary quality)</span></li>
+              <li><span data-zh>插雕文位置要匹配属性加成</span><span data-en>Glyph socket position must match stat bonuses</span></li>
+              <li><span data-zh>优先升级影响核心机制的雕文</span><span data-en>Prioritize upgrading Glyphs affecting core mechanics</span></li>
+              <li><span data-zh>雕文等级越高，属性加成越强</span><span data-en>Higher Glyph level = stronger stat bonuses</span></li>
+              <li><span data-zh>关注雕文的次要词缀效果</span><span data-en>Pay attention to Glyph secondary effects</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 5: Fishing System -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">5</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>钓鱼系统全面指南</span><span data-en>Complete Fishing System Guide</span></h3>
+            <p><span data-zh>解锁方法、基础操作与稀有鱼类收集</span><span data-en>Unlock methods, basics, and rare fish collection</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="fishing-unlock">
+            <h4 style="font-family: var(--font-title); color: var(--accent-green); margin-bottom: 8px;">
+              🔓 <span data-zh>解锁条件</span><span data-en>Unlock Condition</span>
+            </h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+              <span data-zh>在泰米斯城找钓鱼NPC接任务，完成钓鱼入门任务即可解锁钓鱼系统</span>
+              <span data-en>Find the Fishing NPC in Temis City and complete the fishing tutorial quest</span>
+            </p>
+          </div>
+
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>基础钓鱼方法</span><span data-en>Basic Fishing Method</span></h4>
+            <div class="fishing-steps">
+              <div class="fishing-step">
+                <span class="step-number">1</span>
+                <div class="step-content">
+                  <p><span data-zh>购买鱼竿和鱼饵</span><span data-en>Purchase fishing rod and bait</span></p>
+                </div>
+              </div>
+              <div class="fishing-step">
+                <span class="step-number">2</span>
+                <div class="step-content">
+                  <p><span data-zh>找到斯科沃斯海岸或河流</span><span data-en>Find Skovos coast or rivers</span></p>
+                </div>
+              </div>
+              <div class="fishing-step">
+                <span class="step-number">3</span>
+                <div class="step-content">
+                  <p><span data-zh>抛竿等待鱼上钩</span><span data-en>Cast line and wait for fish</span></p>
+                </div>
+              </div>
+              <div class="fishing-step">
+                <span class="step-number">4</span>
+                <div class="step-content">
+                  <p><span data-zh>观察浮漂移动，收竿时机判断</span><span data-en>Watch the float, timing for reeling in</span></p>
+                </div>
+              </div>
+              <div class="fishing-step">
+                <span class="step-number">5</span>
+                <div class="step-content">
+                  <p><span data-zh>收竿获取鱼类与材料</span><span data-en>Reel in to get fish and materials</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>稀有鱼类列表</span><span data-en>Rare Fish List</span></h4>
+            <div class="fish-grid">
+              <div class="fish-card">
+                <span class="fish-icon">🐟</span>
+                <div class="fish-info">
+                  <h4><span data-zh>风暴金枪鱼</span><span data-en>Storm Tuna</span></h4>
+                  <p class="fish-reward"><span data-zh>可兑换坐骑</span><span data-en>Exchange for Mount</span></p>
+                </div>
+              </div>
+              <div class="fish-card">
+                <span class="fish-icon">🐠</span>
+                <div class="fish-info">
+                  <h4><span data-zh>迷雾灯笼鱼</span><span data-en>Mist Lanternfish</span></h4>
+                  <p class="fish-reward"><span data-zh>可兑换宠物</span><span data-en>Exchange for Pet</span></p>
+                </div>
+              </div>
+              <div class="fish-card">
+                <span class="fish-icon">🐡</span>
+                <div class="fish-info">
+                  <h4><span data-zh>熔火鲤鱼</span><span data-en>Volcanic Carp</span></h4>
+                  <p class="fish-reward"><span data-zh>可兑换传奇装备</span><span data-en>Exchange for Legendary Gear</span></p>
+                </div>
+              </div>
+              <div class="fish-card">
+                <span class="fish-icon">🦈</span>
+                <div class="fish-info">
+                  <h4><span data-zh>深渊鲨鱼</span><span data-en>Abyssal Shark</span></h4>
+                  <p class="fish-reward"><span data-zh>可兑换独特外观</span><span data-en>Exchange for Unique Cosmetic</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-subsection">
+            <div style="background: rgba(212,160,23,0.1); border: 1px solid rgba(212,160,23,0.3); border-radius: var(--radius); padding: 16px; margin-top: 16px;">
+              <h4 style="font-family: var(--font-title); color: var(--accent-gold); margin-bottom: 8px;">
+                🏆 <span data-zh>钓鱼成就</span><span data-en>Fishing Achievement</span>
+              </h4>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                <span data-zh>完成所有鱼类图鉴可获得独特称号和奖励，完成图鉴收集还有额外成就点数</span>
+                <span data-en>Complete all fish compendium for unique titles and rewards, plus bonus achievement points</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 6: Hidden Achievements -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">6</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>隐藏成就与彩蛋</span><span data-en>Hidden Achievements & Easter Eggs</span></h3>
+            <p><span data-zh>斯科沃斯与泰米斯城的隐藏内容</span><span data-en>Hidden content in Skovos and Temis City</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="region-secrets">
+            <div class="region-secret">
+              <div class="region-secret-header">
+                <span>🗺️</span>
+                <h4><span data-zh>斯科沃斯隐藏内容</span><span data-en>Skovos Hidden Content</span></h4>
+              </div>
+              <div class="region-secret-body">
+                <ul class="secret-list">
+                  <li class="secret-item">
+                    <span class="secret-icon">🌲</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>迷雾密林深处的秘密房间</span><span data-en>Secret Room in Shrouded Forest</span></h5>
+                      <p><span data-zh>需要特定顺序击杀怪物才能触发入口出现</span><span data-en>Must kill monsters in specific order to trigger entrance</span></p>
+                    </div>
+                  </li>
+                  <li class="secret-item">
+                    <span class="secret-icon">🏛️</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>古代废墟的隐藏祭坛</span><span data-en>Hidden Altar in Ancient Ruins</span></h5>
+                      <p><span data-zh>可获得额外奖励，包括稀有材料和传奇装备</span><span data-en>Can obtain bonus rewards including rare materials and legendaries</span></p>
+                    </div>
+                  </li>
+                  <li class="secret-item">
+                    <span class="secret-icon">🌋</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>熔火高地的火山之心</span><span data-en>Volcano Heart in Volcanic Highlands</span></h5>
+                      <p><span data-zh>传说装备掉落点，每天可挑战一次</span><span data-en>Legendary gear drop location, challengeable once daily</span></p>
+                    </div>
+                  </li>
+                  <li class="secret-item">
+                    <span class="secret-icon">⚡</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>风暴海岸的雷电石碑</span><span data-en>Thunder Stone on Storm Coast</span></h5>
+                      <p><span data-zh>雨天触发，可获得强力BUFF</span><span data-en>Triggered during rain, grants powerful BUFF</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-secret">
+              <div class="region-secret-header">
+                <span>🏰</span>
+                <h4><span data-zh>泰米斯城彩蛋</span><span data-en>Temis City Easter Eggs</span></h4>
+              </div>
+              <div class="region-secret-body">
+                <ul class="secret-list">
+                  <li class="secret-item">
+                    <span class="secret-icon">🍺</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>酒吧老板的特殊对话</span><span data-en>Bar Owner's Special Dialogue</span></h5>
+                      <p><span data-zh>完成特定任务后解锁，可获得隐藏任务线索</span><span data-en>Unlock after completing specific quests, reveals hidden quest clues</span></p>
+                    </div>
+                  </li>
+                  <li class="secret-item">
+                    <span class="secret-icon">⛲</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>喷泉许愿效果</span><span data-en>Fountain Wish Effect</span></h5>
+                      <p><span data-zh>投入金币许愿，有几率获得稀有材料</span><span data-en>Throw coins to make wishes, chance to get rare materials</span></p>
+                    </div>
+                  </li>
+                  <li class="secret-item">
+                    <span class="secret-icon">🛒</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>隐藏商人出现条件</span><span data-en>Hidden Merchant Appearance</span></h5>
+                      <p><span data-zh>特定时间出现在城市广场，售卖独特物品</span><span data-en>Appears in city square at specific times, sells unique items</span></p>
+                    </div>
+                  </li>
+                  <li class="secret-item">
+                    <span class="secret-icon">🎭</span>
+                    <div class="secret-content">
+                      <h5><span data-zh>剧院隐藏剧情</span><span data-en>Theater Hidden Story</span></h5>
+                      <p><span data-zh>夜晚进入剧院可触发暗黑4历史剧情</span><span data-en>Enter theater at night to trigger Diablo 4 lore story</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 7: Team Cooperation -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">7</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>组队配合技巧</span><span data-en>Team Cooperation Tips</span></h3>
+            <p><span data-zh>职业分工与最佳组队配置</span><span data-en>Class roles and optimal team compositions</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>职业分工建议</span><span data-en>Class Role Suggestions</span></h4>
+            <div class="team-comp-grid">
+              <div class="class-card">
+                <div class="class-icon">⚔️</div>
+                <h4 class="class-name"><span data-zh>圣骑士</span><span data-en>Paladin</span></h4>
+                <p class="class-role"><span data-zh>前排 + 团队光环</span><span data-en>Tank + Team Aura</span></p>
+                <p class="class-desc"><span data-zh>承受伤害，保护队友，提供BUFF光环</span><span data-en>Absorb damage, protect teammates, provide BUFF auras</span></p>
+              </div>
+              <div class="class-card">
+                <div class="class-icon">🔮</div>
+                <h4 class="class-name"><span data-zh>术士</span><span data-en>Warlock</span></h4>
+                <p class="class-role"><span data-zh>主力输出</span><span data-en>Main DPS</span></p>
+                <p class="class-desc"><span data-zh>召唤恶魔，提供高额持续伤害</span><span data-en>Summon demons, provide high sustained damage</span></p>
+              </div>
+              <div class="class-card">
+                <div class="class-icon">🧙</div>
+                <h4 class="class-name"><span data-zh>法师</span><span data-en>Sorcerer</span></h4>
+                <p class="class-role"><span data-zh>控制 + AOE</span><span data-en>Control + AOE</span></p>
+                <p class="class-desc"><span data-zh>冰冻控制，范围伤害，控场能力</span><span data-en>Freeze control, AoE damage, crowd control</span></p>
+              </div>
+              <div class="class-card">
+                <div class="class-icon">🗡️</div>
+                <h4 class="class-name"><span data-zh>盗贼</span><span data-en>Rogue</span></h4>
+                <p class="class-role"><span data-zh>单体爆发</span><span data-en>Single Target Burst</span></p>
+                <p class="class-desc"><span data-zh>高机动性，快速击杀精英和BOSS</span><span data-en>High mobility, quickly kill elites and bosses</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>4人组队最佳配置</span><span data-en>Best 4-Player Team Composition</span></h4>
+            <div class="comp-cards">
+              <div class="comp-card">
+                <h4><span data-zh>配置一：均衡型</span><span data-en>Composition 1: Balanced</span></h4>
+                <div class="comp-slots">
+                  <span class="comp-slot">⚔️ 圣骑士</span>
+                  <span class="comp-slot">🔮 术士</span>
+                  <span class="comp-slot">🧙 法师</span>
+                  <span class="comp-slot">🗡️ 任意</span>
+                </div>
+                <p class="comp-desc"><span data-zh>攻守平衡，适合所有内容</span><span data-en>Balanced offense and defense, suitable for all content</span></p>
+              </div>
+              <div class="comp-card">
+                <h4><span data-zh>配置二：爆发型</span><span data-en>Composition 2: Burst</span></h4>
+                <div class="comp-slots">
+                  <span class="comp-slot">⚔️ 圣骑士</span>
+                  <span class="comp-slot">🔮 术士</span>
+                  <span class="comp-slot">🔮 术士</span>
+                  <span class="comp-slot">🗡️ 盗贼</span>
+                </div>
+                <p class="comp-desc"><span data-zh>双术士爆发流，快速清图</span><span data-en>Dual Warlock burst, fast clearing</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-subsection">
+            <h4 class="tip-subsection-title"><span data-zh>战利品分配建议</span><span data-en>Loot Distribution Suggestions</span></h4>
+            <div class="loot-rules">
+              <div class="loot-rule">
+                <span class="loot-icon">📋</span>
+                <div class="loot-content">
+                  <h4><span data-zh>需求优先原则</span><span data-en>Need Before Greed</span></h4>
+                  <p><span data-zh>装备优先给能最大化利用的职业</span><span data-en>Give gear to class that can maximize its use</span></p>
+                </div>
+              </div>
+              <div class="loot-rule">
+                <span class="loot-icon">🔗</span>
+                <div class="loot-content">
+                  <h4><span data-zh>账号绑定装备</span><span data-en>Account-Bound Gear</span></h4>
+                  <p><span data-zh>绑定账号装备直接给对应职业</span><span data-en>Account-bound gear goes directly to corresponding class</span></p>
+                </div>
+              </div>
+              <div class="loot-rule">
+                <span class="loot-icon">💎</span>
+                <div class="loot-content">
+                  <h4><span data-zh>神话装备分配</span><span data-en>Mythic Item Distribution</span></h4>
+                  <p><span data-zh>按需求分配，可通过骰子决定</span><span data-en>Distribute by need, can decide by dice roll</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip 8: Common Mistakes -->
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-number">8</div>
+          <div class="tip-header-content">
+            <h3><span data-zh>常见误区避坑</span><span data-en>Common Mistakes to Avoid</span></h3>
+            <p><span data-zh>新手常犯的错误与正确做法</span><span data-en>Common beginner mistakes and correct approaches</span></p>
+          </div>
+        </div>
+        <div class="tip-card-body">
+          <div class="mistakes-section">
+            <h4 style="font-family: var(--font-title); color: var(--accent-red); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              ❌ <span data-zh>不要做的事情</span><span data-en>Things NOT to Do</span>
+            </h4>
+            <div class="mistakes-grid" style="margin-bottom: 24px;">
+              <div class="mistake-item">
+                <span class="mistake-icon">❌</span>
+                <div class="mistake-content">
+                  <h4><span data-zh>低级时花大量金币买装备</span><span data-en>Spending lots of gold on gear at low level</span></h4>
+                  <p><span data-zh>很快就会换掉，浪费资源</span><span data-en>You'll replace it soon, wasting resources</span></p>
+                </div>
+              </div>
+              <div class="mistake-item">
+                <span class="mistake-icon">❌</span>
+                <div class="mistake-content">
+                  <h4><span data-zh>卖掉神话碎片</span><span data-en>Selling Mythic Shards</span></h4>
+                  <p><span data-zh>极稀有，不可再生，后悔莫及</span><span data-en>Extremely rare, non-renewable, you'll regret it</span></p>
+                </div>
+              </div>
+              <div class="mistake-item">
+                <span class="mistake-icon">❌</span>
+                <div class="mistake-content">
+                  <h4><span data-zh>错过每日战争计划</span><span data-en>Missing daily War Plans</span></p>
+                  <p><span data-zh>错过=亏进度，每天必做</span><span data-en>Missing = losing progress, do it every day</span></p>
+                </div>
+              </div>
+              <div class="mistake-item">
+                <span class="mistake-icon">❌</span>
+                <div class="mistake-content">
+                  <h4><span data-zh>忽视赛季旅程目标</span><span data-en>Ignoring Season Journey objectives</span></h4>
+                  <p><span data-zh>奖励丰厚，优先完成</span><span data-en>Rewards are generous, prioritize them</span></p>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="font-family: var(--font-title); color: var(--accent-green); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              ✅ <span data-zh>应该做的事情</span><span data-en>Things You SHOULD Do</span>
+            </h4>
+            <div class="mistakes-grid">
+              <div class="do-item">
+                <span class="do-icon">✅</span>
+                <div class="do-content">
+                  <h4><span data-zh>优先完成赛季旅程目标</span><span data-en>Prioritize Season Journey objectives</span></h4>
+                  <p><span data-zh>奖励丰厚，加速成长</span><span data-en>Generous rewards, accelerate growth</span></p>
+                </div>
+              </div>
+              <div class="do-item">
+                <span class="do-icon">✅</span>
+                <div class="do-content">
+                  <h4><span data-zh>组队永远比单刷效率高</span><span data-en>Party grinding is always more efficient than solo</span></h4>
+                  <p><span data-zh>效率提升30%以上</span><span data-en>Efficiency boost of 30%+</span></p>
+                </div>
+              </div>
+              <div class="do-item">
+                <span class="do-icon">✅</span>
+                <div class="do-content">
+                  <h4><span data-zh>每周重置前把多余资源用掉</span><span data-en>Use up excess resources before weekly reset</span></h4>
+                  <p><span data-zh>避免资源浪费</span><span data-en>Avoid wasting resources</span></p>
+                </div>
+              </div>
+              <div class="do-item">
+                <span class="do-icon">✅</span>
+                <div class="do-content">
+                  <h4><span data-zh>定期检查装备词缀</span><span data-en>Regularly check gear affixes</span></h4>
+                  <p><span data-zh>及时更换提升更大的装备</span><span data-en>Replace gear with larger improvements in time</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Tips Section -->
+      <div class="advanced-section">
+        <h3 class="advanced-title">
+          <span>🔥</span>
+          <span data-zh>进阶技巧（高玩必读）</span>
+          <span data-en>Advanced Tips (Must Read for Pros)</span>
+          <span>🔥</span>
+        </h3>
+        <div class="advanced-grid">
+          <div class="advanced-card">
+            <h4>🎯 <span data-zh>战利品过滤器配置</span><span data-en>Loot Filter Configuration</span></h4>
+            <ul class="advanced-tips">
+              <li><span data-zh>设置只显示金色/传说品质装备</span><span data-en>Set to only show Gold/Legendary quality gear</span></li>
+              <li><span data-zh>过滤低物品等级装备</span><span data-en>Filter out low Item Level gear</span></li>
+              <li><span data-zh>重点关注核心词缀装备</span><span data-en>Focus on gear with core affixes</span></li>
+              <li><span data-zh>按职业过滤装备类型</span><span data-en>Filter gear types by class</span></li>
+            </ul>
+          </div>
+          <div class="advanced-card">
+            <h4>🔥 <span data-zh>折磨难度选择</span><span data-en>Torment Difficulty Selection</span></h4>
+            <ul class="advanced-tips">
+              <li><span data-zh>能够秒怪时提升难度</span><span data-en>Raise difficulty when you can one-shot enemies</span></li>
+              <li><span data-zh>考虑掉落率与效率的平衡</span><span data-en>Balance drop rate vs efficiency</span></li>
+              <li><span data-zh>苦痛XII掉落率最高</span><span data-en>Torment XII has highest drop rate</span></li>
+              <li><span data-zh>组队时可根据队友调整</span><span data-en>Adjust based on party members</span></li>
+            </ul>
+          </div>
+          <div class="advanced-card">
+            <h4>🔄 <span data-zh>重铸系统技巧</span><span data-en>Reforging System Tips</span></h4>
+            <ul class="advanced-tips">
+              <li><span data-zh>使用最少资源获得最优词缀</span><span data-en>Use minimum resources for optimal affixes</span></li>
+              <li><span data-zh>锁定核心词缀再重铸</span><span data-en>Lock core affixes before reforging</span></li>
+              <li><span data-zh>计算重铸期望值</span><span data-en>Calculate expected reforge value</span></li>
+              <li><span data-zh>优先重铸高稀有度装备</span><span data-en>Prioritize reforging high rarity gear</span></li>
+            </ul>
+          </div>
+          <div class="advanced-card">
+            <h4>📊 <span data-zh>效率最大化</span><span data-en>Maximize Efficiency</span></h4>
+            <ul class="advanced-tips">
+              <li><span data-zh>同时进行多个赛季旅程目标</span><span data-en>Work on multiple Season Journey objectives simultaneously</span></li>
+              <li><span data-zh>利用地下城特殊词缀Farm</span><span data-en>Leverage dungeon special affixes for farming</span></li>
+              <li><span data-zh>合理安排每周资源使用</span><span data-en>Plan weekly resource usage wisely</span></li>
+              <li><span data-zh>关注版本更新调整BD</span><span data-en>Adjust BD based on patch notes</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h4>⚔️ Diablo 4: Lord of Hatred Guide</h4>
+          <p>
+            <span data-zh>本攻略站涵盖《暗黑破坏神4：憎恨之王》完整内容，助你在憎恨纪元中纵横庇护之地。</span>
+            <span data-en>Your complete guide to Diablo 4: Lord of Hatred. Everything you need to dominate Sanctuary in the Age of Hatred.</span>
+          </p>
+          <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="classes.html" style="font-size:0.8rem;"><span data-zh>职业攻略</span><span data-en>Classes</span></a>
+            <a href="region.html" style="font-size:0.8rem;"><span data-zh>地区攻略</span><span data-en>Region</span></a>
+            <a href="endgame.html" style="font-size:0.8rem;"><span data-zh>终局攻略</span><span data-en>Endgame</span></a>
+            <a href="bosses.html" style="font-size:0.8rem;"><span data-zh>Boss攻略</span><span data-en>Bosses</span></a>
+            <a href="season.html" style="font-size:0.8rem;"><span data-zh>赛季攻略</span><span data-en>Season</span></a>
+            <a href="mythic.html" style="font-size:0.8rem;"><span data-zh>神话装备</span><span data-en>Mythic</span></a>
+            <a href="builds.html" style="font-size:0.8rem;"><span data-zh>BD配装</span><span data-en>Builds</span></a>
+            <a href="tips.html" style="font-size:0.8rem;"><span data-zh>实用技巧</span><span data-en>Tips</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>攻略板块</span><span data-en>Guide Sections</span></h5>
+          <ul>
+            <li><a href="classes.html"><span data-zh>职业详解</span><span data-en>Classes</span></a></li>
+            <li><a href="region.html"><span data-zh>斯科沃斯地区</span><span data-en>Skovos Region</span></a></li>
+            <li><a href="endgame.html"><span data-zh>终局系统</span><span data-en>Endgame</span></a></li>
+            <li><a href="bosses.html"><span data-zh>Boss图鉴</span><span data-en>Boss Compendium</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>外部资源</span><span data-en>External Resources</span></h5>
+          <ul>
+            <li><a href="https://news.blizzard.com/en-us/diablo4" target="_blank" rel="noopener">Blizzard News</a></li>
+            <li><a href="https://diablo4.blizzard.com/" target="_blank" rel="noopener">Official Site</a></li>
+            <li><a href="https://maxroll.gg/diablo4" target="_blank" rel="noopener">MaxRoll.gg</a></li>
+            <li><a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 D4 Lord of Hatred Guide. All rights reserved. Diablo © Blizzard Entertainment.</p>
+        <p><span data-zh>本站为玩家攻略站，与暴雪娱乐无附属关系</span><span data-en>Fan-made guide site, not affiliated with Blizzard Entertainment</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    /* ===== Language Toggle ===== */
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      localStorage.setItem('d4guide-lang', lang);
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    /* Auto-detect browser language */
+    (function() {
+      var saved = localStorage.getItem('d4guide-lang');
+      if (saved) {
+        setLang(saved);
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().startsWith('en')) {
+          setLang('en');
+        }
+      }
+    })();
+
+    /* ===== Back to Top Button ===== */
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+
+      /* Reading progress */
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = (window.scrollY / docHeight) * 100;
+      var bar = document.getElementById('reading-progress');
+      if (bar) bar.style.width = progress + '%';
+    });
+  </script>
+</body>
+</html>

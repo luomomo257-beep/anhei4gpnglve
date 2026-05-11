@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>暗黑破坏神4 S13清算赛季攻略 | 战网通行证·赛季旅程·祝福系统 | Diablo 4 Season 13 Guide</title>
+  <meta name="description" content="《暗黑破坏神4：憎恨之王》S13「清算赛季」完全指南。100+目标赛季旅程、免费/高级/豪华战网通行证对比、5种余烬祝福系统推荐、S13特有活动详解。Diablo 4 Season of Reckoning complete guide." />
+  <meta name="keywords" content="暗黑破坏神4,S13赛季,清算赛季,战网通行证,赛季旅程,余烬祝福,Diablo 4,Season 13,Season of Reckoning,Battle Pass,Season Journey,2026" />
+  <meta name="author" content="D4 Guide Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/season.html" />
+
+  <!-- ===== SEO: Open Graph ===== -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="暗黑破坏神4 S13清算赛季完全攻略 | 战网通行证·赛季旅程·祝福系统" />
+  <meta property="og:description" content="S13「清算赛季」与憎恨之王同步上线，等级上限提升至70级，100+目标赛季旅程，5种余烬祝福系统。" />
+  <meta property="og:url" content="https://your-domain.com/season.html" />
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="D4 Lord of Hatred Guide" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diablo 4 Season 13: Season of Reckoning Complete Guide" />
+  <meta name="twitter:description" content="100+ Season Journey objectives, Free/Premium/Deluxe Battle Pass, 5 Ember Blessing systems. Everything about S13." />
+
+  <!-- ===== SEO: Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "暗黑破坏神4 S13清算赛季完全攻略",
+    "description": "S13赛季旅程、战网通行证、余烬祝福系统全面指南",
+    "datePublished": "2026-04-27",
+    "dateModified": "2026-05-07",
+    "author": {"@type": "Organization", "name": "D4 Guide Team"},
+    "about": {"@type": "VideoGame", "name": "Diablo IV: Lord of Hatred"}
+  }
+  </script>
+
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --accent-red: #c41e3a;
+      --accent-gold: #d4a017;
+      --accent-orange: #e8651a;
+      --text-primary: #e8e0d0;
+      --text-secondary: #9a9088;
+      --text-muted: #5a5058;
+      --border-color: #2a2030;
+      --glow-red: rgba(196, 30, 58, 0.4);
+      --glow-gold: rgba(212, 160, 23, 0.3);
+      --font-title: 'Georgia', 'SimSun', serif;
+      --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --radius: 8px;
+      --transition: 0.25s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-orange); text-decoration: none; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+
+    /* ===== Language Toggle Bar ===== */
+    .lang-toggle-bar {
+      background: rgba(10,10,15,0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+    .lang-toggle-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-mini-brand {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .lang-buttons { display: flex; gap: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #fff;
+    }
+
+    /* ===== Top Navigation ===== */
+    .top-nav {
+      background: rgba(10,10,15,0.98);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+    }
+    .top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo-icon { font-size: 1.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links li a:hover, .nav-links li a.current {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+
+    /* ===== Page Hero ===== */
+    .page-hero {
+      position: relative;
+      padding: 100px 0 64px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 50%, rgba(212,160,23,0.12) 0%, transparent 70%),
+        linear-gradient(180deg, #0a0800 0%, #0a0a0f 100%);
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 15% 20%, rgba(212,160,23,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 70%, rgba(196,30,58,0.4) 0%, transparent 100%);
+      animation: twinkle 5s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle { 0% { opacity: 0.4; } 100% { opacity: 0.9; } }
+    .page-hero-inner { position: relative; z-index: 1; }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .breadcrumb a { color: var(--text-muted); }
+    .breadcrumb a:hover { color: var(--accent-gold); }
+    .page-title {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: #fff;
+      text-shadow: 0 0 40px var(--glow-gold);
+      margin-bottom: 12px;
+    }
+    .page-subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto 24px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .badge {
+      background: rgba(212,160,23,0.15);
+      border: 1px solid rgba(212,160,23,0.4);
+      color: var(--text-primary);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    /* ===== Section Styles ===== */
+    .section-block {
+      border-bottom: 1px solid var(--border-color);
+      padding: 64px 0;
+    }
+    .section-block:last-child { border-bottom: none; }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: #fff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-icon { font-size: 1.5rem; }
+    .section-lead {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      max-width: 720px;
+    }
+
+    /* ===== Season Banner ===== */
+    .season-banner {
+      background: linear-gradient(135deg, rgba(212,160,23,0.12), rgba(196,30,58,0.08));
+      border: 1px solid rgba(212,160,23,0.25);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .season-logo {
+      font-size: 4rem;
+      text-align: center;
+      line-height: 1;
+    }
+    .season-banner-text h3 {
+      font-family: var(--font-title);
+      font-size: 1.4rem;
+      color: var(--accent-gold);
+      margin-bottom: 6px;
+    }
+    .season-banner-text p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    .season-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .season-meta-item {
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+    @media (max-width: 600px) {
+      .season-banner { grid-template-columns: 1fr; text-align: center; }
+    }
+
+    /* ===== Timeline ===== */
+    .journey-timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding-left: 48px;
+      margin-bottom: 32px;
+    }
+    .journey-timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 24px;
+      bottom: 24px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent-gold), var(--accent-red), transparent);
+    }
+    .journey-milestone {
+      position: relative;
+      padding: 20px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      transition: var(--transition);
+    }
+    .journey-milestone:hover { border-color: rgba(212,160,23,0.4); }
+    .journey-milestone::before {
+      content: '';
+      position: absolute;
+      left: -38px;
+      top: 28px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      border: 3px solid var(--bg-primary);
+      box-shadow: 0 0 10px rgba(212,160,23,0.5);
+    }
+    .milestone-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .milestone-icon { font-size: 1.4rem; }
+    .milestone-tier {
+      font-family: var(--font-title);
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: rgba(196,30,58,0.15);
+      color: #ff6080;
+      border: 1px solid rgba(196,30,58,0.3);
+    }
+    .milestone-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .milestone-desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .milestone-goals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .milestone-goal {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+    .milestone-reward {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      background: rgba(212,160,23,0.1);
+      border: 1px solid rgba(212,160,23,0.3);
+      color: var(--accent-gold);
+    }
+
+    /* ===== Battle Pass ===== */
+    .bp-comparison {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 768px) {
+      .bp-comparison { grid-template-columns: 1fr; }
+    }
+    .bp-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .bp-card:hover { transform: translateY(-3px); }
+    .bp-card.free { border-color: rgba(80,180,100,0.3); }
+    .bp-card.premium { border-color: rgba(212,160,23,0.3); }
+    .bp-card.deluxe { border-color: rgba(196,30,58,0.3); }
+    .bp-card-head {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .bp-card.free .bp-card-head { background: rgba(80,180,100,0.08); }
+    .bp-card.premium .bp-card-head { background: rgba(212,160,23,0.08); }
+    .bp-card.deluxe .bp-card-head { background: rgba(196,30,58,0.08); }
+    .bp-tier-name {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+    .bp-card.free .bp-tier-name { color: #7dd898; }
+    .bp-card.premium .bp-tier-name { color: var(--accent-gold); }
+    .bp-card.deluxe .bp-tier-name { color: #e87090; }
+    .bp-price {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .bp-card-body { padding: 20px; }
+    .bp-reward-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .bp-reward-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .bp-reward-list li::before {
+      content: '✓';
+      color: var(--accent-gold);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    /* ===== Blessings ===== */
+    .blessing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .blessing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: var(--transition);
+    }
+    .blessing-card:hover { border-color: rgba(212,160,23,0.4); }
+    .blessing-card.priority { border-color: rgba(196,30,58,0.3); }
+    .blessing-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .blessing-icon { font-size: 1.4rem; }
+    .blessing-name {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+    }
+    .blessing-priority {
+      margin-left: auto;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: rgba(196,30,58,0.15);
+      color: #ff6080;
+      border: 1px solid rgba(196,30,58,0.3);
+    }
+    .blessing-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .blessing-levels {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .blessing-level {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+    }
+    .blessing-level.active {
+      background: rgba(212,160,23,0.2);
+      border-color: rgba(212,160,23,0.5);
+      color: var(--accent-gold);
+    }
+
+    /* ===== Activities ===== */
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .activity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .activity-card:hover { border-color: rgba(196,30,58,0.3); transform: translateY(-2px); }
+    .activity-card-head {
+      padding: 16px 20px;
+      background: linear-gradient(135deg, rgba(196,30,58,0.1), rgba(0,0,0,0));
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .activity-icon { font-size: 1.4rem; }
+    .activity-card-head h4 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: #fff;
+    }
+    .activity-card-body { padding: 16px 20px; }
+    .activity-card-body p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===== Level Cap ===== */
+    .level-cap-card {
+      background: linear-gradient(135deg, rgba(196,30,58,0.1), rgba(0,0,0,0));
+      border: 1px solid rgba(196,30,58,0.25);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .level-cap-num {
+      font-family: var(--font-title);
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      text-shadow: 0 0 30px var(--glow-gold);
+      line-height: 1;
+    }
+    .level-cap-text h3 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .level-cap-text p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+    @media (max-width: 600px) {
+      .level-cap-card { grid-template-columns: 1fr; text-align: center; }
+    }
+
+    /* ===== Quick Nav ===== */
+    .quick-nav {
+      position: sticky;
+      top: 110px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+    }
+    .quick-nav h4 {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .quick-nav-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .quick-nav-list a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 12px;
+      border-radius: 14px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+    .quick-nav-list a:hover {
+      background: rgba(212,160,23,0.1);
+      border-color: rgba(212,160,23,0.3);
+      color: var(--text-primary);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #060608;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: var(--text-muted); }
+    .footer-col ul li a:hover { color: var(--accent-gold); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+
+    #back-to-top {
+      position: fixed; bottom: 30px; right: 30px; width: 46px; height: 46px;
+      background: var(--accent-red); border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      color: #fff; box-shadow: 0 4px 16px rgba(196,30,58,0.4); transition: var(--transition);
+      opacity: 0; pointer-events: none; z-index: 999;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: all; }
+    #back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+    /* ===== i18n ===== */
+    [data-en], [data-zh] { display: inline; }
+    html[data-lang="en"] [data-zh] { display: none; }
+    html[data-lang="zh"] [data-en] { display: none; }
+    [data-en-block], [data-zh-block] { display: block; }
+    html[data-lang="en"] [data-zh-block] { display: none; }
+    html[data-lang="zh"] [data-en-block] { display: none; }
+
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 2px; }
+      .nav-links li a { padding: 4px 8px; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Language Toggle Bar ===== -->
+  <div class="lang-toggle-bar">
+    <div class="container">
+      <span class="site-mini-brand">D4 LORD OF HATRED GUIDE</span>
+      <div class="lang-buttons">
+        <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Top Navigation ===== -->
+  <div class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">⚔️</span>
+        <span data-zh>暗黑4 · 憎恨之王攻略</span>
+        <span data-en>D4 Lord of Hatred Guide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="classes.html">⚔️ <span data-zh>职业</span><span data-en>Classes</span></a></li>
+        <li><a href="region.html">🗺️ <span data-zh>地区</span><span data-en>Region</span></a></li>
+        <li><a href="endgame.html">🏆 <span data-zh>终局</span><span data-en>Endgame</span></a></li>
+        <li><a href="bosses.html">💀 <span data-zh>Boss</span><span data-en>Boss</span></a></li>
+        <li><a href="season.html" class="current">📅 <span data-zh>赛季</span><span data-en>Season</span></a></li>
+        <li><a href="mythic.html">🌟 <span data-zh>神话</span><span data-en>Mythic</span></a></li>
+        <li><a href="builds.html">📋 <span data-zh>配装</span><span data-en>Builds</span></a></li>
+        <li><a href="tips.html">💡 <span data-zh>技巧</span><span data-en>Tips</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Page Hero ===== -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <p class="breadcrumb">
+        <a href="index.html"><span data-zh>首页</span><span data-en>Home</span></a> /
+        <span data-zh>S13赛季攻略</span><span data-en>Season 13 Guide</span>
+      </p>
+      <h1 class="page-title">
+        <span data-zh>📅 S13清算赛季 完全指南</span>
+        <span data-en>📅 Season 13: Season of Reckoning</span>
+      </h1>
+      <p class="page-subtitle">
+        <span data-zh>与憎恨之王同步上线的S13「清算赛季」，等级上限提升至70级，100+目标赛季旅程，5种余烬祝福系统，助你征服斯科沃斯！</span>
+        <span data-en>Season 13 "Season of Reckoning" launched alongside Lord of Hatred. Level cap raised to 70, 100+ Season Journey objectives, 5 Ember Blessing systems.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><span data-zh>📅 上线：2026.4.27</span><span data-en>📅 Live: Apr 27, 2026</span></span>
+        <span class="badge"><span data-zh">🌟 S13清算赛季</span><span data-en>🌟 Season of Reckoning</span></span>
+        <span class="badge"><span data-zh>⬆️ 等级上限70</span><span data-en>⬆️ Level Cap 70</span></span>
+        <span class="badge"><span data-zh>🎫 战网通行证</span><span data-en>🎫 Battle Pass</span></span>
+        <span class="badge"><span data-zh">⚗️ 余烬祝福系统</span><span data-en>⚗️ Ember Blessings</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Quick Nav ===== -->
+  <div class="container" style="padding-top: 32px;">
+    <div class="quick-nav">
+      <h4><span data-zh>快速跳转</span><span data-en>Quick Jump</span></h4>
+      <div class="quick-nav-list">
+        <a href="#overview">🏆 <span data-zh>赛季概览</span><span data-en>Overview</span></a>
+        <a href="#journey">🗺️ <span data-zh>赛季旅程</span><span data-en>Journey</span></a>
+        <a href="#battlepass">🎫 <span data-zh>战网通行证</span><span data-en>Battle Pass</span></a>
+        <a href="#blessings">⚗️ <span data-zh>余烬祝福</span><span data-en>Blessings</span></a>
+        <a href="#activities">⚔️ <span data-zh>赛季活动</span><span data-en>Activities</span></a>
+        <a href="#leveling">📈 <span data-zh>冲级建议</span><span data-en>Leveling</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Season Overview ===== -->
+  <section class="section-block" id="overview">
+    <div class="container">
+      <div class="season-banner">
+        <div class="season-logo">🔥</div>
+        <div class="season-banner-text">
+          <h3><span data-zh>S13 清算赛季</span><span data-en>S13 Season of Reckoning</span></h3>
+          <p>
+            <span data-zh>憎恨纪元的最终清算时刻。斯科沃斯大陆被憎恨之力侵扰，英雄们必须在这片土地上证明自己的价值，击败彼列，阻止墨菲斯托的复活。</span>
+            <span data-en>The final reckoning of the Age of Hatred. Sanctuary's heroes must prove their worth on Skovos, defeat Belial, and prevent Mephisto's resurrection.</span>
+          </p>
+          <div class="season-meta">
+            <span class="season-meta-item">📅 <span data-zh>上线：2026年4月27日</span><span data-en>Live: Apr 27, 2026</span></span>
+            <span class="season-meta-item">⬆️ <span data-zh>等级上限：70级</span><span data-en>Level Cap: 70</span></span>
+            <span class="season-meta-item">🗺️ <span data-zh>专属内容：斯科沃斯</span><span data-en>Exclusive: Skovos</span></span>
+            <span class="season-meta-item">🆕 <span data-zh>新系统：余烬祝福</span><span data-en>New: Ember Blessings</span></span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        <span class="section-icon">🏆</span>
+        <span data-zh="true">S13赛季重大变化</span>
+        <span data-en="true">Major S13 Changes</span>
+      </h2>
+      <div class="activity-grid">
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">⬆️</span>
+            <h4><span data-zh="true">等级上限提升</span><span data-en="true">Level Cap Raised</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">等级上限从50级提升至70级，给予玩家更长的成长曲线。前中期内容更丰富，新手有更舒适的体验窗口。</span>
+              <span data-en="true">Level cap raised from 50 to 70, creating a longer progression curve. More mid-game content, better new player experience.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">⚗️</span>
+            <h4><span data-zh="true">余烬祝福系统</span><span data-en="true">Ember Blessing System</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">新系统！通过每日/每周活动获取余烬材料，激活5种不同祝福，最多叠加至5级，大幅提升资源获取效率。</span>
+              <span data-en="true">New system! Earn Ember materials from daily/weekly activities to activate 5 different blessings, stackable to level 5, boosting resource efficiency.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">🗺️</span>
+            <h4><span data-zh="true">斯科沃斯专属内容</span><span data-en="true">Skovos-Exclusive Content</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">清算试炼、憎恨渗透事件、斯科沃斯探索赛等独有活动，完成可获得专属奖励与余烬材料。</span>
+              <span data-en="true">Exclusive activities like Reckoning Trials, Hatred Infiltration Events, and Skovos Exploration Races with unique rewards and Ember materials.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">🎫</span>
+            <h4><span data-zh="true">战网通行证优化</span><span data-en="true">Battle Pass Improvements</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">S13通行证增加了更多外观奖励，包括斯科沃斯主题坐骑、护甲套装、传送门等。免费版也提供基础奖励。</span>
+              <span data-en="true">S13 Battle Pass adds more cosmetic rewards including Skovos-themed mounts, armor sets, portals. Even the free track has solid rewards.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Level Cap ===== -->
+  <section class="section-block" id="leveling">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">📈</span>
+        <span data-zh="true">等级上限提升至 70 级</span>
+        <span data-en="true">Level Cap Raised to Level 70</span>
+      </h2>
+
+      <div class="level-cap-card">
+        <div class="level-cap-num">70</div>
+        <div class="level-cap-text">
+          <h3><span data-zh="true">前所未有的成长空间</span><span data-en="true">Unprecedented Growth Space</span></h3>
+          <p>
+            <span data-zh="true">S13将最高等级由50提升至70，给予玩家更长的成长曲线。这意味着前中期内容更为丰富，不会像往届赛季那样一冲就直接进终局。新手玩家这次有更舒适的体验窗口。</span>
+            <span data-en="true">S13 raises the max level from 50 to 70, creating a longer progression curve. Players won't rocket straight into endgame — giving new players a far more comfortable experience window. More skill points to experiment with builds.</span>
+          </p>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-title);font-size:1.1rem;color:#fff;margin-bottom:16px;">
+        <span data-zh="true">等级分布与技能点分配建议</span>
+        <span data-en="true">Level Distribution & Skill Point Allocation</span>
+      </h3>
+      <div class="activity-grid">
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">🌱</span>
+            <h4><span data-zh="true">1-40级：开荒期</span><span data-en="true">Lv 1-40: Early Game</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">跟随主线剧情推进斯科沃斯地图。建议优先点满1-2个主要输出技能，其余随意。装备更换频繁，不要过度投资。</span>
+              <span data-en="true">Follow the main story through Skovos. Prioritize maxing 1-2 main damage skills. Gear changes frequently — don't over-invest early.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">⚔️</span>
+            <h4><span data-zh="true">40-60级：中期成型</span><span data-en="true">Lv 40-60: Mid Game</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">开始锁定BD方向，系统性投入技能点。激活赫拉迪姆方块，开始尝试制作系统。战利品过滤调整为稀有以上。</span>
+              <span data-en="true">Lock in your build direction. Systematically invest skill points. Activate Horadric Cube, experiment with crafting. Set loot filter to Rare+.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">🏆</span>
+            <h4><span data-zh="true">60-70级：终局冲刺</span><span data-en="true">Lv 60-70: Endgame Push</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">完成所有技能点投入。开始刷祖先级装备。激活余烬祝福系统。解锁战争计划开始定制化终局玩法。</span>
+              <span data-en="true">Complete all skill point investments. Start farming Ancestral gear. Activate Ember Blessing system. Unlock War Plans for customized endgame.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Season Journey ===== -->
+  <section class="section-block" id="journey">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">🗺️</span>
+        <span data-zh="true">赛季旅程 Season Journey</span>
+        <span data-en="true">Season Journey</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh="true">100+目标分9个阶段，涵盖从开荒到终局的所有玩法指引。每阶段完成后获得丰厚奖励，助你快速成长。</span>
+        <span data-en="true">100+ objectives across 9 tiers, covering everything from leveling to endgame. Each tier completed grants massive rewards to accelerate growth.</span>
+      </p>
+
+      <div class="journey-timeline">
+
+        <!-- Tier 1-3 -->
+        <div class="journey-milestone">
+          <div class="milestone-header">
+            <span class="milestone-icon">🌱</span>
+            <span class="milestone-tier"><span data-zh="true">阶段 1-3</span><span data-en="true">Tiers 1-3</span></span>
+            <span class="milestone-title"><span data-zh="true">开荒期：英雄的诞生</span><span data-en="true">Early Game: Birth of a Hero</span></span>
+          </div>
+          <p class="milestone-desc">
+            <span data-zh="true">完成主线剧情，解锁斯科沃斯大陆，激活赫拉迪姆方块。这是最基础的赛季起步目标。</span>
+            <span data-en="true">Complete the main story, unlock Skovos, activate the Horadric Cube. These are the baseline season start objectives.</span>
+          </p>
+          <div class="milestone-goals">
+            <span class="milestone-goal"><span data-zh="true">完成憎恨之王主线</span><span data-en="true">Complete Lord of Hatred story</span></span>
+            <span class="milestone-goal"><span data-zh="true">达到等级 10</span><span data-en="true">Reach Level 10</span></span>
+            <span class="milestone-goal"><span data-zh="true">达到等级 25</span><span data-en="true">Reach Level 25</span></span>
+            <span class="milestone-goal"><span data-zh="true">达到等级 40</span><span data-en="true">Reach Level 40</span></span>
+            <span class="milestone-goal"><span data-zh="true">激活赫拉迪姆方块</span><span data-en="true">Activate Horadric Cube</span></span>
+          </div>
+          <span class="milestone-reward">
+            🎁 <span data-zh="true">奖励：传奇符文缓存 × 3 + 12 技能点</span>
+            <span data-en="true">Reward: 3× Legendary Rune Caches + 12 Skill Points</span>
+          </span>
+        </div>
+
+        <!-- Tier 4-6 -->
+        <div class="journey-milestone">
+          <div class="milestone-header">
+            <span class="milestone-icon">⚔️</span>
+            <span class="milestone-tier"><span data-zh="true">阶段 4-6</span><span data-en="true">Tiers 4-6</span></span>
+            <span class="milestone-title"><span data-zh="true">中期成型：斯科沃斯征服者</span><span data-en="true">Mid Game: Skovos Conqueror</span></span>
+          </div>
+          <p class="milestone-desc">
+            <span data-zh="true">完成战争计划活动链、挑战巢穴BOSS、在回响的憎恨中到达深层。这是终局玩法的入门阶段。</span>
+            <span data-en="true">Complete War Plans chains, challenge Lair Bosses, and push deep into Echoing Hatred. This is the entry point to endgame content.</span>
+          </p>
+          <div class="milestone-goals">
+            <span class="milestone-goal"><span data-zh="true">完成 5 次战争计划</span><span data-en="true">Complete 5 War Plans</span></span>
+            <span class="milestone-goal"><span data-zh="true">击败初级巢穴 BOSS ×3</span><span data-en="true">Defeat 3 Tier-1 Lair Bosses</span></span>
+            <span class="milestone-goal"><span data-zh="true">进入回荡之憎第10层</span><span data-en="true">Reach Echoing Hatred Tier 10</span></span>
+            <span class="milestone-goal"><span data-zh="true">完成每日清算试炼 ×7</span><span data-en="true">Complete 7 Daily Reckoning Trials</span></span>
+            <span class="milestone-goal"><span data-zh="true">激活 2 种余烬祝福</span><span data-en="true">Activate 2 Ember Blessings</span></span>
+          </div>
+          <span class="milestone-reward">
+            🎁 <span data-zh="true">奖励：璀璨火花 × 5 + 42 巅峰点数 + 坐骑奖杯</span>
+            <span data-en="true">Reward: 5× Resplendent Sparks + 42 Paragon Points + Mount Trophy</span>
+          </span>
+        </div>
+
+        <!-- Tier 7-9 -->
+        <div class="journey-milestone">
+          <div class="milestone-header">
+            <span class="milestone-icon">🏆</span>
+            <span class="milestone-tier" style="background:rgba(212,160,23,0.15);color:#e0b840;border:1px solid rgba(212,160,23,0.3);">
+              <span data-zh="true">阶段 7-9</span><span data-en="true">Tiers 7-9</span>
+            </span>
+            <span class="milestone-title"><span data-zh="true">终局冲榜：憎恨终结者</span><span data-en="true">Endgame: Hatred Terminator</span></span>
+          </div>
+          <p class="milestone-desc">
+            <span data-zh="true">击败彼列、折磨XII深坑通关、完成所有赛季专属活动、收集指定神话装备。这是真正的终局挑战。</span>
+            <span data-en="true">Defeat Belial, complete Torment XII Pit, finish all seasonal activities, and collect designated Mythic gear. This is true endgame challenge.</span>
+          </p>
+          <div class="milestone-goals">
+            <span class="milestone-goal"><span data-zh="true">击败彼列 ×3</span><span data-en="true">Defeat Belial ×3</span></span>
+            <span class="milestone-goal"><span data-zh="true">完成苦痛XII深坑</span><span data-en="true">Complete Torment XII Pit</span></span>
+            <span class="milestone-goal"><span data-zh="true">回荡之憎达到第50层</span><span data-en="true">Reach Echoing Hatred Tier 50</span></span>
+            <span class="milestone-goal"><span data-zh="true">收集 3 件神话装备</span><span data-en="true">Collect 3 Mythic items</span></span>
+            <span class="milestone-goal"><span data-zh="true">激活全部 5 种余烬祝福</span><span data-en="true">Activate all 5 Ember Blessings</span></span>
+            <span class="milestone-goal"><span data-zh="true">完成斯科沃斯探索赛</span><span data-en="true">Complete Skovos Race</span></span>
+          </div>
+          <span class="milestone-reward">
+            🎁 <span data-zh="true">奖励：璀璨火花 × 9 + Loathroot 宠物 + 专属徽章</span>
+            <span data-en="true">Reward: 9× Resplendent Sparks + Loathroot Pet + Exclusive Badge</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Battle Pass ===== -->
+  <section class="section-block" id="battlepass">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">🎫</span>
+        <span data-zh="true">战网通行证 Battle Pass</span>
+        <span data-en="true">Battle Pass</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh="true">S13战网通行证提供三个档次，所有档次均可在赛季期间购买并完成，全部奖励可永久保留（仅外观物品）。</span>
+        <span data-en="true">S13 Battle Pass offers three tiers. All can be purchased and completed during the season. All rewards are permanent (cosmetics only).</span>
+      </p>
+
+      <div class="bp-comparison">
+        <!-- Free -->
+        <div class="bp-card free">
+          <div class="bp-card-head">
+            <div class="bp-tier-name"><span data-zh="true">免费版</span><span data-en="true">Free</span></div>
+            <div class="bp-price"><span data-zh="true">无需购买</span><span data-en="true">No purchase required</span></div>
+          </div>
+          <div class="bp-card-body">
+            <ul class="bp-reward-list">
+              <li><span data-zh="true">武器外观 ×1</span><span data-en="true">Weapon Cosmetic ×1</span></li>
+              <li><span data-zh="true">白金币 200</span><span data-en="true">200 Platinum</span></li>
+              <li>Skovosi <span data-zh="true">坐骑</span><span data-en="true">Mount</span></li>
+              <li>Skovosi <span data-zh="true">护甲套装</span><span data-en="true">Armor Set</span></li>
+              <li>Path of Antiquity <span data-zh="true">传送门</span><span data-en="true">Town Portal</span></li>
+              <li><span data-zh="true">赛季表情 ×2</span><span data-en="true">Season Emotes ×2</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="bp-card premium">
+          <div class="bp-card-head">
+            <div class="bp-tier-name"><span data-zh="true">高级版</span><span data-en="true">Premium</span></div>
+            <div class="bp-price"><span data-zh="true">约 ¥68 / $9.99</span></div>
+          </div>
+          <div class="bp-card-body">
+            <ul class="bp-reward-list">
+              <li><span data-zh="true">包含免费版全部内容</span><span data-en="true">All Free content included</span></li>
+              <li>Firstborn Glory <span data-zh="true">护甲</span><span data-en="true">Armor</span></li>
+              <li>Kynigos <span data-zh="true">猫坐骑</span><span data-en="true">Cat Mount</span></li>
+              <li>Axiom <span data-zh="true">马坐骑</span><span data-en="true">Horse Mount</span></li>
+              <li>Progenitor's Crystal <span data-zh="true">奖杯</span><span data-en="true">Trophy</span></li>
+              <li>Tickles <span data-zh="true">蜘蛛宠物</span><span data-en="true">Spider Pet</span></li>
+              <li>Arch of Antiquity <span data-zh="true">传送门</span><span data-en="true">Town Portal</span></li>
+              <li><span data-zh="true">高级武器外观 ×4</span><span data-en="true">4 Premium Weapon Cosmetics</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Deluxe -->
+        <div class="bp-card deluxe">
+          <div class="bp-card-head">
+            <div class="bp-tier-name"><span data-zh="true">豪华版</span><span data-en="true">Deluxe</span></div>
+            <div class="bp-price"><span data-zh="true">约 ¥128 / $19.99</span></div>
+          </div>
+          <div class="bp-card-body">
+            <ul class="bp-reward-list">
+              <li><span data-zh="true">包含高级版全部内容</span><span data-en="true">All Premium content included</span></li>
+              <li>Progenitor's Grace <span data-zh="true">动态背饰</span><span data-en="true">Back Trophy</span></li>
+              <li>Luster <span data-zh="true">蜘蛛宠物</span><span data-en="true">Spider Pet</span></li>
+              <li>Hallowed Ancient <span data-zh="true">立即解锁护甲</span><span data-en="true">Instant Armor Unlock</span></li>
+              <li><span data-zh="true">赛季专属表情包</span><span data-en="true">Season Exclusive Emotes</span></li>
+              <li><span data-zh="true">30天经验加成</span><span data-en="true">30-Day XP Boost</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:rgba(212,160,23,0.07);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:20px;">
+        <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin-bottom:10px;">
+          💡 <span data-zh="true">购买建议</span><span data-en="true">Purchase Recommendations</span>
+        </h4>
+        <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.7;">
+          <span data-zh="true">如果你是赛季玩家并希望收集外观，建议直接购买豪华版（包含高级+额外内容）。高级版性价比最高，适合大多数玩家。免费版内容虽然不多，但200白金币是实打实的资源，不购买通行证也能获得。</span>
+          <span data-en="true">If you're a seasonal player who collects cosmetics, go Deluxe (includes Premium + extra). Premium offers the best value for most players. Free track content is limited but the 200 Platinum is solid currency even without purchase.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Ember Blessings ===== -->
+  <section class="section-block" id="blessings">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">⚗️</span>
+        <span data-zh="true">余烬祝福系统 Ember Blessings</span>
+        <span data-en="true">Ember Blessings</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh="true">消耗每日/每周活动获得的余烬材料激活祝福，最高可叠加至5级。建议优先激活推荐等级满的祝福。</span>
+        <span data-en="true">Spend Ember materials earned from daily/weekly activities to activate blessings, stackable up to level 5. Prioritize the recommended blessings first.</span>
+      </p>
+
+      <div class="blessing-grid">
+        <div class="blessing-card priority">
+          <div class="blessing-header">
+            <span class="blessing-icon">🏺</span>
+            <span class="blessing-name"><span data-zh="true">回收之瓮</span><span data-en="true">Salvage Urn</span></span>
+            <span class="blessing-priority">⭐<span data-zh="true">推荐</span><span data-en="true">Priority</span></span>
+          </div>
+          <p class="blessing-desc">
+            <span data-zh="true">提高稀有材料拆解出率约30%/级。终局玩家核心祝福，大幅提升材料获取效率。</span>
+            <span data-en="true">Increases rare material salvage rate by ~30% per level. Core blessing for endgame players — massive material efficiency boost.</span>
+          </p>
+          <div class="blessing-levels">
+            <span class="blessing-level">1</span>
+            <span class="blessing-level">2</span>
+            <span class="blessing-level active">3</span>
+            <span class="blessing-level active">4</span>
+            <span class="blessing-level active">5</span>
+          </div>
+        </div>
+
+        <div class="blessing-card priority">
+          <div class="blessing-header">
+            <span class="blessing-icon">⚒️</span>
+            <span class="blessing-name"><span data-zh="true">大师之瓮</span><span data-en="true">Artisan's Urn</span></span>
+            <span class="blessing-priority">⭐<span data-zh="true">推荐</span><span data-en="true">Priority</span></span>
+          </div>
+          <p class="blessing-desc">
+            <span data-zh="true">提高黑曜石掉落率约25%/级。黑曜石是制作传说装备的核心材料，终局必备。</span>
+            <span data-en="true">Increases Obducite drop rate by ~25% per level. Obducite is essential for crafting legendary gear — essential for endgame.</span>
+          </p>
+          <div class="blessing-levels">
+            <span class="blessing-level">1</span>
+            <span class="blessing-level">2</span>
+            <span class="blessing-level active">3</span>
+            <span class="blessing-level active">4</span>
+            <span class="blessing-level active">5</span>
+          </div>
+        </div>
+
+        <div class="blessing-card">
+          <div class="blessing-header">
+            <span class="blessing-icon">❓</span>
+            <span class="blessing-name"><span data-zh="true">好奇之瓮</span><span data-en="true">Curiosity's Urn</span></span>
+          </div>
+          <p class="blessing-desc">
+            <span data-zh="true">提高从杂货商处获得双件物品的概率约20%/级。适合经常在商人处刷新购买装备的玩家。</span>
+            <span data-en="true">Increases dual-item chances from merchants by ~20% per level. Good for players who frequently buy gear from merchants.</span>
+          </p>
+          <div class="blessing-levels">
+            <span class="blessing-level">1</span>
+            <span class="blessing-level active">2</span>
+            <span class="blessing-level active">3</span>
+            <span class="blessing-level">4</span>
+            <span class="blessing-level">5</span>
+          </div>
+        </div>
+
+        <div class="blessing-card">
+          <div class="blessing-header">
+            <span class="blessing-icon">🔮</span>
+            <span class="blessing-name"><span data-zh="true">雕文之瓮</span><span data-en="true">Glyph Urn</span></span>
+          </div>
+          <p class="blessing-desc">
+            <span data-zh="true">有概率（15%/级）获得额外雕文强化效果。适合已完成大部分技能点投入、开始关注巅峰雕文的玩家。</span>
+            <span data-en="true">15% chance per level to gain bonus Glyph enhancements. Ideal for players who have most skill points invested and focus on Paragon Glyphs.</span>
+          </p>
+          <div class="blessing-levels">
+            <span class="blessing-level">1</span>
+            <span class="blessing-level">2</span>
+            <span class="blessing-level">3</span>
+            <span class="blessing-level">4</span>
+            <span class="blessing-level">5</span>
+          </div>
+        </div>
+
+        <div class="blessing-card">
+          <div class="blessing-header">
+            <span class="blessing-icon">👻</span>
+            <span class="blessing-name"><span data-zh="true">祖先低语之瓮</span><span data-en="true">Ancestral Urn</span></span>
+          </div>
+          <p class="blessing-desc">
+            <span data-zh="true">提高获得祖先低语缓存概率约20%/级。对快速获取祖先级装备有帮助，适合刷装阶段。</span>
+            <span data-en="true">Increases Ancestral Whisper Cache drop rate by ~20% per level. Helps with fast Ancestral gear acquisition — great during gear-farming phase.</span>
+          </p>
+          <div class="blessing-levels">
+            <span class="blessing-level">1</span>
+            <span class="blessing-level">2</span>
+            <span class="blessing-level active">3</span>
+            <span class="blessing-level">4</span>
+            <span class="blessing-level">5</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-title);font-size:1.1rem;color:#fff;margin-bottom:16px;margin-top:24px;">
+        <span data-zh="true">推荐激活顺序</span>
+        <span data-en="true">Recommended Activation Order</span>
+      </h3>
+      <div class="activity-grid">
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">1️⃣</span>
+            <h4><span data-zh="true">第一优先</span><span data-en="true">First Priority</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">回收之瓮 5级 + 大师之瓮 5级。这两个祝福直接提升制作和材料获取效率，是终局最核心的祝福组合。</span>
+              <span data-en="true">Salvage Urn Lv5 + Artisan's Urn Lv5. These two blessings directly boost crafting and material efficiency — the core endgame combo.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">2️⃣</span>
+            <h4><span data-zh="true">第二优先</span><span data-en="true">Second Priority</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">祖先低语之瓮 3级。帮助快速获取祖先级装备，为后续制作打下基础。</span>
+              <span data-en="true">Ancestral Urn Lv3. Helps quickly acquire Ancestral gear for crafting foundations.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">3️⃣</span>
+            <h4><span data-zh="true">第三优先</span><span data-en="true">Third Priority</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">好奇之瓮 3级。如果经常从商人购买装备，这个祝福效果明显。</span>
+              <span data-en="true">Curiosity Urn Lv3. If you frequently buy gear from merchants, this blessing has noticeable impact.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Seasonal Activities ===== -->
+  <section class="section-block" id="activities">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">⚔️</span>
+        <span data-zh="true">S13赛季特有活动</span>
+        <span data-en="true">S13 Exclusive Seasonal Activities</span>
+      </h2>
+
+      <div class="activity-grid">
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">⚔️</span>
+            <h4><span data-zh="true">清算试炼 Daily Reckoning Trial</span><span data-en="true">Daily Reckoning Trial</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">每日挑战，完成可获得3-5个回响痕迹和余烬材料。是回荡之憎入场券的主要来源，建议每天都完成。</span>
+              <span data-en="true">Daily challenge. Completing grants 3-5 Echoing Traces and Ember materials. Main source of Echoing Hatred tickets — complete daily.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">🌪️</span>
+            <h4><span data-zh="true">憎恨渗透事件 Hatred Infiltration</span><span data-en="true">Hatred Infiltration Event</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">限时高难度事件，在斯科沃斯随机地点触发。击败渗透的憎恨首领可获得大量余烬材料和斯科沃斯特有奖励。</span>
+              <span data-en="true">Timed high-difficulty event, triggered at random Skovos locations. Defeating the infiltration Hatred boss grants large amounts of Ember materials and Skovos-exclusive rewards.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">🏃</span>
+            <h4><span data-zh="true">斯科沃斯探索赛 Skovos Race</span><span data-en="true">Skovos Exploration Race</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">计时挑战，在限定时间内探索斯科沃斯指定区域并完成目标。排行榜竞争激烈，完成可获得赛季旅程终极奖励。</span>
+              <span data-en="true">Timed challenge to explore Skovos regions and complete objectives within a time limit. Competitive leaderboards. Completion grants Season Journey ultimate rewards.</span>
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-card-head">
+            <span class="activity-icon">👑</span>
+            <h4><span data-zh="true">每周首领挑战 Weekly Boss Challenge</span><span data-en="true">Weekly Boss Challenge</span></h4>
+          </div>
+          <div class="activity-card-body">
+            <p>
+              <span data-zh="true">每周重置，击败指定BOSS获得15-20个回响痕迹和大量余烬材料。是余烬祝福升级的主要途径。</span>
+              <span data-en="true">Resets weekly. Defeating the designated boss grants 15-20 Echoing Traces and large amounts of Ember materials. Primary path for Ember Blessing upgrades.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h4>⚔️ Diablo 4: Lord of Hatred Guide</h4>
+          <p>
+            <span data-zh="true">本攻略站涵盖《暗黑破坏神4：憎恨之王》完整内容，助你在憎恨纪元中纵横庇护之地。</span>
+            <span data-en="true">Your complete guide to Diablo 4: Lord of Hatred. Everything you need to dominate Sanctuary in the Age of Hatred.</span>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh="true">攻略板块</span><span data-en="true">Guide Sections</span></h5>
+          <ul>
+            <li><a href="classes.html"><span data-zh="true">职业详解</span><span data-en="true">Classes</span></a></li>
+            <li><a href="region.html"><span data-zh="true">斯科沃斯地区</span><span data-en="true">Skovos Region</span></a></li>
+            <li><a href="endgame.html"><span data-zh="true">终局系统</span><span data-en="true">Endgame</span></a></li>
+            <li><a href="bosses.html"><span data-zh="true">Boss图鉴</span><span data-en="true">Bosses</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh="true">其他板块</span><span data-en="true">Other Sections</span></h5>
+          <ul>
+            <li><a href="season.html"><span data-zh="true">赛季系统</span><span data-en="true">Season</span></a></li>
+            <li><a href="mythic.html"><span data-zh="true">神话装备</span><span data-en="true">Mythic</span></a></li>
+            <li><a href="builds.html"><span data-zh="true">BD配装</span><span data-en="true">Builds</span></a></li>
+            <li><a href="tips.html"><span data-zh="true">实用技巧</span><span data-en="true">Tips</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 D4 Lord of Hatred Guide. All rights reserved. Diablo © Blizzard Entertainment.</p>
+        <p><span data-zh="true">本站为玩家攻略站，与暴雪娱乐无附属关系</span><span data-en="true">Fan-made guide site, not affiliated with Blizzard Entertainment</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      localStorage.setItem('d4guide-lang', lang);
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    (function() {
+      var saved = localStorage.getItem('d4guide-lang');
+      if (saved) {
+        setLang(saved);
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().startsWith('en')) {
+          setLang('en');
+        }
+      }
+    })();
+
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

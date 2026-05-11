@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>暗黑破坏神4：斯科沃斯攻略 | 风暴海岸·迷雾密林·古代废墟·熔火高地 | Skovos Region Guide</title>
+  <meta name="description" content="暗黑破坏神4憎恨之王斯科沃斯群岛完全攻略，涵盖风暴海岸、迷雾密林、古代废墟、熔火高地四大区域详细指南，主城泰米斯介绍，斯科沃斯特有资源与材料，快速升级路线推荐。Diablo 4 Skovos region complete guide." />
+  <meta name="keywords" content="暗黑破坏神4,斯科沃斯,攻略,风暴海岸,迷雾密林,古代废墟,熔火高地,泰米斯,Diablo 4,Skovos,Stormbound Coast,Shrouded Forest,Ancient Ruins,Volcanic Highlands,Temis,憎恨之王" />
+  <meta name="author" content="D4 Guide Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/region.html" />
+
+  <!-- ===== SEO: Open Graph ===== -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="暗黑破坏神4：斯科沃斯攻略 | 风暴海岸·迷雾密林·古代废墟·熔火高地" />
+  <meta property="og:description" content="斯科沃斯群岛四大区域完全指南，探索泰米斯主城，收集特有资源，速通升级路线。" />
+  <meta property="og:url" content="https://your-domain.com/region.html" />
+  <meta property="og:image" content="https://your-domain.com/og-image-region.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="D4 Lord of Hatred Guide" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diablo 4: Skovos Region Guide | Stormbound Coast, Shrouded Forest, Ancient Ruins, Volcanic Highlands" />
+  <meta name="twitter:description" content="Complete guide to all four Skovos zones: main city Temis, region-specific resources, and fast leveling routes." />
+  <meta name="twitter:image" content="https://your-domain.com/og-image-region.jpg" />
+
+  <!-- ===== SEO: Alternate Language Links ===== -->
+  <link rel="alternate" hreflang="zh-CN" href="https://your-domain.com/region.html" />
+  <link rel="alternate" hreflang="en" href="https://your-domain.com/en/region.html" />
+  <link rel="alternate" hreflang="x-default" href="https://your-domain.com/region.html" />
+
+  <!-- ===== SEO: Structured Data (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "暗黑破坏神4：斯科沃斯攻略完全指南",
+    "description": "斯科沃斯群岛四大区域详细攻略，包含风暴海岸、迷雾密林、古代废墟、熔火高地的环境、敌人、隐藏内容与高效探索路线。",
+    "inLanguage": ["zh-CN", "en"],
+    "author": {
+      "@type": "Organization",
+      "name": "D4 Guide Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "D4 Lord of Hatred Guide",
+      "url": "https://your-domain.com/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://your-domain.com/region.html"
+    },
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-05-07"
+  }
+  </script>
+
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --accent-red: #c41e3a;
+      --accent-gold: #d4a017;
+      --accent-orange: #e8651a;
+      --accent-teal: #2a8a8a;
+      --accent-purple: #6a4a9a;
+      --accent-green: #3a8a3a;
+      --text-primary: #e8e0d0;
+      --text-secondary: #9a9088;
+      --text-muted: #5a5058;
+      --border-color: #2a2030;
+      --glow-red: rgba(196, 30, 58, 0.4);
+      --glow-gold: rgba(212, 160, 23, 0.3);
+      --font-title: 'Georgia', 'SimSun', serif;
+      --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --radius: 8px;
+      --transition: 0.25s ease;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-orange); text-decoration: none; }
+
+    /* ===== Layout ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+
+    /* ===== Language Toggle Bar ===== */
+    .lang-toggle-bar {
+      background: rgba(10,10,15,0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+    .lang-toggle-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-mini-brand {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .lang-buttons { display: flex; gap: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #fff;
+    }
+
+    /* ===== Top Navigation ===== */
+    .top-nav {
+      background: rgba(10,10,15,0.98);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+    }
+    .top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo-icon { font-size: 1.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links li a:hover, .nav-links li a.active {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+    .nav-links li a.active {
+      color: var(--accent-gold);
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(42,138,138,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(106,74,154,0.12) 0%, transparent 60%),
+        linear-gradient(180deg, #0a080a 0%, #0a0a0f 100%);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 15% 20%, rgba(42,138,138,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 15%, rgba(106,74,154,0.5) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 40% 70%, rgba(42,138,138,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 55%, rgba(212,160,23,0.5) 0%, transparent 100%),
+        radial-gradient(2px 2px at 60% 35%, rgba(106,74,154,0.3) 0%, transparent 100%);
+      animation: twinkle 4s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 100%;
+      padding: 60px 24px;
+    }
+    .hero-eyebrow {
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      color: var(--accent-teal);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+    .hero-title {
+      font-family: var(--font-title);
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #fff;
+      text-shadow: 0 0 60px rgba(42,138,138,0.4), 0 2px 8px rgba(0,0,0,0.8);
+      margin-bottom: 12px;
+    }
+    .hero-title .accent { color: var(--accent-teal); }
+    .hero-subtitle {
+      font-family: var(--font-title);
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      color: var(--accent-gold);
+      text-shadow: 0 0 30px var(--glow-gold);
+      margin-bottom: 20px;
+    }
+    .hero-desc {
+      font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .badge {
+      background: rgba(42,138,138,0.12);
+      border: 1px solid rgba(42,138,138,0.35);
+      color: var(--text-primary);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ===== Section Titles ===== */
+    .section-header { text-align: center; margin-bottom: 40px; }
+    .section-tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-teal);
+      border: 1px solid rgba(42,138,138,0.4);
+      padding: 3px 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: #fff;
+      text-shadow: 0 0 30px rgba(42,138,138,0.3);
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-teal), transparent);
+      margin: 12px auto 0;
+      width: 120px;
+    }
+
+    /* ===== Content Cards ===== */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .content-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .content-card:hover {
+      border-color: rgba(42,138,138,0.5);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+      transform: translateY(-3px);
+    }
+    .content-card-inner {
+      padding: 24px;
+    }
+    .content-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+    }
+    .content-card-icon.storm { background: linear-gradient(135deg, #1a2a3a, #2a4a5a); border: 1px solid rgba(100,150,180,0.3); }
+    .content-card-icon.forest { background: linear-gradient(135deg, #0a1a0a, #1a2a1a); border: 1px solid rgba(80,160,80,0.3); }
+    .content-card-icon.ruins { background: linear-gradient(135deg, #1a1a0a, #2a2a1a); border: 1px solid rgba(180,150,60,0.3); }
+    .content-card-icon.volcano { background: linear-gradient(135deg, #2a0a0a, #3a1a1a); border: 1px solid rgba(200,80,50,0.3); }
+    .content-card-icon.city { background: linear-gradient(135deg, #1a0a2a, #2a1a3a); border: 1px solid rgba(150,100,200,0.3); }
+    .content-card-icon.resource { background: linear-gradient(135deg, #0a1a1a, #1a2a2a); border: 1px solid rgba(42,138,138,0.3); }
+    .content-card-icon.leveling { background: linear-gradient(135deg, #1a1a1a, #2a2a2a); border: 1px solid rgba(200,200,200,0.2); }
+    .content-card-title {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .content-card-desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===== Detailed Region Section ===== */
+    .region-detail {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+    .region-header {
+      padding: 28px 28px 24px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .region-header-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .region-header-icon.storm { background: linear-gradient(135deg, #1a2a3a, #2a4a5a); border: 1px solid rgba(100,150,180,0.4); }
+    .region-header-icon.forest { background: linear-gradient(135deg, #0a2a0a, #1a3a1a); border: 1px solid rgba(80,180,80,0.4); }
+    .region-header-icon.ruins { background: linear-gradient(135deg, #2a2a0a, #3a3a1a); border: 1px solid rgba(200,170,80,0.4); }
+    .region-header-icon.volcano { background: linear-gradient(135deg, #3a0a0a, #4a1a1a); border: 1px solid rgba(220,90,50,0.4); }
+    .region-header-text { flex: 1; }
+    .region-title {
+      font-family: var(--font-title);
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .region-subtitle {
+      font-size: 0.9rem;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+    .region-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .region-body {
+      padding: 24px 28px;
+    }
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .region-item {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 18px;
+    }
+    .region-item-title {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .region-item-title::before {
+      content: '';
+      width: 4px;
+      height: 16px;
+      background: var(--accent-teal);
+      border-radius: 2px;
+    }
+    .region-item ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .region-item li {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      padding-left: 14px;
+      position: relative;
+    }
+    .region-item li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent-teal);
+      font-size: 0.7rem;
+      top: 3px;
+    }
+
+    /* ===== Main City Section ===== */
+    .city-section {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, #0d0a12 50%, var(--bg-primary) 100%);
+      padding: 64px 0;
+    }
+    .city-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    @media (max-width: 768px) {
+      .city-layout { grid-template-columns: 1fr; }
+    }
+    .city-info {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+    .city-info h4 {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .city-info ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .city-info li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 18px;
+      position: relative;
+    }
+    .city-info li::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: var(--accent-purple);
+      font-size: 0.6rem;
+      top: 5px;
+    }
+
+    /* ===== Resource Table ===== */
+    .resource-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+    .resource-table th,
+    .resource-table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.9rem;
+    }
+    .resource-table th {
+      background: rgba(255,255,255,0.03);
+      color: var(--accent-gold);
+      font-family: var(--font-title);
+      font-weight: 600;
+    }
+    .resource-table td {
+      color: var(--text-secondary);
+    }
+    .resource-table tr:hover td {
+      background: rgba(42,138,138,0.05);
+    }
+    .difficulty-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .difficulty-badge.easy { background: rgba(58,138,58,0.2); color: #6aba6a; }
+    .difficulty-badge.medium { background: rgba(212,160,23,0.2); color: #d4a017; }
+    .difficulty-badge.hard { background: rgba(196,30,58,0.2); color: #e8607a; }
+
+    /* ===== Leveling Route ===== */
+    .leveling-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .leveling-header {
+      padding: 20px 24px;
+      background: rgba(255,255,255,0.02);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .leveling-header h4 {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .leveling-header p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .leveling-body {
+      padding: 20px 24px;
+    }
+    .leveling-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .leveling-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .step-number {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--accent-teal);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-content strong {
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .step-content p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    /* ===== Back to Top Button ===== */
+    #back-to-top {
+      position: fixed; bottom: 30px; right: 30px; width: 46px; height: 46px;
+      background: var(--accent-teal); border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      color: #fff; box-shadow: 0 4px 16px rgba(42,138,138,0.4); transition: var(--transition);
+      opacity: 0; pointer-events: none; z-index: 999;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: all; }
+    #back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+    /* ===== Progress Bar ===== */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--accent-teal), var(--accent-gold));
+      z-index: 10001; transition: width 0.1s linear;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #060608;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: var(--text-muted); }
+    .footer-col ul li a:hover { color: var(--accent-gold); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ===== i18n hidden by default ===== */
+    [data-en], [data-zh] { display: inline; }
+    html[data-lang="en"] [data-zh] { display: none; }
+    html[data-lang="zh"] [data-en] { display: none; }
+    [data-en-block], [data-zh-block] { display: block; }
+    html[data-lang="en"] [data-zh-block] { display: none; }
+    html[data-lang="zh"] [data-en-block] { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 2px; }
+      .nav-links li a { padding: 4px 8px; font-size: 0.75rem; }
+      .region-header { flex-direction: column; }
+      .region-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- ===== Language Toggle Bar ===== -->
+  <div class="lang-toggle-bar">
+    <div class="container">
+      <span class="site-mini-brand">D4 LORD OF HATRED GUIDE</span>
+      <div class="lang-buttons">
+        <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Top Navigation ===== -->
+  <div class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">⚔️</span>
+        <span data-zh>暗黑4 · 憎恨之王攻略</span>
+        <span data-en>D4 Lord of Hatred Guide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="classes.html">⚔️ <span data-zh>职业</span><span data-en>Classes</span></a></li>
+        <li><a href="region.html" class="active">🗺️ <span data-zh>地区</span><span data-en>Region</span></a></li>
+        <li><a href="endgame.html">🏆 <span data-zh>终局</span><span data-en>Endgame</span></a></li>
+        <li><a href="bosses.html">💀 <span data-zh>Boss</span><span data-en>Boss</span></a></li>
+        <li><a href="season.html">📅 <span data-zh>赛季</span><span data-en>Season</span></a></li>
+        <li><a href="mythic.html">🌟 <span data-zh>神话</span><span data-en>Mythic</span></a></li>
+        <li><a href="builds.html">📋 <span data-zh>配装</span><span data-en>Builds</span></a></li>
+        <li><a href="tips.html">💡 <span data-zh>技巧</span><span data-en>Tips</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <span data-zh>斯科沃斯群岛 · 新大陆探索</span>
+        <span data-en>Skovos Isles · New Continent Exploration</span>
+      </p>
+      <h1 class="hero-title">
+        <span data-zh>暗黑破坏神 4<br><span class="accent">斯科沃斯攻略</span></span>
+        <span data-en>Diablo IV<br><span class="accent">Skovos Region Guide</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        <span data-zh>风暴海岸 · 迷雾密林 · 古代废墟 · 熔火高地</span>
+        <span data-en>Stormbound Coast · Shrouded Forest · Ancient Ruins · Volcanic Highlands</span>
+      </p>
+      <p class="hero-desc">
+        <span data-zh>深入庇护之地东南方向的群岛大陆，穿越风暴与迷雾，探索远古遗迹，在火山熔岩中直面地狱腐化的威胁。四大区域完整攻略助你征服斯科沃斯。</span>
+        <span data-en>Journey to the southeastern isles of Sanctuary. Brave storms and fog, explore ancient ruins, and face demonic corruption in volcanic lands. Complete guide for all four Skovos zones.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><span data-zh>🌊 风暴海岸</span><span data-en>🌊 Stormbound Coast</span></span>
+        <span class="badge"><span data-zh>🌲 迷雾密林</span><span data-en>🌲 Shrouded Forest</span></span>
+        <span class="badge"><span data-zh>🏛️ 古代废墟</span><span data-en>🏛️ Ancient Ruins</span></span>
+        <span class="badge"><span data-zh>🔥 熔火高地</span><span data-en>🔥 Volcanic Highlands</span></span>
+        <span class="badge"><span data-zh>🏰 泰米斯主城</span><span data-en>🏰 Temis City</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skovos Overview ===== -->
+  <section id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>大陆概览</span><span data-en>Continent Overview</span></span>
+        <h2 class="section-title">
+          <span data-zh>斯科沃斯群岛</span>
+          <span data-en>Skovos Isles</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>位于庇护之地东南方向，由多座群岛组成的神秘大陆。这里常年被风暴笼罩，地狱腐化正在蔓延。</span>
+          <span data-en>A mysterious continent of islands southeast of Sanctuary, constantly shrouded in storms with demonic corruption spreading.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="content-grid">
+        <div class="content-card">
+          <div class="content-card-inner">
+            <div class="content-card-icon city">🏰</div>
+            <h3 class="content-card-title">
+              <span data-zh>主城泰米斯</span>
+              <span data-en>Temis City</span>
+            </h3>
+            <p class="content-card-desc">
+              <span data-zh>斯科沃斯的中央枢纽城市，所有终局活动的出发点。城内设有铁匠、商贩、任务发布者等关键NPC。</span>
+              <span data-en>The central hub of Skovos, serving as the starting point for all endgame activities. Key NPCs include Blacksmith, Merchants, and Quest Givers.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="content-card-inner">
+            <div class="content-card-icon storm">🌊</div>
+            <h3 class="content-card-title">
+              <span data-zh>气候环境</span>
+              <span data-en>Climate & Environment</span>
+            </h3>
+            <p class="content-card-desc">
+              <span data-zh>常年风暴笼罩，能见度极低。地狱腐化正在各地蔓延，从海岸到火山，威胁着整片大陆。</span>
+              <span data-en>Permanently shrouded in storms with extremely low visibility. Hellish corruption spreads from coastlines to volcanic regions, threatening the entire continent.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="content-card-inner">
+            <div class="content-card-icon resource">💎</div>
+            <h3 class="content-card-title">
+              <span data-zh>特有资源</span>
+              <span data-en>Region-Specific Resources</span>
+            </h3>
+            <p class="content-card-desc">
+              <span data-zh>斯科沃斯精华、群岛珊瑚、风暴核心、远古碎片等独有材料，用于高级装备制作与特殊任务。</span>
+              <span data-en>Exclusive materials including Skovos Essence, Archipelago Coral, Storm Core, and Ancient Fragments for high-end crafting and special quests.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Region 1: Stormbound Coast ===== -->
+  <section id="stormbound-coast">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>第一区域</span><span data-en>Zone 1</span></span>
+        <h2 class="section-title">
+          <span data-zh>风暴海岸</span>
+          <span data-en>Stormbound Coast</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>常年风暴侵袭，海岸线被巨浪侵蚀。开阔战场，适合AOE职业发挥。</span>
+          <span data-en>Permanently storm-battered coastlines with waves eroding the shores. Open battlefields ideal for AOE-focused builds.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="region-detail">
+        <div class="region-header">
+          <div class="region-header-icon storm">🌊</div>
+          <div class="region-header-text">
+            <h3 class="region-title">
+              <span data-zh>风暴海岸</span>
+              <span data-en>Stormbound Coast</span>
+            </h3>
+            <p class="region-subtitle">Stormbound Coast · 常年风暴侵袭的群岛海岸</p>
+            <p class="region-desc">
+              <span data-zh>风暴海岸是斯科沃斯群岛的门户区域，广阔的沿海地带被永恒的风暴不断侵蚀。海浪日夜拍打着嶙峋的悬崖峭壁，形成了独特的地形景观。这片区域是大多数玩家首次探索斯科沃斯的起点，相对温和的气候和开阔的地形使其成为理想的练级区域。</span>
+              <span data-en>The Stormbound Coast serves as the gateway to Skovos Isles. This vast coastal area is constantly eroded by eternal storms. Waves crash against rugged cliffs day and night, creating unique terrain. Most players begin their Skovos exploration here, where the relatively milder climate and open terrain make it ideal for leveling.</span>
+            </p>
+          </div>
+        </div>
+        <div class="region-body">
+          <div class="region-grid">
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>主要敌人</span>
+                <span data-en>Major Enemies</span>
+              </h4>
+              <ul>
+                <li><span data-zh>腐蚀水手 Corroded Sailors</span><span data-en>Corroded Sailors</span></li>
+                <li><span data-zh>风暴元素 Storm Elementals</span><span data-en>Storm Elementals</span></li>
+                <li><span data-zh>憎恨海盗 Hatred Pirates</span><span data-en>Hatred Pirates</span></li>
+                <li><span data-zh>闪电元素 Lightning Wisps</span><span data-en>Lightning Wisps</span></li>
+                <li><span data-zh>溺亡怨灵 Drowned Spirits</span><span data-en>Drowned Spirits</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>区域特色</span>
+                <span data-en>Zone Features</span>
+              </h4>
+              <ul>
+                <li><span data-zh>开阔战场，视野良好</span><span data-en>Open battlefields with good visibility</span></li>
+                <li><span data-zh>适合AOE职业发挥</span><span data-en>Ideal for AOE-focused class builds</span></li>
+                <li><span data-zh>海崖探索，悬崖平台众多</span><span data-en>Cliff exploration with numerous platforms</span></li>
+                <li><span data-zh>沉船遗迹隐藏珍贵宝物</span><span en>Shipwreck sites hide valuable treasures</span></li>
+                <li><span data-zh>风暴触发器可召唤精英怪</span><span data-en>Storm triggers can summon elite enemies</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>推荐任务顺序</span>
+                <span data-en>Recommended Quest Order</span>
+              </h4>
+              <ul>
+                <li><span data-zh>1. 完成主线引导任务</span><span data-en>1. Complete main story introduction</span></li>
+                <li><span data-zh>2. 探索东部海岸线</span><span data-en>2. Explore eastern coastline</span></li>
+                <li><span data-zh>3. 清理风暴前哨据点</span><span data-en>3. Clear Storm Outpost strongholds</span></li>
+                <li><span data-zh>4. 挑战风暴元素祭坛</span><span data-en>4. Challenge Storm Elemental altars</span></li>
+                <li><span data-zh>5. 开启隐藏沉船宝箱</span><span data-en>5. Open hidden shipwreck chests</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>隐藏内容/秘密区域</span>
+                <span data-en>Hidden Content & Secrets</span>
+              </h4>
+              <ul>
+                <li><span data-zh>海崖下的沉船内部（需要游泳技能）</span><span data-en>Shipwrecks below cliffs (requires swimming)</span></li>
+                <li><span data-zh>风暴之眼隐藏房间</span><span data-en>Hidden chamber in Storm's Eye</span></li>
+                <li><span data-zh>被遗忘的灯塔地下室</span><span data-en>Abandoned lighthouse basement</span></li>
+                <li><span data-zh>潮汐洞穴群（多个入口）</span><span data-en>Tidal cave network (multiple entrances)</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>高效刷怪路线</span>
+                <span data-en>Efficient Farming Route</span>
+              </h4>
+              <ul>
+                <li><span data-zh>起点：东部海滩 → 沿着悬崖向北</span><span data-en>Start: East Beach → Follow cliffs north</span></li>
+                <li><span data-zh>途经：风暴哨站 → 海蚀洞穴</span><span data-en>Via: Storm Outpost → Sea caves</span></li>
+                <li><span data-zh>终点：风暴之眼 → 返回传送点</span><span data-en>End: Storm's Eye → Return to waypoint</span></li>
+                <li><span data-zh>单次循环约8-12分钟</span><span data-en>Single loop takes 8-12 minutes</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>可获得资源</span>
+                <span data-en>Obtainable Resources</span>
+              </h4>
+              <ul>
+                <li><span data-zh>群岛珊瑚（稀有制作材料）</span><span data-en>Archipelago Coral (rare crafting material)</span></li>
+                <li><span data-zh>风暴精华（用于风暴套装）</span><span data-en>Storm Essence (for Storm set)</span></li>
+                <li><span data-zh>腐蚀水手掉落装备</span><span data-en>Corroded Sailor gear drops</span></li>
+                <li><span data-zh>风暴潮汐之核（BOSS掉落）</span><span data-en>Storm Tide Core (boss drop)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Region 2: Shrouded Forest ===== -->
+  <section id="shrouded-forest">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>第二区域</span><span data-en>Zone 2</span></span>
+        <h2 class="section-title">
+          <span data-zh>迷雾密林</span>
+          <span data-en>Shrouded Forest</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>浓雾笼罩，能见度极低。伏击机制丰富，考验玩家警觉性。</span>
+          <span data-en>Shrouded in thick fog with extremely low visibility. Rich ambush mechanics test player awareness.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="region-detail">
+        <div class="region-header">
+          <div class="region-header-icon forest">🌲</div>
+          <div class="region-header-text">
+            <h3 class="region-title">
+              <span data-zh>迷雾密林</span>
+              <span data-en>Shrouded Forest</span>
+            </h3>
+            <p class="region-subtitle">Shrouded Forest · 浓雾笼罩的神秘林地</p>
+            <p class="region-desc">
+              <span data-zh>迷雾密林是斯科沃斯最神秘的区域之一，终年被浓稠的迷雾所笼罩，能见度极低。这片古老的森林充满了腐化的树精、暗影狼群和游荡的迷雾幽魂。玩家必须时刻保持警觉，因为敌人经常从雾中突然发起伏击。森林深处隐藏着珍贵的宝箱和神秘的秘密BOSS。</span>
+              <span data-en>The Shrouded Forest is one of Skovos' most mysterious zones, permanently covered in thick fog with extremely low visibility. This ancient forest is filled with corrupted treants, shadow wolf packs, and wandering mist wraiths. Players must stay alert as enemies frequently ambush from within the fog. Hidden chests and mysterious secret bosses await in the forest depths.</span>
+            </p>
+          </div>
+        </div>
+        <div class="region-body">
+          <div class="region-grid">
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>主要敌人</span>
+                <span data-en>Major Enemies</span>
+              </h4>
+              <ul>
+                <li><span data-zh>腐化树精 Corrupted Treants</span><span data-en>Corrupted Treants</span></li>
+                <li><span data-zh>暗影狼群 Shadow Wolf Packs</span><span data-en>Shadow Wolf Packs</span></li>
+                <li><span data-zh>迷雾幽魂 Mist Wraiths</span><span data-en>Mist Wraiths</span></li>
+                <li><span data-zh>毒孢蘑菇 Poison Spore Mushrooms</span><span data-en>Poison Spore Mushrooms</span></li>
+                <li><span data-zh>森林守护者 Forest Guardians</span><span data-en>Forest Guardians</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>区域特色</span>
+                <span data-en>Zone Features</span>
+              </h4>
+              <ul>
+                <li><span data-zh>极低能见度（视野约15米）</span><span data-en>Extremely low visibility (~15m range)</span></li>
+                <li><span data-zh>伏击机制丰富</span><span data-en>Rich ambush mechanics</span></li>
+                <li><span data-zh>需要玩家时刻保持警觉</span><span data-en>Requires constant player vigilance</span></li>
+                <li><span data-zh>迷雾浓度随机变化</span><span data-en>Fog density varies dynamically</span></li>
+                <li><span data-zh>夜间视野进一步降低</span><span data-en>Nighttime further reduces visibility</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>推荐任务顺序</span>
+                <span data-en>Recommended Quest Order</span>
+              </h4>
+              <ul>
+                <li><span data-zh>1. 获取迷雾灯笼道具</span><span data-en>1. Obtain Mist Lantern item</span></li>
+                <li><span data-zh>2. 追踪腐化树精踪迹</span><span data-en>2. Track Corrupted Treant path</span></li>
+                <li><span data-zh>3. 探索林间古道</span><span data-en>3. Explore ancient forest paths</span></li>
+                <li><span data-zh>4. 清理狼群巢穴</span><span data-en>4. Clear wolf pack dens</span></li>
+                <li><span data-zh>5. 挑战密林秘密BOSS</span><span data-en>5. Challenge forest secret boss</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>隐藏宝箱位置</span>
+                <span en>Hidden Chest Locations</span>
+              </h4>
+              <ul>
+                <li><span data-zh>巨树根部（需要砍断藤蔓）</span><span data-en>Giant tree roots (cut vines to access)</span></li>
+                <li><span data-zh>瀑布后方的山洞</span><span data-en>Cave behind waterfall</span></li>
+                <li><span data-zh>树冠平台（攀爬藤蔓到达）</span><span data-en>Canopy platform (climb vines)</span></li>
+                <li><span data-zh>地下树根网络入口</span><span data-en>Underground root network entrance</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>密林秘密BOSS</span>
+                <span data-en>Forest Secret Boss</span>
+              </h4>
+              <ul>
+                <li><span data-zh>暮光之魂 Twilight Wraith</span><span data-en>Twilight Wraith</span></li>
+                <li><span data-zh>等级：55-60级</span><span data-en>Level: 55-60</span></li>
+                <li><span data-zh>弱点：火焰伤害</span><span data-en>Weakness: Fire damage</span></li>
+                <li><span data-zh>掉落：迷雾精华、森林套装</span><span data-en>Drops: Mist Essence, Forest set</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>生存技巧</span>
+                <span data-en>Survival Tips</span>
+              </h4>
+              <ul>
+                <li><span data-zh>保持静步模式减少仇恨</span><span data-en>Use Sneak mode to reduce aggro</span></li>
+                <li><span data-zh>使用声东击西引出伏兵</span><span data-en>Lure out ambushers with distractions</span></li>
+                <li><span data-zh>迷雾灯笼可驱散部分雾气</span><span data-en>Mist Lantern disperses some fog</span></li>
+                <li><span data-zh>注意地面上的陷阱标记</span><span data-en>Watch for trap markers on ground</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Region 3: Ancient Ruins ===== -->
+  <section id="ancient-ruins">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>第三区域</span><span data-en>Zone 3</span></span>
+        <h2 class="section-title">
+          <span data-zh>古代废墟</span>
+          <span data-en>Ancient Ruins</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>远古文明遗迹，机关重重。地下城密集，探索密度最高。</span>
+          <span data-en>Ancient civilization ruins with countless traps. Dense dungeon locations, highest exploration density.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="region-detail">
+        <div class="region-header">
+          <div class="region-header-icon ruins">🏛️</div>
+          <div class="region-header-text">
+            <h3 class="region-title">
+              <span data-zh>古代废墟</span>
+              <span data-en>Ancient Ruins</span>
+            </h3>
+            <p class="region-subtitle">Ancient Ruins · 远古文明的石质遗迹</p>
+            <p class="region-desc">
+              <span data-zh>古代废墟是斯科沃斯最具探索价值的区域，这里保存着失落远古文明的遗迹。巨大的石质建筑、精密的机关系统、以及被遗忘的宝藏吸引着无数冒险者。石像鬼守卫守护着这些遗迹，诅咒亡魂和远古祭司在废墟中游荡。地下城密集分布，是获取传说装备的最佳地点。</span>
+              <span data-en>The Ancient Ruins are the most explorable area in Skovos, preserving remnants of a lost ancient civilization. Massive stone structures, intricate trap systems, and forgotten treasures attract countless adventurers. Gargoyle guardians protect these ruins while cursed spirits and ancient priests wander the grounds. Dense dungeon distribution makes this the best location for legendary gear.</span>
+            </p>
+          </div>
+        </div>
+        <div class="region-body">
+          <div class="region-grid">
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>主要敌人</span>
+                <span data-en>Major Enemies</span>
+              </h4>
+              <ul>
+                <li><span data-zh>石像鬼守卫 Gargoyle Guardians</span><span data-en>Gargoyle Guardians</span></li>
+                <li><span data-zh>诅咒亡魂 Cursed Spirits</span><span data-en>Cursed Spirits</span></li>
+                <li><span data-zh>远古祭司 Ancient Priests</span><span data-en>Ancient Priests</span></li>
+                <li><span data-zh>活化雕像 Animated Statues</span><span data-en>Animated Statues</span></li>
+                <li><span data-zh>机关陷阱 Trigger Traps</span><span data-en>Trigger Traps</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>区域特色</span>
+                <span data-en>Zone Features</span>
+              </h4>
+              <ul>
+                <li><span data-zh>地下城密度最高</span><span data-en>Highest dungeon density</span></li>
+                <li><span data-zh>各种机关陷阱需要解谜</span><span data-en>Various traps require puzzle-solving</span></li>
+                <li><span data-zh>传说装备掉落率高</span><span data-en>High legendary drop rate</span></li>
+                <li><span data-zh>隐藏宝库需要特殊钥匙</span><span data-en>Hidden vaults require special keys</span></li>
+                <li><span data-zh>古文字石碑可提供线索</span><span data-en>Ancient inscriptions provide clues</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>推荐任务顺序</span>
+                <span data-en>Recommended Quest Order</span>
+              </h4>
+              <ul>
+                <li><span data-zh>1. 破译古文字石碑</span><span data-en>1. Decipher ancient inscriptions</span></li>
+                <li><span data-zh>2. 寻找远古祭司日记</span><span data-en>2. Find Ancient Priest journals</span></li>
+                <li><span data-zh>3. 破解一号机关室</span><span data-en>3. Solve first mechanism chamber</span></li>
+                <li><span data-zh>4. 清理石像鬼守卫区域</span><span data-en>4. Clear Gargoyle guardian area</span></li>
+                <li><span data-zh>5. 开启隐藏宝库</span><span data-en>5. Open hidden vault</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>隐藏宝库开启方式</span>
+                <span data-en>Hidden Vault Opening Method</span>
+              </h4>
+              <ul>
+                <li><span data-zh>收集4块远古碎片</span><span data-en>Collect 4 Ancient Fragments</span></li>
+                <li><span data-zh>按照石碑顺序激活祭坛</span><span data-en>Activate altars in inscription order</span></li>
+                <li><span data-zh>击败守护的活化雕像</span><span data-en>Defeat guarding Animated Statues</span></li>
+                <li><span data-zh>宝库内含3个传说宝箱</span><span data-en>Vault contains 3 legendary chests</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>传说装备掉落点</span>
+                <span data-en>Legendary Gear Drop Locations</span>
+              </h4>
+              <ul>
+                <li><span data-zh>祭司墓室（诅咒亡魂密集）</span><span data-en>Priest crypts (dense Cursed Spirits)</span></li>
+                <li><span data-zh>石像鬼巢穴</span><span data-en>Gargoyle nests</span></li>
+                <li><span data-zh>地下三层宝藏室</span><span data-en>Underground level 3 treasure rooms</span></li>
+                <li><span data-zh>隐藏宝库（需钥匙）</span><span data-en>Hidden vaults (requires key)</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>可获得资源</span>
+                <span data-en>Obtainable Resources</span>
+              </h4>
+              <ul>
+                <li><span data-zh>远古碎片（宝库钥匙材料）</span><span data-en>Ancient Fragments (vault key material)</span></li>
+                <li><span data-zh>石化精华（套装升级用）</span><span data-en>Stone Essence (set upgrade material)</span></li>
+                <li><span data-zh>远古文字残页（任务道具）</span><span data-en>Ancient text fragments (quest items)</span></li>
+                <li><span data-zh>石像鬼核心（稀有掉落）</span><span data-en>Gargoyle Core (rare drop)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Region 4: Volcanic Highlands ===== -->
+  <section id="volcanic-highlands">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>第四区域</span><span data-en>Zone 4</span></span>
+        <h2 class="section-title">
+          <span data-zh>熔火高地</span>
+          <span data-en>Volcanic Highlands</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>火山活跃，地狱腐化最严重。高风险高收益，精英怪密集。</span>
+          <span data-en>Active volcanism, most severely corrupted area. High risk, high reward with dense elite enemies.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="region-detail">
+        <div class="region-header">
+          <div class="region-header-icon volcano">🔥</div>
+          <div class="region-header-text">
+            <h3 class="region-title">
+              <span data-zh>熔火高地</span>
+              <span data-en>Volcanic Highlands</span>
+            </h3>
+            <p class="region-subtitle">Volcanic Highlands · 地狱腐化最严重的区域</p>
+            <p class="region-desc">
+              <span data-zh>熔火高地是斯科沃斯最危险的区域，火山活动频繁，熔岩河流纵横交错。这是地狱腐化蔓延最严重的地区，熔岩巨人、火焰恶魔和憎恨领主在此盘踞。高风险带来高收益，这里精英怪密集，是追求顶级装备玩家的必刷之地。火山核心隐藏着斯科沃斯最强大的秘密。</span>
+              <span data-en>The Volcanic Highlands are Skovos' most dangerous zone with frequent volcanic activity and crisscrossing lava rivers. This is the most severely hell-corrupted area, where Lava Giants, Fire Demons, and Hatred Lords lurk. High risk brings high reward with dense elite enemies—mandatory farming ground for players seeking top-tier gear. The Volcanic Core hides Skovos' most powerful secrets.</span>
+            </p>
+          </div>
+        </div>
+        <div class="region-body">
+          <div class="region-grid">
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>主要敌人</span>
+                <span data-en>Major Enemies</span>
+              </h4>
+              <ul>
+                <li><span data-zh>熔岩巨人 Lava Giants</span><span data-en>Lava Giants</span></li>
+                <li><span data-zh>火焰恶魔 Fire Demons</span><span data-en>Fire Demons</span></li>
+                <li><span data-zh>憎恨领主 Hatred Lords</span><span data-en>Hatred Lords</span></li>
+                <li><span data-zh>岩浆元素 Magma Elementals</span><span data-en>Magma Elementals</span></li>
+                <li><span data-zh>燃烧怨灵 Burning Wraiths</span><span data-en>Burning Wraiths</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>区域特色</span>
+                <span data-en>Zone Features</span>
+              </h4>
+              <ul>
+                <li><span data-zh>地狱腐化最严重</span><span data-en>Most severely hell-corrupted</span></li>
+                <li><span data-zh>高风险高收益</span><span data-en>High risk, high reward</span></li>
+                <li><span data-zh>精英怪密集分布</span><span data-en>Dense elite enemy distribution</span></li>
+                <li><span data-zh>熔岩地形需要小心躲避</span><span data-en>Lava terrain requires careful navigation</span></li>
+                <li><span data-zh>环境伤害极高</span><span data-en>Extremely high environmental damage</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>推荐任务顺序</span>
+                <span data-en>Recommended Quest Order</span>
+              </h4>
+              <ul>
+                <li><span data-zh>1. 获取火焰抗性装备</span><span data-en>1. Obtain fire resistance gear</span></li>
+                <li><span data-zh>2. 探索外围熔岩平原</span><span data-en>2. Explore outer lava plains</span></li>
+                <li><span data-zh>3. 挑战熔岩巨人领地</span><span data-en>3. Challenge Lava Giant territory</span></li>
+                <li><span data-zh>4. 追踪憎恨领主踪迹</span><span data-en>4. Track Hatred Lord path</span></li>
+                <li><span data-zh>5. 进入火山核心区域</span><span data-en>5. Enter Volcanic Core area</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>火山核心秘密区域</span>
+                <span data-en>Volcanic Core Secret Area</span>
+              </h4>
+              <ul>
+                <li><span data-zh>需要击败外围所有BOSS</span><span data-en>Requires defeating all outer bosses</span></li>
+                <li><span data-zh>激活三座火山祭坛</span><span data-en>Activate three volcanic altars</span></li>
+                <li><span data-zh>收集地狱核心钥匙</span><span data-en>Collect Hell Core Key</span></li>
+                <li><span data-zh>核心内含终极秘密</span><span data-en>Ultimate secret inside core</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>地狱大军事件触发点</span>
+                <span data-en>Hell Army Event Triggers</span>
+              </h4>
+              <ul>
+                <li><span data-zh>熔岩瀑布顶端（稀有触发）</span><span data-en>Lava waterfall peak (rare trigger)</span></li>
+                <li><span data-zh>三座祭坛同时激活</span><span data-en>All three altars activated simultaneously</span></li>
+                <li><span data-zh>击败憎恨领主后</span><span data-en>After defeating Hatred Lord</span></li>
+                <li><span data-zh>地狱大军事件掉落顶级装备</span><span data-en>Hell Army event drops top-tier gear</span></li>
+              </ul>
+            </div>
+            <div class="region-item">
+              <h4 class="region-item-title">
+                <span data-zh>可获得资源</span>
+                <span data-en>Obtainable Resources</span>
+              </h4>
+              <ul>
+                <li><span data-zh>风暴核心（高级锻造材料）</span><span data-en>Storm Core (advanced forging material)</span></li>
+                <li><span data-zh>地狱精华（憎恨套装用）</span><span data-en>Hell Essence (Hatred set material)</span></li>
+                <li><span data-zh>熔岩之泪（稀有制作材料）</span><span data-en>Lava Tear (rare crafting material)</span></li>
+                <li><span data-zh>憎恨领主核心（终极掉落）</span><span data-en>Hatred Lord Core (ultimate drop)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main City: Temis ===== -->
+  <section class="city-section" id="temis-city">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>斯科沃斯主城</span><span data-en>Main City</span></span>
+        <h2 class="section-title">
+          <span data-zh>泰米斯 Temis</span>
+          <span data-en>Temis City</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>斯科沃斯的中央枢纽城市，所有终局活动的出发点。</span>
+          <span data-en>The central hub of Skovos, serving as the starting point for all endgame activities.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="city-layout">
+        <div class="city-info">
+          <h4>🏰 <span data-zh>城市布局</span><span data-en>City Layout</span></h4>
+          <ul>
+            <li><span data-zh>中央广场：传送门与公告板所在</span><span data-en>Central Plaza: Waypoint and bulletin board</span></li>
+            <li><span data-zh>东区：铁匠铺、锻造师</span><span data-en>East District: Blacksmith, Forges</span></li>
+            <li><span data-zh>西区：商贩、炼金师</span><span data-en>West District: Merchants, Alchemists</span></li>
+            <li><span data-zh>北区：任务发布者、行会大厅</span><span data-en>North District: Quest givers, Guild Hall</span></li>
+            <li><span data-zh>港区：船舶交易、钓鱼点</span><span data-en>Harbor: Ship trade, Fishing spot</span></li>
+            <li><span data-zh>地下：隐藏商人、秘密拍卖行</span><span data-en>Underground: Hidden merchants, Secret auction</span></li>
+          </ul>
+        </div>
+
+        <div class="city-info">
+          <h4>👥 <span data-zh>各功能NPC位置</span><span data-en>NPC Locations</span></h4>
+          <ul>
+            <li><span data-zh>铁匠马库斯（东区）：装备强化、镶嵌</span><span data-en>Marcus the Blacksmith (East): Enhancement, Socketing</span></li>
+            <li><span data-zh>商贩艾琳（西区）：药水、消耗品</span><span data-en>Elaine the Merchant (West): Potions, Consumables</span></li>
+            <li><span data-zh>任务官卡洛斯（北区）：主线/支线任务</span><span data-en>Carlos the Quartermaster (North): Main/Side quests</span></li>
+            <li><span data-zh>炼金师祖儿（西区）：药剂制作、附魔</span><span data-en>Zul the Alchemist (West): Potion crafting, Enchanting</span></li>
+            <li><span data-zh>收藏家维克多（港口）：稀有物品兑换</span><span data-en>Victor the Collector (Harbor): Rare item exchange</span></li>
+          </ul>
+        </div>
+
+        <div class="city-info">
+          <h4>🏆 <span data-zh>终局活动入口</span><span data-en>Endgame Activity Entrances</span></h4>
+          <ul>
+            <li><span data-zh>战争计划板（中央广场）：每日/每周活动</span><span data-en>War Plans Board (Central Plaza): Daily/Weekly events</span></li>
+            <li><span data-zh>回响之憎入口（北区）：高层大秘境</span><span data-en>Echo of Hatred (North): High-level Nightmare Dungeon</span></li>
+            <li><span data-zh>赫拉迪姆方块（东区地下室）：材料合成</span><span data-en>Horadric Cube (East Basement): Crafting</span></li>
+            <li><span data-zh>符咒祭坛（西区）：符文镶嵌</span><span data-en>Rune Altar (West): Rune socketing</span></li>
+            <li><span data-zh>赛季殿堂（北区）：赛季进度查看</span><span data-en>Season Hall (North): Season progress</span></li>
+          </ul>
+        </div>
+
+        <div class="city-info">
+          <h4>🔮 <span data-zh>城内隐藏彩蛋</span><span data-en>Hidden Secrets</span></h4>
+          <ul>
+            <li><span data-zh>隐藏商人「沉默的杰克」：每周六午夜出现</span><span data-en>Silent Jack: Appears every Saturday midnight</span></li>
+            <li><span data-zh>下水道密室：与特定NPC对话后解锁</span><span data-en>Sewer chamber: Unlock via NPC dialogue</span></li>
+            <li><span data-zh>屋顶宝箱：需要跳跃挑战到达</span><span data-en>Roof chest: Requires parkour to reach</span></li>
+            <li><span data-zh>壁画秘密：使用火把照亮特定墙壁</span><span data-en>Wall painting secret: Illuminate specific walls</span></li>
+            <li><span data-zh>猫咪收藏：找到5只隐藏猫咪获得称号</span><span data-en>Cat collection: Find 5 hidden cats for title</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Region-Specific Resources ===== -->
+  <section id="resources">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>特有资源</span><span data-en>Region-Specific Resources</span></span>
+        <h2 class="section-title">
+          <span data-zh>斯科沃斯特有资源与材料</span>
+          <span data-en>Skovos-Specific Resources & Materials</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>斯科沃斯独有的珍稀材料，用于高级装备制作与特殊任务。</span>
+          <span data-en>Unique rare materials from Skovos for high-end crafting and special quests.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <table class="resource-table">
+        <thead>
+          <tr>
+            <th><span data-zh>资源名称</span><span data-en>Resource Name</span></th>
+            <th><span data-zh>获取区域</span><span data-en>Source Zone</span></th>
+            <th><span data-zh>获取方式</span><span data-en>How to Obtain</span></th>
+            <th><span data-zh>用途</span><span data-en>Usage</span></th>
+            <th><span data-zh>稀有度</span><span data-en>Rarity</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>斯科沃斯精华</strong><br><small>Skovos Essence</small></td>
+            <td><span data-zh>全区域掉落</span><span data-en>All zones</span></td>
+            <td><span data-zh>击杀斯科沃斯敌人掉落</span><span data-en>Dropped by Skovos enemies</span></td>
+            <td><span data-zh>憎恨套装升级</span><span data-en>Hatred set upgrades</span></td>
+            <td><span class="difficulty-badge medium">普通</span><span data-en>Common</span></td>
+          </tr>
+          <tr>
+            <td><strong>群岛珊瑚</strong><br><small>Archipelago Coral</small></td>
+            <td><span data-zh>风暴海岸</span><span data-en>Stormbound Coast</span></td>
+            <td><span data-zh>沉船探索、海底采集</span><span data-en>Shipwreck exploration, underwater gathering</span></td>
+            <td><span data-zh>风暴套装制作</span><span data-en>Storm set crafting</span></td>
+            <td><span class="difficulty-badge medium">稀有</span><span data-en>Rare</span></td>
+          </tr>
+          <tr>
+            <td><strong>风暴核心</strong><br><small>Storm Core</small></td>
+            <td><span data-zh>熔火高地</span><span data-en>Volcanic Highlands</span></td>
+            <td><span data-zh>憎恨领主掉落、熔岩巨人掉落</span><span data-en>Hatred Lord drops, Lava Giant drops</span></td>
+            <td><span data-zh>高级锻造、终极武器</span><span data-en>Advanced forging, Ultimate weapons</span></td>
+            <td><span class="difficulty-badge hard">极稀有</span><span data-en>Very Rare</span></td>
+          </tr>
+          <tr>
+            <td><strong>远古碎片</strong><br><small>Ancient Fragment</small></td>
+            <td><span data-zh>古代废墟</span><span data-en>Ancient Ruins</span></td>
+            <td><span data-zh>收集4块开启隐藏宝库</span><span data-en>Collect 4 to open hidden vault</span></td>
+            <td><span data-zh>宝库钥匙、传说装备</span><span data-en>Vault key, Legendary gear</span></td>
+            <td><span class="difficulty-badge hard">困难</span><span data-en>Hard</span></td>
+          </tr>
+          <tr>
+            <td><strong>迷雾精华</strong><br><small>Mist Essence</small></td>
+            <td><span data-zh>迷雾密林</span><span data-en>Shrouded Forest</span></td>
+            <td><span data-zh>秘密BOSS掉落、迷雾幽魂掉落</span><span data-en>Secret boss drops, Mist Wraith drops</span></td>
+            <td><span data-zh>森林套装、迷雾灯笼升级</span><span data-en>Forest set, Mist Lantern upgrade</span></td>
+            <td><span class="difficulty-badge medium">稀有</span><span data-en>Rare</span></td>
+          </tr>
+          <tr>
+            <td><strong>地狱核心</strong><br><small>Hell Core</small></td>
+            <td><span data-zh>火山核心</span><span data-en>Volcanic Core</span></td>
+            <td><span data-zh>地狱大军事件、终极BOSS</span><span data-en>Hell Army event, Ultimate boss</span></td>
+            <td><span data-zh>神话装备升级、终极任务</span><span data-en>Mythic upgrade, Ultimate quest</span></td>
+            <td><span class="difficulty-badge hard">传说</span><span data-en>Legendary</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== Fast Leveling Routes ===== -->
+  <section id="leveling">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>快速升级</span><span data-en>Fast Leveling</span></span>
+        <h2 class="section-title">
+          <span data-zh>快速升级路线建议</span>
+          <span data-en>Fast Leveling Route Suggestions</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>从1级到70级的最优升级路线，助你快速进入终局内容。</span>
+          <span data-en>Optimal leveling routes from level 1 to 70 for fast endgame access.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="leveling-section">
+        <div class="leveling-header">
+          <h4>📈 <span data-zh>1-50级任务链推荐</span><span data-en>Level 1-50 Quest Chain Recommendations</span></h4>
+          <p><span data-zh>完成主线剧情同时兼顾支线任务，保持经验获取效率</span><span data-en>Complete main story while handling side quests for optimal XP efficiency</span></p>
+        </div>
+        <div class="leveling-body">
+          <div class="leveling-steps">
+            <div class="leveling-step">
+              <span class="step-number">1</span>
+              <div class="step-content">
+                <strong><span data-zh>1-25级：风暴海岸新手区</span><span data-en>Levels 1-25: Stormbound Coast新手区</span></strong>
+                <p><span data-zh>跟随主线引导任务，清理海岸线据点。建议优先完成区域任务获取装备基础。</span><span data-en>Follow main story, clear coastal strongholds. Prioritize zone quests for gear foundation.</span></p>
+              </div>
+            </div>
+            <div class="leveling-step">
+              <span class="step-number">2</span>
+              <div class="step-content">
+                <strong><span data-zh>25-40级：迷雾密林过渡区</span><span data-en>Levels 25-40: Shrouded Forest Transition</span></strong>
+                <p><span data-zh>获取迷雾灯笼后进入密林，建议组队刷怪提升效率。伏击频繁，建议保持警戒状态。</span><span data-en>Enter forest after obtaining Mist Lantern. Group grinding recommended. Stay alert for ambushes.</span></p>
+              </div>
+            </div>
+            <div class="leveling-step">
+              <span class="step-number">3</span>
+              <div class="step-content">
+                <strong><span data-zh>40-50级：古代废墟探索</span><span data-en>Levels 40-50: Ancient Ruins Exploration</span></strong>
+                <p><span data-zh>地下城密集区，传说装备掉落率高。建议完成所有地下城任务获取额外经验与装备。</span><span data-en>Dense dungeon area with high legendary drop rate. Complete all dungeon quests for bonus XP and gear.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="leveling-section">
+        <div class="leveling-header">
+          <h4>⚡ <span data-zh>50-70级刷怪路线</span><span data-en>Level 50-70 Farming Route</span></h4>
+          <p><span data-zh>专注高效刷怪，兼顾资源收集，快速达到终局门槛</span><span data-en>Focus on efficient farming while gathering resources for fast endgame entry</span></p>
+        </div>
+        <div class="leveling-body">
+          <div class="leveling-steps">
+            <div class="leveling-step">
+              <span class="step-number">1</span>
+              <div class="step-content">
+                <strong><span data-zh>推荐路线：古代废墟循环</span><span data-en>Recommended Route: Ancient Ruins Loop</span></strong>
+                <p><span data-zh>废墟北部 → 祭司墓室 → 石像鬼巢穴 → 隐藏宝库 → 返回传送点。单次循环12-15分钟，高效且资源丰富。</span><span data-en>North Ruins → Priest Crypts → Gargoyle Nests → Hidden Vault → Return to waypoint. 12-15 min per loop, efficient with rich resources.</span></p>
+              </div>
+            </div>
+            <div class="leveling-step">
+              <span class="step-number">2</span>
+              <div class="step-content">
+                <strong><span data-zh>高级路线：熔火高地速刷</span><span data-en>Advanced Route: Volcanic Highlands Speedrun</span></strong>
+                <p><span data-zh>适合60级以上玩家。高风险高收益，精英怪密集。推荐组队进行，注意火焰抗性装备。</span><span data-en>For players level 60+. High risk, high reward with dense elites. Group recommended, fire resistance gear needed.</span></p>
+              </div>
+            </div>
+            <div class="leveling-step">
+              <span class="step-number">3</span>
+              <div class="step-content">
+                <strong><span data-zh>终极路线：地狱大军事件</span><span data-en>Ultimate Route: Hell Army Event</span></strong>
+                <p><span data-zh>触发地狱大军事件，击败所有波次敌人可获得大量经验与顶级掉落。每周可触发2-3次。</span><span data-en>Trigger Hell Army event, defeat all waves for massive XP and top-tier drops. Can trigger 2-3 times per week.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="leveling-section">
+        <div class="leveling-header">
+          <h4>💡 <span data-zh>升级效率技巧</span><span data-en>Leveling Efficiency Tips</span></h4>
+          <p><span data-zh>最大化升级效率的关键技巧</span><span data-en>Key tips for maximizing leveling efficiency</span></p>
+        </div>
+        <div class="leveling-body">
+          <div class="leveling-steps">
+            <div class="leveling-step">
+              <span class="step-number">1</span>
+              <div class="step-content">
+                <strong><span data-zh>经验加成活动</span><span data-en>XP Boost Activities</span></strong>
+                <p><span data-zh>每日中午12:00-14:00与晚上20:00-22:00有经验加成BUFF，记得在活动期间刷怪。</span><span data-en>XP boost BUFF active during 12:00-14:00 and 20:00-22:00 daily. Farm during these periods.</span></p>
+              </div>
+            </div>
+            <div class="leveling-step">
+              <span class="step-number">2</span>
+              <div class="step-content">
+                <strong><span data-zh>组队加成</span><span data-en>Party Bonus</span></strong>
+                <p><span data-zh>2人组队+15%经验，3人组队+25%，4人组队+35%。尽量组队升级效率更高。</span><span data-en>2-player party +15% XP, 3-player +25%, 4-player +35%. Party grinding is more efficient.</span></p>
+              </div>
+            </div>
+            <div class="leveling-step">
+              <span class="step-number">3</span>
+              <div class="step-content">
+                <strong><span data-zh>使用传送点</span><span data-en>Use Waypoints</span></strong>
+                <p><span data-zh>解锁所有传送点后可以在不同区域快速切换，避开拥挤区域寻找更高效的刷怪点。</span><span data-en>Unlock all waypoints for quick zone switching, avoiding crowded areas and finding efficient farming spots.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h4>⚔️ Diablo 4: Lord of Hatred Guide</h4>
+          <p>
+            <span data-zh>本攻略站涵盖《暗黑破坏神4：憎恨之王》完整内容，助你在憎恨纪元中纵横庇护之地。所有内容均为玩家社区整理，非暴雪官方站点。</span>
+            <span data-en>Your complete guide to Diablo 4: Lord of Hatred. Everything you need to dominate Sanctuary in the Age of Hatred. Community-maintained, not affiliated with Blizzard.</span>
+          </p>
+          <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="classes.html" style="font-size:0.8rem;"><span data-zh>职业攻略</span><span data-en>Classes</span></a>
+            <a href="region.html" style="font-size:0.8rem;"><span data-zh>地区攻略</span><span data-en>Region</span></a>
+            <a href="endgame.html" style="font-size:0.8rem;"><span data-zh>终局攻略</span><span data-en>Endgame</span></a>
+            <a href="bosses.html" style="font-size:0.8rem;"><span data-zh>Boss攻略</span><span data-en>Bosses</span></a>
+            <a href="season.html" style="font-size:0.8rem;"><span data-zh>赛季攻略</span><span data-en>Season</span></a>
+            <a href="mythic.html" style="font-size:0.8rem;"><span data-zh>神话装备</span><span data-en>Mythic</span></a>
+            <a href="builds.html" style="font-size:0.8rem;"><span data-zh>BD配装</span><span data-en>Builds</span></a>
+            <a href="tips.html" style="font-size:0.8rem;"><span data-zh>实用技巧</span><span data-en>Tips</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>攻略板块</span><span data-en>Guide Sections</span></h5>
+          <ul>
+            <li><a href="classes.html"><span data-zh>职业详解</span><span data-en>Classes</span></a></li>
+            <li><a href="region.html"><span data-zh>斯科沃斯地区</span><span data-en>Skovos Region</span></a></li>
+            <li><a href="endgame.html"><span data-zh>终局系统</span><span data-en>Endgame</span></a></li>
+            <li><a href="bosses.html"><span data-zh>Boss图鉴</span><span data-en>Boss Compendium</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>斯科沃斯区域</span><span data-en>Skovos Zones</span></h5>
+          <ul>
+            <li><a href="#stormbound-coast"><span data-zh>风暴海岸</span><span data-en>Stormbound Coast</span></a></li>
+            <li><a href="#shrouded-forest"><span data-zh>迷雾密林</span><span data-en>Shrouded Forest</span></a></li>
+            <li><a href="#ancient-ruins"><span data-zh>古代废墟</span><span data-en>Ancient Ruins</span></a></li>
+            <li><a href="#volcanic-highlands"><span data-zh>熔火高地</span><span data-en>Volcanic Highlands</span></a></li>
+            <li><a href="#temis-city"><span data-zh>泰米斯主城</span><span data-en>Temis City</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 D4 Lord of Hatred Guide. All rights reserved. Diablo © Blizzard Entertainment.</p>
+        <p><span data-zh>本站为玩家攻略站，与暴雪娱乐无附属关系</span><span data-en>Fan-made guide site, not affiliated with Blizzard Entertainment</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    /* ===== Language Toggle ===== */
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      localStorage.setItem('d4guide-lang', lang);
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    /* Auto-detect browser language */
+    (function() {
+      var saved = localStorage.getItem('d4guide-lang');
+      if (saved) {
+        setLang(saved);
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().startsWith('en')) {
+          setLang('en');
+        }
+      }
+    })();
+
+    /* ===== Back to Top Button & Reading Progress ===== */
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+
+      /* Reading progress */
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = (window.scrollY / docHeight) * 100;
+      var bar = document.getElementById('reading-progress');
+      if (bar) bar.style.width = progress + '%';
+    });
+  </script>
+</body>
+</html>

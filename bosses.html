@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>暗黑破坏神4 BOSS图鉴大全 | 巢穴首领打法攻略</title>
+  <meta name="description" content="暗黑破坏神4憎恨之王BOSS图鉴，涵盖初级巢穴5大首领、高级巢穴4大首领、彼列谎言之王终极挑战。包含机制解析、技能躲避、掉落表与组队技巧。Diablo 4 Boss Guide." />
+  <meta name="keywords" content="暗黑破坏神4,BOSS图鉴,巢穴首领,打法攻略,彼列,安达利尔,都瑞尔,乌里瓦尔,憎恨之王,Diablo 4,Boss Guide,Hell Tide,Torment,2026" />
+  <meta name="author" content="D4 Guide Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/bosses.html" />
+
+  <!-- ===== SEO: Open Graph ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="暗黑破坏神4 BOSS图鉴大全 | 巢穴首领打法攻略" />
+  <meta property="og:description" content="憎恨之王扩展包完整BOSS攻略：初级/高级巢穴首领、机制解析、技能躲避与掉落表。" />
+  <meta property="og:url" content="https://your-domain.com/bosses.html" />
+  <meta property="og:image" content="https://your-domain.com/og-image-bosses.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="D4 Lord of Hatred Guide" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diablo 4 Boss Guide | All Lair Bosses & Belial Guide" />
+  <meta name="twitter:description" content="Complete boss compendium for Diablo 4 Lord of Hatred. All lair bosses, mechanics, and Belial Lord of Lies strategy." />
+  <meta name="twitter:image" content="https://your-domain.com/og-image-bosses.jpg" />
+
+  <!-- ===== SEO: Alternate Language Links ===== -->
+  <link rel="alternate" hreflang="zh-CN" href="https://your-domain.com/bosses.html" />
+  <link rel="alternate" hreflang="en" href="https://your-domain.com/en/bosses.html" />
+  <link rel="alternate" hreflang="x-default" href="https://your-domain.com/bosses.html" />
+
+  <!-- ===== SEO: Structured Data (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "暗黑破坏神4 BOSS图鉴大全",
+    "description": "Complete boss compendium for Diablo 4 Lord of Hatred including Tier-1 and Tier-2 lair bosses plus Belial.",
+    "url": "https://your-domain.com/bosses.html",
+    "inLanguage": ["zh-CN", "en"],
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "D4 Lord of Hatred Guide",
+      "url": "https://your-domain.com/"
+    },
+    "about": {
+      "@type": "VideoGame",
+      "name": "Diablo 4: Lord of Hatred",
+      "gamePlatform": "PC, PlayStation, Xbox"
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --accent-red: #c41e3a;
+      --accent-gold: #d4a017;
+      --accent-orange: #e8651a;
+      --text-primary: #e8e0d0;
+      --text-secondary: #9a9088;
+      --text-muted: #5a5058;
+      --border-color: #2a2030;
+      --glow-red: rgba(196, 30, 58, 0.4);
+      --glow-gold: rgba(212, 160, 23, 0.3);
+      --font-title: 'Georgia', 'SimSun', serif;
+      --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --radius: 8px;
+      --transition: 0.25s ease;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-orange); text-decoration: none; }
+
+    /* ===== Layout ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+
+    /* ===== Language Toggle Bar ===== */
+    .lang-toggle-bar {
+      background: rgba(10,10,15,0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+    .lang-toggle-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-mini-brand {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .lang-buttons { display: flex; gap: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #fff;
+    }
+
+    /* ===== Top Navigation ===== */
+    .top-nav {
+      background: rgba(10,10,15,0.98);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+    }
+    .top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo-icon { font-size: 1.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links li a:hover, .nav-links li a.active {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+
+    /* ===== Page Hero ===== */
+    .page-hero {
+      position: relative;
+      padding: 80px 0 60px;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(196,30,58,0.15) 0%, transparent 70%),
+        linear-gradient(180deg, #0a0008 0%, #0a0a0f 100%);
+      text-align: center;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 20% 25%, rgba(212,160,23,0.5) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 70% 20%, rgba(196,30,58,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 70%, rgba(212,160,23,0.4) 0%, transparent 100%),
+        radial-gradient(2px 2px at 85% 60%, rgba(232,101,26,0.4) 0%, transparent 100%);
+      animation: twinkle 4s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    .page-hero-content { position: relative; z-index: 1; }
+    .page-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      color: var(--accent-red);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .page-title {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 0 40px var(--glow-red);
+      margin-bottom: 16px;
+    }
+    .page-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto 24px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .badge {
+      background: rgba(196,30,58,0.15);
+      border: 1px solid rgba(196,30,58,0.4);
+      color: var(--text-primary);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ===== Section Headers ===== */
+    .section-header { text-align: center; margin-bottom: 40px; }
+    .section-tag {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-red);
+      border: 1px solid rgba(196,30,58,0.4);
+      padding: 3px 12px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: #fff;
+      text-shadow: 0 0 20px var(--glow-red);
+      margin-bottom: 10px;
+    }
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+      margin: 10px auto 0;
+      width: 100px;
+    }
+
+    /* ===== Overview Section ===== */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .overview-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: var(--transition);
+    }
+    .overview-card:hover {
+      border-color: rgba(196,30,58,0.4);
+      transform: translateY(-2px);
+    }
+    .overview-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .overview-card h4 {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .overview-card p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===== Boss Grid ===== */
+    .boss-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .boss-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .boss-card:hover {
+      border-color: rgba(196,30,58,0.5);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+      transform: translateY(-4px);
+    }
+    .boss-card-header {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .boss-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+    .boss-avatar.fire { background: linear-gradient(135deg, #3a1a0a, #5a2a0a); border: 1px solid rgba(232,101,26,0.4); }
+    .boss-avatar.lightning { background: linear-gradient(135deg, #2a2a0a, #4a4a0a); border: 1px solid rgba(212,160,23,0.4); }
+    .boss-avatar.ice { background: linear-gradient(135deg, #1a2a3a, #2a4a5a); border: 1px solid rgba(100,180,220,0.4); }
+    .boss-avatar.dark { background: linear-gradient(135deg, #1a0a1a, #2a0a2a); border: 1px solid rgba(180,100,200,0.4); }
+    .boss-avatar.blood { background: linear-gradient(135deg, #3a0a0a, #5a0a0a); border: 1px solid rgba(200,50,50,0.4); }
+    .boss-avatar.poison { background: linear-gradient(135deg, #0a2a0a, #0a4a0a); border: 1px solid rgba(50,200,50,0.4); }
+    .boss-avatar.hatred { background: linear-gradient(135deg, #2a0a1a, #4a0a2a); border: 1px solid rgba(196,30,58,0.5); }
+    .boss-avatar.all { background: linear-gradient(135deg, #2a1a0a, #4a2a1a); border: 1px solid rgba(212,160,23,0.5); }
+    .boss-avatar.ultimate { background: linear-gradient(135deg, #3a1a3a, #5a2a5a); border: 2px solid rgba(212,160,23,0.6); box-shadow: 0 0 20px var(--glow-gold); }
+
+    .boss-header-info h3 {
+      font-family: var(--font-title);
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .boss-type-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      padding: 2px 10px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+
+    .boss-card-body {
+      padding: 20px 24px;
+    }
+    .boss-location {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .boss-location::before { content: '📍'; }
+
+    .boss-stats {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .boss-stat {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 8px 12px;
+      flex: 1;
+      min-width: 100px;
+    }
+    .boss-stat-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .boss-stat-value {
+      font-size: 0.95rem;
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    .boss-mechanics {
+      margin-bottom: 16px;
+    }
+    .boss-mechanics h4 {
+      font-size: 0.85rem;
+      color: var(--accent-red);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .mechanic-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .mechanic-list li {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      padding-left: 16px;
+      position: relative;
+    }
+    .mechanic-list li::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: var(--accent-red);
+      font-size: 0.6rem;
+      top: 4px;
+    }
+
+    .boss-tips {
+      background: rgba(212,160,23,0.08);
+      border: 1px solid rgba(212,160,23,0.2);
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+    .boss-tips h4 {
+      font-size: 0.8rem;
+      color: var(--accent-gold);
+      margin-bottom: 6px;
+    }
+    .boss-tips p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .boss-loot {
+      border-top: 1px solid var(--border-color);
+      padding-top: 14px;
+    }
+    .boss-loot h4 {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .loot-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .loot-tag {
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 4px;
+      background: rgba(196,30,58,0.1);
+      border: 1px solid rgba(196,30,58,0.3);
+      color: var(--text-secondary);
+    }
+
+    /* ===== Tier 2 Section ===== */
+    .tier-section {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, #0d0812 50%, var(--bg-primary) 100%);
+      padding: 48px 0;
+    }
+
+    /* ===== Apex Boss ===== */
+    .apex-section {
+      position: relative;
+      padding: 80px 0;
+      background:
+        radial-gradient(ellipse 100% 80% at 50% 50%, rgba(212,160,23,0.12) 0%, transparent 60%),
+        linear-gradient(180deg, #0d0a08 0%, #0a0a0f 50%, #0a0008 100%);
+    }
+    .apex-boss-card {
+      background: var(--bg-card);
+      border: 2px solid rgba(212,160,23,0.4);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(212,160,23,0.15);
+    }
+    .apex-header {
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background: linear-gradient(135deg, rgba(212,160,23,0.1) 0%, transparent 100%);
+      border-bottom: 1px solid rgba(212,160,23,0.2);
+    }
+    .apex-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #3a1a3a, #5a2a5a);
+      border: 2px solid rgba(212,160,23,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      box-shadow: 0 0 30px var(--glow-gold);
+    }
+    .apex-title-group h2 {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      color: var(--accent-gold);
+      text-shadow: 0 0 20px var(--glow-gold);
+      margin-bottom: 4px;
+    }
+    .apex-title-group .subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+    .apex-body {
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .apex-mechanics, .apex-drops {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .apex-mechanics h3, .apex-drops h3 {
+      font-size: 1rem;
+      color: var(--accent-gold);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .apex-mechanics ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .apex-mechanics li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-left: 20px;
+      position: relative;
+    }
+    .apex-mechanics li::before {
+      content: '⚔';
+      position: absolute;
+      left: 0;
+      color: var(--accent-red);
+    }
+    .apex-phases {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    .phase-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .phase-num {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+    .phase-name {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+      margin-bottom: 6px;
+    }
+    .phase-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+    .key-feature {
+      background: linear-gradient(135deg, rgba(196,30,58,0.15), rgba(212,160,23,0.1));
+      border: 1px solid rgba(212,160,23,0.3);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+    .key-feature h4 {
+      font-size: 0.9rem;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+    .key-feature p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .drop-pool-info {
+      margin-top: 16px;
+    }
+    .drop-pool-info li {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .drop-pool-info li:last-child { border-bottom: none; }
+    .team-bonus {
+      margin-top: 16px;
+      padding: 14px;
+      background: rgba(100,200,100,0.08);
+      border: 1px solid rgba(100,200,100,0.2);
+      border-radius: 6px;
+    }
+    .team-bonus h5 {
+      font-size: 0.8rem;
+      color: #80c080;
+      margin-bottom: 6px;
+    }
+    .team-bonus p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #060608;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: var(--text-muted); }
+    .footer-col ul li a:hover { color: var(--accent-gold); }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ===== Back to Top Button ===== */
+    #back-to-top {
+      position: fixed; bottom: 30px; right: 30px; width: 46px; height: 46px;
+      background: var(--accent-red); border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      color: #fff; box-shadow: 0 4px 16px rgba(196,30,58,0.4); transition: var(--transition);
+      opacity: 0; pointer-events: none; z-index: 999;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: all; }
+    #back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+    /* ===== Progress Bar ===== */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--accent-red), var(--accent-gold));
+      z-index: 10001; transition: width 0.1s linear;
+    }
+
+    /* ===== i18n ===== */
+    [data-en], [data-zh] { display: inline; }
+    html[data-lang="en"] [data-zh] { display: none; }
+    html[data-lang="zh"] [data-en] { display: none; }
+    [data-en-block], [data-zh-block] { display: block; }
+    html[data-lang="en"] [data-zh-block] { display: none; }
+    html[data-lang="zh"] [data-en-block] { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) {
+      .apex-body { grid-template-columns: 1fr; }
+      .apex-phases { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 2px; }
+      .nav-links li a { padding: 4px 8px; font-size: 0.75rem; }
+      .boss-grid { grid-template-columns: 1fr; }
+      .apex-header { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- ===== Language Toggle Bar ===== -->
+  <div class="lang-toggle-bar">
+    <div class="container">
+      <span class="site-mini-brand">D4 LORD OF HATRED GUIDE</span>
+      <div class="lang-buttons">
+        <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Top Navigation ===== -->
+  <div class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">⚔️</span>
+        <span data-zh>暗黑4 · 憎恨之王攻略</span>
+        <span data-en>D4 Lord of Hatred Guide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="classes.html">⚔️ <span data-zh>职业</span><span data-en>Classes</span></a></li>
+        <li><a href="region.html">🗺️ <span data-zh>地区</span><span data-en>Region</span></a></li>
+        <li><a href="endgame.html">🏆 <span data-zh>终局</span><span data-en>Endgame</span></a></li>
+        <li><a href="bosses.html" class="active">💀 <span data-zh>Boss</span><span data-en>Boss</span></a></li>
+        <li><a href="season.html">📅 <span data-zh>赛季</span><span data-en>Season</span></a></li>
+        <li><a href="mythic.html">🌟 <span data-zh>神话</span><span data-en>Mythic</span></a></li>
+        <li><a href="builds.html">📋 <span data-zh>配装</span><span data-en>Builds</span></a></li>
+        <li><a href="tips.html">💡 <span data-zh>技巧</span><span data-en>Tips</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="page-eyebrow">
+        <span data-zh>暗黑破坏神4 · 憎恨之王</span>
+        <span data-en>Diablo 4 · Lord of Hatred</span>
+      </p>
+      <h1 class="page-title">
+        <span data-zh>BOSS图鉴大全</span>
+        <span data-en>Boss Compendium</span>
+      </h1>
+      <p class="page-subtitle">
+        <span data-zh>巢穴首领完整打法攻略，含机制解析、技能躲避、掉落表与组队技巧</span>
+        <span data-en>Complete boss guides with mechanics analysis, dodge guides, loot tables, and co-op tips</span>
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><span data-zh>初级巢穴 5 Boss</span><span data-en>Tier-1 Lairs 5 Boss</span></span>
+        <span class="badge"><span data-zh>高级巢穴 4 Boss</span><span data-en>Tier-2 Lairs 4 Boss</span></span>
+        <span class="badge"><span data-zh>彼列终极挑战</span><span data-en>Belial Apex Challenge</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Boss System Overview ===== -->
+  <section id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>系统概述</span><span data-en>System Overview</span></span>
+        <h2 class="section-title">
+          <span data-zh>憎恨之王BOSS系统</span>
+          <span data-en>Lord of Hatred Boss System</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>憎恨之王扩展包对BOSS系统进行了全面革新，引入阶梯式挑战结构与简化后的钥匙系统</span>
+          <span data-en>Lord of Hatred overhauled the boss system with tiered challenges and simplified key mechanics</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="overview-icon">📊</div>
+          <h4><span data-zh>阶梯式挑战结构</span><span data-en>Tiered Challenge Structure</span></h4>
+          <p>
+            <span data-zh>初级巢穴（Tier 1）→ 高级巢穴（Tier 2）→ 彼列巅峰挑战。三级难度递进，掉落品质逐级提升。</span>
+            <span data-en>Tier 1 → Tier 2 → Belial Apex. Three difficulty tiers with increasing loot quality.</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🔑</div>
+          <h4><span data-zh>钥匙系统简化</span><span data-en>Simplified Key System</span></h4>
+          <p>
+            <span data-zh>击败BOSS直接掉落钥匙，无需囤积材料。挑战更流畅，farm更高效。</span>
+            <span data-en>Defeating bosses drops keys directly. No material hoarding required. Smoother gameplay.</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">⚔️</div>
+          <h4><span data-zh>通用战斗准备</span><span data-en>Combat Preparation</span></h4>
+          <p>
+            <span data-zh>高生命值上限、解控技能、元素抗性药水、足够输出。熟悉BOSS机制是通关关键。</span>
+            <span data-en>High HP pool, CC break, elemental resist potions, sufficient damage. Knowing boss mechanics is key.</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">👥</div>
+          <h4><span data-zh>组队加成机制</span><span data-en>Co-op Bonus System</span></h4>
+          <p>
+            <span data-zh>每增加一名队友，暗金掉落概率+33%。4人组队效率最高，尤其适合彼列巅峰挑战。</span>
+            <span data-en>Each additional party member adds +33% Mythic drop rate. 4-player teams are most efficient.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tier 1 Bosses ===== -->
+  <section id="tier1">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>初级巢穴</span><span data-en>Tier 1 Lairs</span></span>
+        <h2 class="section-title">
+          <span data-zh>初级巢穴 Bosses</span>
+          <span data-en>5 Tier-1 Lair Bosses</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>适合中级玩家挑战，掉落高级巢穴钥匙与元素系传奇装备</span>
+          <span data-en>Suitable for mid-level players, drops Tier-2 keys and elemental Legendaries</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="boss-grid">
+
+        <!-- Urivar -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar fire">🔥</div>
+            <div class="boss-header-info">
+              <h3>乌里瓦尔 Urivar</h3>
+              <span class="boss-type-badge">🔥 <span data-zh>火属性</span><span data-en>Fire</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：库拉斯特地下城 Kurast Dungeons</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~500万 ~5M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>地面火焰池叠加（最危险技能）</span><span data-en>Ground Fire Pools stacking (most dangerous)</span></li>
+                <li><span data-zh>火球弹幕攻击</span><span data-en>Fireball barrage</span></li>
+                <li><span data-zh>火焰冲刺突袭</span><span data-en>Flame dash charge</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>保持持续移动，优先躲避火焰池叠加区域。圣骑士防护光环可减少40%灼烧伤害。</span><span data-en>Keep moving constantly, prioritize avoiding fire pool stacking. Paladin's protective aura reduces burn damage by 40%.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>火系传奇</span><span data-en>Fire Legendaries</span></span>
+                <span class="loot-tag"><span data-zh>高级巢穴钥匙</span><span data-en>Tier-2 Key</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grigoire -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar lightning">⚡</div>
+            <div class="boss-header-info">
+              <h3>格里戈瓦 Grigoire</h3>
+              <span class="boss-type-badge">⚡ <span data-zh>雷属性</span><span data-en>Lightning</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：地狱狂潮 Hell Tide</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~450万 ~4.5M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>随机雷柱投放（0.5秒预警）</span><span data-en>Random lightning pillar drops (0.5s warning)</span></li>
+                <li><span data-zh>雷球连锁攻击</span><span data-en>Chain lightning orbs</span></li>
+                <li><span data-zh>静电场降低移速</span><span data-en>Static field slows movement</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>雷柱有0.5秒预警时间，看到光圈立即移动。保持移动可有效规避大部分雷属性伤害。</span><span data-en>Lightning pillars have 0.5s warning. Move immediately when you see the circle. Keep moving to avoid most lightning damage.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>雷系传奇</span><span data-en>Lightning Legendaries</span></span>
+                <span class="loot-tag"><span data-zh>高级巢穴钥匙</span><span data-en>Tier-2 Key</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beast in the Ice -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar ice">❄️</div>
+            <div class="boss-header-info">
+              <h3><span data-zh>冰中之兽</span><span data-en>Beast in the Ice</span></h3>
+              <span class="boss-type-badge">❄️ <span data-zh>冰属性</span><span data-en>Ice</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：噩梦地下城 Nightmare Dungeons</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~480万 ~4.8M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>冰冻圆圈快速扩散</span><span data-en>Ice circle rapid expansion</span></li>
+                <li><span data-zh>冰刺投射攻击</span><span data-en>Ice spike projectiles</span></li>
+                <li><span data-zh>冰冻效果叠加减速</span><span data-en>Stacking freeze slow effect</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>冰圈扩散时向中心跑。保留解控技能应对紧急情况，避免被连续冰冻导致无法移动。</span><span data-en>Run toward the center when ice circles expand. Save CC-break for emergencies to avoid being frozen.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>冰系传奇</span><span data-en>Ice Legendaries</span></span>
+                <span class="loot-tag"><span data-zh>高级巢穴钥匙</span><span data-en>Tier-2 Key</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varshan Echo -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar dark">🌑</div>
+            <div class="boss-header-info">
+              <h3><span data-zh>瓦尔桑回响</span><span data-en>Varshan Echo</span></h3>
+              <span class="boss-type-badge">🌑 <span data-zh>暗/物理</span><span data-en>Dark/Physical</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：低语之树 Whispering Tree</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~550万 ~5.5M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>触手攻击（4段，第4段AOE）</span><span data-en>Tentacle attack (4 hits, #4 is AOE)</span></li>
+                <li><span data-zh>腐肉之池地面效果</span><span data-en>Rotting pool ground effect</span></li>
+                <li><span data-zh>召唤小怪增援</span><span data-en>Summons adds</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span en>Strategy</span></h4>
+              <p><span data-zh>保持中距离最稳定，可规避前3段触手攻击。第4段AOE前有明显停顿，及时走位躲避。</span><span data-en>Medium range is safest to dodge the first 3 tentacle hits. Watch for pause before #4 AOE.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>低语专属装备</span><span en>Whispering Items</span></span>
+                <span class="loot-tag"><span data-zh>高级巢穴钥匙</span><span data-en>Tier-2 Key</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lord Zir -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar blood">🔴</div>
+            <div class="boss-header-info">
+              <h3><span data-zh>齐尔领主</span><span data-en>Lord Zir</span></h3>
+              <span class="boss-type-badge">🔴 <span data-zh>火属性</span><span data-en>Fire</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：地狱狂潮祭坛 Hell Tide Altars</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~520万 ~5.2M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>血池累积地面效果</span><span data-en>Blood pool stacking</span></li>
+                <li><span data-zh>血旋追击玩家</span><span data-en>Blood spiral chase</span></li>
+                <li><span data-zh>血爆高伤害技能</span><span data-en>Blood burst high damage</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>血池阶段切换前有2秒停顿，这是全力输出的最佳窗口。合理利用停顿期最大化DPS。</span><span data-en>2 second pause before blood pool phase transition. This is the best window for maximum DPS.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>血系传奇</span><span data-en>Blood Legendaries</span></span>
+                <span class="loot-tag"><span data-zh>高级巢穴钥匙</span><span data-en>Tier-2 Key</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tier 2 Bosses ===== -->
+  <section id="tier2" class="tier-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>高级巢穴</span><span data-en>Tier 2 Lairs</span></span>
+        <h2 class="section-title">
+          <span data-zh>高级巢穴 Bosses</span>
+          <span data-en>4 Tier-2 Lair Bosses</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>折磨难度专属挑战，掉落暗金装备与神话概率大幅提升</span>
+          <span data-en>Torment-exclusive challenges with significantly higher Mythic drop rates</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="boss-grid">
+
+        <!-- Duriel -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar poison">🪱</div>
+            <div class="boss-header-info">
+              <h3>都瑞尔 Duriel</h3>
+              <span class="boss-type-badge">🪱 <span data-zh>毒属性</span><span data-en>Poison</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：折磨难度 Torment Difficulty</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~2000万 ~20M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>酸液喷射（直线攻击）</span><span data-en>Acid spray (linear)</span></li>
+                <li><span data-zh>毒云逐渐积累</span><span data-en>Poison cloud stacking</span></li>
+                <li><span data-zh>钻地突袭</span><span data-en>Burrowing charge</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>建议携带解毒药水。战斗约30秒，需要持续输出。毒云阶段注意走位避免叠加中毒。</span><span data-en>Bring poison cleanse potion. Fight lasts ~30 seconds. Avoid poison cloud stacking.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>掉落保底</span><span data-en>Guaranteed Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>至少1件暗金</span><span data-en>1+ Unique guaranteed</span></span>
+                <span class="loot-tag"><span data-zh>神话概率 ~1%</span><span data-en>Mythic ~1%</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hatred Vanguard -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar hatred">🌑</div>
+            <div class="boss-header-info">
+              <h3><span data-zh>憎恨先驱</span><span data-en>Hatred Vanguard</span></h3>
+              <span class="boss-type-badge">🌑 <span data-zh>暗属性</span><span data-en>Dark</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：憎恨领域 Hatred Realm</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~2500万 ~25M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>灵魂冲击波（长预判，看到蓄力立即侧移）</span><span data-en>Soul shockwave (long wind-up, dodge sideways)</span></li>
+                <li><span data-zh>幻象召唤（需优先处理）</span><span data-en>Illusion summon (priority target)</span></li>
+                <li><span data-zh>暗影链接</span><span data-en>Shadow link</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>第二阶段幻象必须优先清理，否则会无限增援。暗影链接时远离其他玩家避免分担伤害。</span><span data-en>Must clear illusions in phase 2 first, or they will infinitely spawn. Stay away from teammates during shadow link.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>憎恨遗宝</span><span data-en>Hatred Relics</span></span>
+                <span class="loot-tag"><span data-zh>术士专属</span><span data-en>Warlock-only</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Andariel Echo -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar all">🌈</div>
+            <div class="boss-header-info">
+              <h3><span data-zh>安达利尔回响</span><span data-en>Andariel Echo</span></h3>
+              <span class="boss-type-badge">🌈 <span data-zh>全属性</span><span data-en>All Elements</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：折磨难度 Torment Difficulty</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~3000万 ~30M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>毒素弹幕</span><span data-en>Poison barrage</span></li>
+                <li><span data-zh>蜘蛛群召唤</span><span data-en>Spider swarm summon</span></li>
+                <li><span data-zh>多重元素爆发</span><span data-en>Multi-element burst</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>建议组队含圣骑士+法师提供元素抗性光环。多重元素爆发时注意切换走位方向。</span><span data-en>Team composition: Paladin + Sorcerer for elemental resist auras. Change dodge direction during multi-element burst.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>传说掉落</span><span data-en>Legendary Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag" style="background: rgba(212,160,23,0.15); border-color: rgba(212,160,23,0.4);"><span data-zh>安达利尔面容（神话）</span><span data-en>Visage of Andariel (Mythic)</span></span>
+                <span class="loot-tag"><span data-zh>掉率约0.5%</span><span data-en>Drop rate ~0.5%</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Butcher -->
+        <div class="boss-card">
+          <div class="boss-card-header">
+            <div class="boss-avatar blood">🔪</div>
+            <div class="boss-header-info">
+              <h3><span data-zh>屠夫</span><span data-en>The Butcher</span></h3>
+              <span class="boss-type-badge">🔪 <span data-zh>暗属性</span><span data-en>Dark</span></span>
+            </div>
+          </div>
+          <div class="boss-card-body">
+            <p class="boss-location"><span data-zh>推荐位置</span><span data-en>Recommended Location</span>：高级巢穴随机触发 Random in Tier-2</p>
+            <div class="boss-stats">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~2800万 ~28M</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="boss-mechanics">
+              <h4>⚡ <span data-zh>核心机制</span><span data-en>Core Mechanics</span></h4>
+              <ul class="mechanic-list">
+                <li><span data-zh>"新鲜肉！"突进斩击</span><span data-en>"Fresh meat!" Charge slash</span></li>
+                <li><span data-zh>钩锁拉人</span><span data-en>Hook pull</span></li>
+                <li><span data-zh>血怒连击</span><span data-en>Blood rage combo</span></li>
+              </ul>
+            </div>
+            <div class="boss-tips">
+              <h4>📖 <span data-zh>打法攻略</span><span data-en>Strategy</span></h4>
+              <p><span data-zh>突进后有3秒无敌帧，之后是最佳输出窗口。钩锁拉人时注意保持移动避免被连续控制。</span><span data-en>3 second i-frames after charge - best damage window. Keep moving during hook pull to avoid CC chain.</span></p>
+            </div>
+            <div class="boss-loot">
+              <h4>💎 <span data-zh>专属掉落</span><span data-en>Exclusive Drops</span></h4>
+              <div class="loot-tags">
+                <span class="loot-tag"><span data-zh>特殊词缀装备</span><span data-en>Special Affix Gear</span></span>
+                <span class="loot-tag"><span data-zh>全职业通用</span><span data-en>All Classes</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Apex Boss: Belial ===== -->
+  <section id="apex" class="apex-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><span data-zh>巅峰挑战</span><span data-en>Apex Challenge</span></span>
+        <h2 class="section-title">
+          <span data-zh>彼列 · 谎言之王</span>
+          <span data-en>Belial · Lord of Lies</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>终极BOSS挑战，可选择任意掉落池的最强farm目标</span>
+          <span data-en>The ultimate boss challenge with selectable loot pools</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="apex-boss-card">
+        <div class="apex-header">
+          <div class="apex-avatar">👑</div>
+          <div class="apex-title-group">
+            <h2>Belial, Lord of Lies</h2>
+            <p class="subtitle">
+              <span data-zh>全属性 · 终极挑战 · 谎言之王</span>
+              <span data-en>All Elements · Ultimate Challenge · Lord of Lies</span>
+            </p>
+          </div>
+        </div>
+        <div class="apex-body">
+          <div>
+            <div class="boss-location" style="margin-bottom: 20px;">
+              <span data-zh>入场条件</span><span data-en>Entry Requirements</span>：
+              <span data-zh>2× 背叛者躯壳 + 折磨1+难度</span>
+              <span data-en>2x Traitor's Corpse + Torment 1+</span>
+            </div>
+
+            <div class="boss-stats" style="margin-bottom: 20px;">
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>生命值</span><span data-en>HP</span></div>
+                <div class="boss-stat-value">~1亿+ ~100M+</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>难度</span><span data-en>Difficulty</span></div>
+                <div class="boss-stat-value">⭐⭐⭐⭐⭐</div>
+              </div>
+              <div class="boss-stat">
+                <div class="boss-stat-label"><span data-zh>战斗时长</span><span data-en>Fight Duration</span></div>
+                <div class="boss-stat-value">3-5分钟</div>
+              </div>
+            </div>
+
+            <div class="apex-phases">
+              <div class="phase-card">
+                <div class="phase-num"><span data-zh>第一阶段</span><span data-en>Phase 1</span></div>
+                <div class="phase-name"><span data-zh>年轻王子</span><span data-en>Young Prince</span></div>
+                <div class="phase-desc"><span data-zh>彼列化身的年轻王子形态，技能有限</span><span data-en>Belial disguised as young prince, limited abilities</span></div>
+              </div>
+              <div class="phase-card">
+                <div class="phase-num"><span data-zh>第二阶段</span><span data-en>Phase 2</span></div>
+                <div class="phase-name"><span data-zh>真实形态</span><span data-en>True Form</span></div>
+                <div class="phase-desc"><span data-zh>真实形态显现，全技能解锁</span><span data-en>True form revealed, all abilities unlocked</span></div>
+              </div>
+              <div class="phase-card">
+                <div class="phase-num"><span data-zh>第三阶段</span><span data-en>Phase 3</span></div>
+                <div class="phase-name"><span data-zh>全力形态</span><span data-en>Full Power</span></div>
+                <div class="phase-desc"><span data-zh>超高伤害，全力应对</span><span data-en>Extreme damage, full defense mode</span></div>
+              </div>
+            </div>
+
+            <div class="key-feature">
+              <h4>🎯 <span data-zh>最重要机制：自选掉落池</span><span data-en>Key Mechanic: Selectable Loot Pool</span></h4>
+              <p>
+                <span data-zh>开箱时可选择任意BOSS的掉落池。这使彼列成为刷指定神话装备的最高效途径——你可以针对性地farm想要的装备！</span>
+                <span data-en>Choose any boss's loot pool when opening rewards. This makes Belial the most efficient way to farm specific Mythic items - target exactly what you want!</span>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="apex-mechanics">
+              <h3><span data-zh>核心机制</span><span data-en>Core Mechanics</span></h3>
+              <ul>
+                <li><span data-zh>幻象分身：制造多个分身混淆玩家</span><span data-en>Illusion clones: Creates copies to confuse players</span></li>
+                <li><span data-zh>地裂攻击：全屏AOE，需要安全点躲避</span><span data-en>Ground fissure: Full-screen AOE, find safe spot</span></li>
+                <li><span data-zh>谎言领域：持续缩小活动范围的结界</span><span data-en>Realm of Lies: Shrinking arena zone</span></li>
+                <li><span data-zh>恶魔冲击：多段连续打击，注意节奏躲避</span><span data-en>Demonic impact: Multi-hit combo, dodge in rhythm</span></li>
+                <li><span data-zh>彼列之眼：追踪激光，引导队友分散站位</span><span data-en>Belial's Eye: Tracking laser, spread out</span></li>
+              </ul>
+            </div>
+
+            <div class="apex-drops">
+              <h3><span data-zh>掉落保证</span><span data-en>Guaranteed Drops</span></h3>
+              <ul class="drop-pool-info">
+                <li><span data-zh>必掉1件祖先级传奇</span><span data-en>Guaranteed 1 Ancestral Legendary</span></li>
+                <li><span data-zh>最高神话装备概率</span><span data-en>Highest Mythic drop rate</span></li>
+                <li><span data-zh>地狱大军罗盘（稀有材料）</span><span data-en>Infernal Horde Compass (rare material)</span></li>
+                <li><span data-zh>可选任意BOSS掉落池</span><span data-en>Select any boss loot pool</span></li>
+              </ul>
+              <div class="team-bonus">
+                <h5><span data-zh>组队加成</span><span data-en>Party Bonus</span></h5>
+                <p>
+                  <span data-zh>每增加一名队友，额外暗金掉落+33%。4人组队 + 折磨IV+ = 每次3件暗金保证！</span>
+                  <span data-en>+33% additional Unique per party member. 4-player + Torment IV+ = guaranteed 3 Uniques!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h4>⚔️ Diablo 4: Lord of Hatred Guide</h4>
+          <p>
+            <span data-zh>本攻略站涵盖《暗黑破坏神4：憎恨之王》完整内容，助你在憎恨纪元中纵横庇护之地。</span>
+            <span data-en>Your complete guide to Diablo 4: Lord of Hatred. Everything you need to dominate Sanctuary.</span>
+          </p>
+          <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="classes.html" style="font-size:0.8rem;"><span data-zh>职业攻略</span><span data-en>Classes</span></a>
+            <a href="region.html" style="font-size:0.8rem;"><span data-zh>地区攻略</span><span data-en>Region</span></a>
+            <a href="endgame.html" style="font-size:0.8rem;"><span data-zh>终局攻略</span><span data-en>Endgame</span></a>
+            <a href="bosses.html" style="font-size:0.8rem;"><span data-zh>Boss攻略</span><span data-en>Bosses</span></a>
+            <a href="season.html" style="font-size:0.8rem;"><span data-zh>赛季攻略</span><span data-en>Season</span></a>
+            <a href="mythic.html" style="font-size:0.8rem;"><span data-zh>神话装备</span><span data-en>Mythic</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>攻略板块</span><span data-en>Guide Sections</span></h5>
+          <ul>
+            <li><a href="classes.html"><span data-zh>职业详解</span><span data-en>Classes</span></a></li>
+            <li><a href="region.html"><span data-zh>斯科沃斯地区</span><span data-en>Skovos Region</span></a></li>
+            <li><a href="endgame.html"><span data-zh>终局系统</span><span data-en>Endgame</span></a></li>
+            <li><a href="bosses.html"><span data-zh>Boss图鉴</span><span data-en>Boss Compendium</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>外部资源</span><span data-en>External Resources</span></h5>
+          <ul>
+            <li><a href="https://news.blizzard.com/en-us/diablo4" target="_blank" rel="noopener">Blizzard News</a></li>
+            <li><a href="https://diablo4.blizzard.com/" target="_blank" rel="noopener">Official Site</a></li>
+            <li><a href="https://maxroll.gg/diablo4" target="_blank" rel="noopener">MaxRoll.gg</a></li>
+            <li><a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 D4 Lord of Hatred Guide. All rights reserved. Diablo © Blizzard Entertainment.</p>
+        <p><span data-zh>本站为玩家攻略站，与暴雪娱乐无附属关系</span><span data-en>Fan-made guide site, not affiliated with Blizzard</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    /* ===== Language Toggle ===== */
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      localStorage.setItem('d4guide-lang', lang);
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    /* Auto-detect browser language */
+    (function() {
+      var saved = localStorage.getItem('d4guide-lang');
+      if (saved) {
+        setLang(saved);
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().startsWith('en')) {
+          setLang('en');
+        }
+      }
+    })();
+
+    /* ===== Back to Top & Progress ===== */
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+
+      /* Reading progress */
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = (window.scrollY / docHeight) * 100;
+      var bar = document.getElementById('reading-progress');
+      if (bar) bar.style.width = progress + '%';
+    });
+  </script>
+</body>
+</html>

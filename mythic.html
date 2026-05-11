@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>暗黑破坏神4 神话暗金装备图鉴 | 12件Mythic Uniques完整攻略</title>
+  <meta name="description" content="暗黑破坏神4憎恨之王神话装备完整图鉴，12件Mythic Uniques详细攻略。包含破碎誓言、祖父、安达利尔面容、毁灭使者等全部神话装备属性、适用职业、最佳BD与最高效刷取路线。Diablo 4 Mythic Uniques Complete Guide." />
+  <meta name="keywords" content="暗黑破坏神4,神话装备,Mythic Uniques,神话暗金,破碎誓言,祖父,安达利尔面容,毁灭使者,泰瑞尔之力,憎恨之王,Diablo 4,Mythic Items,Fractured Vow,Grandfather,Andariel,Doombringer,2026" />
+  <meta name="author" content="D4 Guide Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/mythic.html" />
+
+  <!-- ===== SEO: Open Graph ===== -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="暗黑破坏神4 神话暗金装备图鉴 | 12件Mythic Uniques完整攻略" />
+  <meta property="og:description" content="12件神话装备完整攻略，含属性效果、适用职业、最佳BD与最高效刷取路线。彼列/高级巢穴/特定BOSS掉率对比。" />
+  <meta property="og:url" content="https://your-domain.com/mythic.html" />
+  <meta property="og:image" content="https://your-domain.com/mythic-og.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="D4 Lord of Hatred Guide" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diablo 4 Mythic Uniques Guide - All 12 Items" />
+  <meta name="twitter:description" content="Complete guide for all 12 Mythic Uniques in Diablo 4: Lord of Hatred. Stats, class builds, and best farming routes." />
+  <meta name="twitter:image" content="https://your-domain.com/mythic-og.jpg" />
+
+  <!-- ===== SEO: Alternate Language Links ===== -->
+  <link rel="alternate" hreflang="zh-CN" href="https://your-domain.com/mythic.html" />
+  <link rel="alternate" hreflang="en" href="https://your-domain.com/en/mythic.html" />
+  <link rel="alternate" hreflang="x-default" href="https://your-domain.com/mythic.html" />
+
+  <!-- ===== SEO: Structured Data (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "暗黑破坏神4 神话暗金装备图鉴 | 12件Mythic Uniques完整攻略",
+    "description": "暗黑破坏神4憎恨之王神话装备完整图鉴，12件Mythic Uniques详细攻略",
+    "inLanguage": ["zh-CN", "en"],
+    "author": {
+      "@type": "Organization",
+      "name": "D4 Guide Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "D4 Lord of Hatred Guide",
+      "url": "https://your-domain.com/"
+    },
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-05-07"
+  }
+  </script>
+
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --accent-red: #c41e3a;
+      --accent-gold: #d4a017;
+      --accent-orange: #e8651a;
+      --text-primary: #e8e0d0;
+      --text-secondary: #9a9088;
+      --text-muted: #5a5058;
+      --border-color: #2a2030;
+      --glow-red: rgba(196, 30, 58, 0.4);
+      --glow-gold: rgba(212, 160, 23, 0.3);
+      --font-title: 'Georgia', 'SimSun', serif;
+      --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --radius: 8px;
+      --transition: 0.25s ease;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-orange); text-decoration: none; }
+
+    /* ===== Layout ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+
+    /* ===== Language Toggle Bar ===== */
+    .lang-toggle-bar {
+      background: rgba(10,10,15,0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+    .lang-toggle-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-mini-brand {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .lang-buttons { display: flex; gap: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #fff;
+    }
+
+    /* ===== Top Navigation ===== */
+    .top-nav {
+      background: rgba(10,10,15,0.98);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+    }
+    .top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo-icon { font-size: 1.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links li a:hover {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+
+    /* ===== Hero ===== */
+    .page-hero {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(212,160,23,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(196,30,58,0.10) 0%, transparent 60%),
+        linear-gradient(180deg, #0a0800 0%, #0a0a0f 100%);
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 15% 20%, rgba(212,160,23,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 15%, rgba(196,30,58,0.5) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 40% 70%, rgba(212,160,23,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 55%, rgba(232,101,26,0.5) 0%, transparent 100%),
+        radial-gradient(2px 2px at 60% 35%, rgba(212,160,23,0.3) 0%, transparent 100%);
+      animation: twinkle 4s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    .page-hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 100%;
+      padding: 60px 24px;
+    }
+    .page-hero-eyebrow {
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+    .page-hero-title {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #fff;
+      text-shadow: 0 0 60px var(--glow-gold), 0 2px 8px rgba(0,0,0,0.8);
+      margin-bottom: 12px;
+    }
+    .page-hero-title .accent { color: var(--accent-gold); }
+    .page-hero-subtitle {
+      font-family: var(--font-title);
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      color: var(--accent-red);
+      text-shadow: 0 0 30px var(--glow-red);
+      margin-bottom: 20px;
+    }
+    .page-hero-desc {
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .badge {
+      background: rgba(212,160,23,0.12);
+      border: 1px solid rgba(212,160,23,0.4);
+      color: var(--text-primary);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ===== Section Titles ===== */
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      border: 1px solid rgba(212,160,23,0.4);
+      padding: 3px 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      color: #fff;
+      text-shadow: 0 0 30px var(--glow-gold);
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+      margin: 12px auto 0;
+      width: 120px;
+    }
+
+    /* ===== Overview Section ===== */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .overview-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: var(--transition);
+    }
+    .overview-card:hover {
+      border-color: rgba(212,160,23,0.4);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+    .overview-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .overview-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .overview-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===== Category Tabs ===== */
+    .category-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .category-tab {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .category-tab:hover {
+      border-color: rgba(212,160,23,0.4);
+      color: var(--text-primary);
+    }
+    .category-tab.active {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      color: #000;
+      font-weight: 600;
+    }
+
+    /* ===== Mythic Item Grid ===== */
+    .mythic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .mythic-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .mythic-card:hover {
+      border-color: rgba(212,160,23,0.5);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      transform: translateY(-4px);
+    }
+    .mythic-card-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .mythic-card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, #1a0a00, #2a1a00);
+      border: 1px solid rgba(212,160,23,0.4);
+    }
+    .mythic-card-icon.weapon { background: linear-gradient(135deg, #2a0a0a, #3a1010); border-color: rgba(196,30,58,0.4); }
+    .mythic-card-icon.armor { background: linear-gradient(135deg, #0a1a1a, #103030); border-color: rgba(100,200,200,0.4); }
+    .mythic-card-icon.helmet { background: linear-gradient(135deg, #1a1a0a, #2a2a10); border-color: rgba(200,200,50,0.4); }
+    .mythic-card-icon.accessory { background: linear-gradient(135deg, #0a0a2a, #10103a); border-color: rgba(150,100,255,0.4); }
+    .mythic-card-title-wrap { flex: 1; }
+    .mythic-card-name {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .mythic-card-name-en {
+      font-size: 0.8rem;
+      color: var(--accent-gold);
+      opacity: 0.8;
+    }
+    .mythic-card-type {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      padding: 3px 8px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+    .mythic-card-body { padding: 20px 24px; }
+    .mythic-stat-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+    .mythic-stat-label {
+      color: var(--text-muted);
+      min-width: 70px;
+      flex-shrink: 0;
+    }
+    .mythic-stat-value { color: var(--text-primary); }
+    .mythic-special {
+      background: rgba(196,30,58,0.1);
+      border: 1px solid rgba(196,30,58,0.3);
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin: 12px 0;
+      font-size: 0.88rem;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+    .mythic-special::before {
+      content: '✨ ';
+      color: var(--accent-gold);
+    }
+    .mythic-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+    .mythic-tag {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+    }
+    .mythic-tag.class-tag {
+      background: rgba(212,160,23,0.1);
+      border-color: rgba(212,160,23,0.3);
+      color: var(--accent-gold);
+    }
+    .mythic-tag.source-tag {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--accent-red);
+    }
+    .mythic-rating {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+    }
+    .mythic-rating-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .rating-stars {
+      color: var(--accent-gold);
+      letter-spacing: 1px;
+    }
+
+    /* ===== Ranking Table ===== */
+    .ranking-section {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, #0d0d12 50%, var(--bg-primary) 100%);
+    }
+    .ranking-table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+    }
+    .ranking-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+    }
+    .ranking-table th {
+      background: rgba(212,160,23,0.1);
+      padding: 14px 16px;
+      text-align: left;
+      font-size: 0.85rem;
+      color: var(--accent-gold);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .ranking-table td {
+      padding: 14px 16px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(42,32,48,0.5);
+    }
+    .ranking-table tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .rank-1 { background: linear-gradient(135deg, #d4a017, #b8860b); color: #000; }
+    .rank-2 { background: linear-gradient(135deg, #c0c0c0, #a0a0a0); color: #000; }
+    .rank-3 { background: linear-gradient(135deg, #cd7f32, #a0522d); color: #fff; }
+    .drop-rate { color: var(--accent-red); font-weight: 600; }
+
+    /* ===== Fragment System ===== */
+    .fragment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .fragment-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .fragment-card h4 {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .fragment-card ul {
+      list-style: none;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .fragment-card li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(42,32,48,0.5);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .fragment-card li:last-child { border-bottom: none; }
+    .fragment-card li::before {
+      content: '>';
+      color: var(--accent-gold);
+      flex-shrink: 0;
+    }
+    .recipe-list {
+      margin-top: 20px;
+      padding: 16px;
+      background: rgba(212,160,23,0.05);
+      border-radius: 6px;
+      border: 1px solid rgba(212,160,23,0.2);
+    }
+    .recipe-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(212,160,23,0.1);
+    }
+    .recipe-item:last-child { border-bottom: none; }
+    .recipe-name { color: var(--text-primary); font-size: 0.9rem; }
+    .recipe-cost {
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #060608;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: var(--text-muted); }
+    .footer-col ul li a:hover { color: var(--accent-gold); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ===== Back to Top Button ===== */
+    #back-to-top {
+      position: fixed; bottom: 30px; right: 30px; width: 46px; height: 46px;
+      background: var(--accent-red); border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      color: #fff; box-shadow: 0 4px 16px rgba(196,30,58,0.4); transition: var(--transition);
+      opacity: 0; pointer-events: none; z-index: 999;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: all; }
+    #back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+    /* ===== Progress Bar ===== */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--accent-gold), var(--accent-red));
+      z-index: 10001; transition: width 0.1s linear;
+    }
+
+    /* ===== i18n hidden by default ===== */
+    [data-en], [data-zh] { display: inline; }
+    html[data-lang="en"] [data-zh] { display: none; }
+    html[data-lang="zh"] [data-en] { display: none; }
+    [data-en-block], [data-zh-block] { display: block; }
+    html[data-lang="en"] [data-zh-block] { display: none; }
+    html[data-lang="zh"] [data-en-block] { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 2px; }
+      .nav-links li a { padding: 4px 8px; font-size: 0.75rem; }
+      .mythic-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- ===== Language Toggle Bar ===== -->
+  <div class="lang-toggle-bar">
+    <div class="container">
+      <span class="site-mini-brand">D4 LORD OF HATRED GUIDE</span>
+      <div class="lang-buttons">
+        <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Top Navigation ===== -->
+  <div class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">⚔️</span>
+        <span data-zh>暗黑4 · 憎恨之王攻略</span>
+        <span data-en>D4 Lord of Hatred Guide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="classes.html">⚔️ <span data-zh>职业</span><span data-en>Classes</span></a></li>
+        <li><a href="region.html">🗺️ <span data-zh>地区</span><span data-en>Region</span></a></li>
+        <li><a href="endgame.html">🏆 <span data-zh>终局</span><span data-en>Endgame</span></a></li>
+        <li><a href="bosses.html">💀 <span data-zh>Boss</span><span data-en>Boss</span></a></li>
+        <li><a href="season.html">📅 <span data-zh>赛季</span><span data-en>Season</span></a></li>
+        <li><a href="mythic.html">🌟 <span data-zh>神话</span><span data-en>Mythic</span></a></li>
+        <li><a href="builds.html">📋 <span data-zh>配装</span><span data-en>Builds</span></a></li>
+        <li><a href="tips.html">💡 <span data-zh>技巧</span><span data-en>Tips</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">
+        <span data-zh>暴雪娱乐 · 2026年5月 · 神话装备完全图鉴</span>
+        <span data-en>Blizzard Entertainment · May 2026 · Mythic Items Complete Guide</span>
+      </p>
+      <h1 class="page-hero-title">
+        <span data-zh>神话暗金 <span class="accent">装备图鉴</span></span>
+        <span data-en>Mythic <span class="accent">Uniques</span></span>
+      </h1>
+      <p class="page-hero-subtitle">
+        <span data-zh>12件Mythic Items · 完整攻略</span>
+        <span data-en>12 Mythic Items · Complete Guide</span>
+      </p>
+      <p class="page-hero-desc">
+        <span data-zh>庇护之地最强大的装备。必定以925物品等级掉落，每一件都能改变你的游戏体验。</span>
+        <span data-en>The most powerful equipment in Sanctuary. Always drops at item level 925. Each piece can transform your gameplay.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="badge">🌟 <span data-zh>12件神话装备</span><span data-en>12 Mythic Items</span></span>
+        <span class="badge">💀 <span data-zh>彼列最高掉率</span><span data-en>Belial Best Drop Rate</span></span>
+        <span class="badge">⚡ <span data-zh>925物品等级</span><span data-en>Item Level 925</span></span>
+        <span class="badge">🔮 <span data-zh>神话碎片合成</span><span data-en>Fragment Crafting</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Overview Section ===== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🌟 OVERVIEW</span>
+        <h2 class="section-title">
+          <span data-zh>什么是神话装备？</span>
+          <span data-en>What Are Mythic Items?</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>神话装备是暗黑破坏神4中最高稀有度的暗金装备，必定以物品等级925掉落。</span>
+          <span data-en>Mythic items are the highest rarity Unique items in Diablo 4, always dropping at item level 925.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="overview-icon">📦</div>
+          <h3><span data-zh>装备稀有度</span><span data-en>Rarity</span></h3>
+          <p>
+            <span data-zh>神话装备是凌驾于传奇之上的最高稀有度。每个角色最多可装备2件神话装备（1件武器+1件防具/饰品）。</span>
+            <span data-en>Mythics are the highest rarity above Legendary. Each character can equip up to 2 Mythic items (1 weapon + 1 armor/accessory).</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🎯</div>
+          <h3><span data-zh>掉落保证</span><span data-en>Guaranteed Drops</span></h3>
+          <p>
+            <span data-zh>所有神话装备必定以物品等级925掉落（满power）。神话装备没有随机物品等级波动，确保每件都是最强形态。</span>
+            <span data-en>All Mythic items drop at item level 925 (max power). No random ilvl variance ensures every piece is at its strongest.</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🏆</div>
+          <h3><span data-zh>获取优先级</span><span data-en>Farming Priority</span></h3>
+          <p>
+            <span data-zh>彼列谎言之王拥有最高神话掉率（2.5%）> 高级巢穴BOSS > 初级巢穴BOSS > 随机世界掉落。推荐优先击杀彼列。</span>
+            <span data-en>Belial Lord of Lies has the highest Mythic drop rate (2.5%) > Tier-2 Nests > Tier-1 Nests > World drops. Prioritize Belial.</span>
+          </p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🔮</div>
+          <h3><span data-zh>碎片合成系统</span><span data-en>Fragment Crafting</span></h3>
+          <p>
+            <span data-zh>用神话碎片可在赫拉迪姆方块中定向合成指定装备。收集足够碎片可100%获得你需要的装备，绕过随机性。</span>
+            <span data-en>Use Mythic Fragments in the Horadric Cube to craft specific items. Collect enough fragments for guaranteed acquisition.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Mythic Items Section ===== -->
+  <section id="mythic-items">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">⚔️ MYTHIC UNIQUE ITEMS</span>
+        <h2 class="section-title">
+          <span data-zh>12件神话装备详解</span>
+          <span data-en>All 12 Mythic Items Explained</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>按装备位置分类，每件装备含属性效果、特效机制、适用职业与最佳刷取路线。</span>
+          <span data-en>Categorized by slot. Each item includes stats, special effects, class suitability, and optimal farming route.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="category-tabs">
+        <button class="category-tab active" onclick="filterItems('all')">
+          <span data-zh>全部</span><span data-en>All</span>
+        </button>
+        <button class="category-tab" onclick="filterItems('weapon')">
+          <span data-zh>武器 (5)</span><span data-en>Weapons (5)</span>
+        </button>
+        <button class="category-tab" onclick="filterItems('armor')">
+          <span data-zh>胸甲 (2)</span><span data-en>Chest (2)</span>
+        </button>
+        <button class="category-tab" onclick="filterItems('helmet')">
+          <span data-zh>头盔 (2)</span><span data-en>Helmet (2)</span>
+        </button>
+        <button class="category-tab" onclick="filterItems('accessory')">
+          <span data-zh>护身符/戒指 (3)</span><span data-en>Accessory (3)</span>
+        </button>
+      </div>
+
+      <div class="mythic-grid" id="mythic-grid">
+
+        <!-- 1. Fractured Vow -->
+        <div class="mythic-card" data-category="weapon">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon weapon">⚔️</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>破碎誓言</span>
+                <span data-en>Fractured Vow</span>
+              </h3>
+              <p class="mythic-card-name-en">Fractured Vow</p>
+              <span class="mythic-card-type">
+                <span data-zh>单手武器</span>
+                <span data-en>One-Hand Weapon</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+30% <span data-zh>元素伤害</span><span data-en>Elemental Damage</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+20% <span data-zh>暴击率</span><span data-en>Crit Rate</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>消灭敌人时有几率重置所有技能冷却时间。</span>
+              <span data-en>Killing enemies has a chance to reset all skill cooldowns.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>全职业</span><span data-en>All Classes</span></span>
+              <span class="mythic-tag source-tag"><span data-zh>彼列最高</span><span data-en>Belial Best</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Heir of Perdition -->
+        <div class="mythic-card" data-category="weapon">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon weapon">🗡️</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>毁灭继承者</span>
+                <span data-en>Heir of Perdition</span>
+              </h3>
+              <p class="mythic-card-name-en">Heir of Perdition</p>
+              <span class="mythic-card-type">
+                <span data-zh>双手武器</span>
+                <span data-en>Two-Hand Weapon</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+25% <span data-zh>暗影伤害</span><span data-en>Shadow Damage</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+15% <span data-zh>攻击速度</span><span data-en>Attack Speed</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>对生命值低于30%的敌人造成50%额外伤害。</span>
+              <span data-en>Deals 50% extra damage to enemies below 30% HP.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>术士/死灵/盗贼</span><span data-en>Warlock/Necro/Rogue</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Doombringer -->
+        <div class="mythic-card" data-category="weapon">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon weapon">⚔️</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>毁灭使者</span>
+                <span data-en>Doombringer</span>
+              </h3>
+              <p class="mythic-card-name-en">Doombringer</p>
+              <span class="mythic-card-type">
+                <span data-zh>单手剑</span>
+                <span data-en>One-Hand Sword</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span en>Stats</span></span>
+              <span class="mythic-stat-value">+20% <span data-zh>暗影伤害</span><span data-en>Shadow Damage</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>生命偷取</span><span data-en>Life Steal</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>击杀敌人时回复生命值。</span>
+              <span data-en>Heals on kill.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>野蛮/德鲁伊/死灵/盗贼/法师</span><span data-en>Barb/Druid/Ne cro/Rogue/Sorc</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★☆☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. The Grandfather -->
+        <div class="mythic-card" data-category="weapon">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon weapon">🗡️</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>祖父</span>
+                <span data-en>The Grandfather</span>
+              </h3>
+              <p class="mythic-card-name-en">The Grandfather</p>
+              <span class="mythic-card-type">
+                <span data-zh>双手剑</span>
+                <span data-en>Two-Hand Sword</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+25 <span data-zh>全属性</span><span data-en>All Stats</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+150% <span data-zh>暴击伤害</span><span data-en>Crit Damage</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>暴击时触发额外伤害。</span>
+              <span data-en>Crits trigger additional damage.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>野蛮人/死灵</span><span data-en>Barbarian/Necro</span></span>
+              <span class="mythic-tag source-tag"><span data-zh>彼列最高</span><span data-en>Belial Best</span></span>
+              <span class="mythic-tag"><span data-zh>T0武器</span><span data-en>T0 Weapon</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Ahavarion -->
+        <div class="mythic-card" data-category="weapon">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon weapon">🔮</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>阿哈瓦里昂</span>
+                <span data-en>Ahavarion</span>
+              </h3>
+              <p class="mythic-card-name-en">Ahavarion, Spear of Odeg</p>
+              <span class="mythic-card-type">
+                <span data-zh>权杖/法杖</span>
+                <span data-en>Staff/Wand</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+5 <span data-zh>所有技能等级</span><span data-en>All Skill Levels</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>随机元素伤害</span><span data-en>Random Element Damage</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>击杀时有几率获得随机buff（护盾/加速/资源回复等）。</span>
+              <span data-en>On kill, chance to gain random buffs (shield/speed/resource regen).</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>法师/死灵</span><span data-en>Sorc/Necro</span></span>
+              <span class="mythic-tag"><span data-zh>万金油</span><span data-en>Versatile</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Shroud of False Death -->
+        <div class="mythic-card" data-category="armor">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon armor">🛡️</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>虚假死亡之裹</span>
+                <span data-en>Shroud of False Death</span>
+              </h3>
+              <p class="mythic-card-name-en">Shroud of False Death</p>
+              <span class="mythic-card-type">
+                <span data-zh>胸甲</span>
+                <span data-en>Chest Armor</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+40% <span data-zh>护甲</span><span data-en>Armor</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>生命值上限</span><span data-en>Max HP</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>受到致命伤害时触发无敌2秒（60秒冷却）。</span>
+              <span data-en>On fatal hit, gain 2s invulnerability (60s cooldown).</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>全职业</span><span data-en>All Classes</span></span>
+              <span class="mythic-tag source-tag"><span data-zh>彼列最高</span><span data-en>Belial Best</span></span>
+              <span class="mythic-tag"><span data-zh>生存向必备</span><span data-en>Survival Essential</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Tyrael's Might -->
+        <div class="mythic-card" data-category="armor">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon armor">👼</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>泰瑞尔之力</span>
+                <span data-en>Tyrael's Might</span>
+              </h3>
+              <p class="mythic-card-name-en">Tyrael's Might</p>
+              <span class="mythic-card-type">
+                <span data-zh>胸甲</span>
+                <span data-en>Chest Armor</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+50% <span data-zh>移动速度</span><span data-en>Move Speed</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>闪避</span><span data-en>Dodge</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>受到致命伤害时必定触发不死效果（暗黑2经典回归）。</span>
+              <span data-en>On fatal hit, guaranteed Undying effect (D2 classic return).</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>全职业</span><span data-en>All Classes</span></span>
+              <span class="mythic-tag"><span data-zh>情怀+实用</span><span data-en>Nostalgia+Utility</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Andariel's Visage -->
+        <div class="mythic-card" data-category="helmet">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon helmet">😈</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>安达利尔的面容</span>
+                <span data-en>Andariel's Visage</span>
+              </h3>
+              <p class="mythic-card-name-en">Andariel's Visage</p>
+              <span class="mythic-card-type">
+                <span data-zh>头盔</span>
+                <span data-en>Helmet</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+<span data-zh>毒属性伤害</span><span data-en>Poison Damage</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>攻击速度</span><span data-en>Attack Speed</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>攻击时附加毒DOT伤害。</span>
+              <span data-en>Attacks apply Poison DOT.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>全职业</span><span data-en>All Classes</span></span>
+              <span class="mythic-tag source-tag"><span data-zh>安达利尔0.5%</span><span data-en>Andariel 0.5%</span></span>
+              <span class="mythic-tag"><span data-zh>赛季最热目标</span><span data-en>Season's Hottest Target</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Harlequin Crest -->
+        <div class="mythic-card" data-category="helmet">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon helmet">👑</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>滑稽之冠</span>
+                <span data-en>Harlequin Crest</span>
+              </h3>
+              <p class="mythic-card-name-en">Harlequin Crest (Shalf)</p>
+              <span class="mythic-card-type">
+                <span data-zh>头盔</span>
+                <span data-en>Helmet</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+<span data-zh>所有属性</span><span data-en>All Stats</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>生命值</span><span data-en>HP</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>减伤+20%，击杀回复资源。</span>
+              <span data-en>Damage reduction +20%, resource on kill.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>全职业</span><span data-en>All Classes</span></span>
+              <span class="mythic-tag"><span data-zh>万金油头盔</span><span data-en>Versatile Helmet</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Melted Heart of Selig -->
+        <div class="mythic-card" data-category="accessory">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon accessory">💎</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>塞利格的融化之心</span>
+                <span data-en>Melted Heart of Selig</span>
+              </h3>
+              <p class="mythic-card-name-en">Melted Heart of Selig</p>
+              <span class="mythic-card-type">
+                <span data-zh>护身符</span>
+                <span data-en>Amulet</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+<span data-zh>资源获取</span><span data-en>Resource Generation</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>所有元素抗性</span><span data-en>All Elemental Res</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>增加资源上限，资源消耗降低。</span>
+              <span data-en>Increased resource cap and reduced resource cost.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>资源消耗型BD</span><span data-en>High-Resource Builds</span></span>
+              <span class="mythic-tag source-tag"><span data-zh>彼列最高</span><span data-en>Belial Best</span></span>
+              <span class="mythic-tag"><span data-zh>术士核心</span><span data-en>Warlock Core</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Ring of Starless Skies -->
+        <div class="mythic-card" data-category="accessory">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon accessory">💍</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>无星之空戒指</span>
+                <span data-en>Ring of Starless Skies</span>
+              </h3>
+              <p class="mythic-card-name-en">Ring of Starless Skies</p>
+              <span class="mythic-card-type">
+                <span data-zh>戒指</span>
+                <span data-en>Ring</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+<span data-zh>所有元素伤害</span><span data-en>All Element Damage</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>暴击率</span><span data-en>Crit Rate</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>随攻击叠加增伤效果，最高5层。</span>
+              <span data-en>Damage increases with each attack, up to 5 stacks.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>全职业</span><span data-en>All Classes</span></span>
+              <span class="mythic-tag"><span data-zh>通用性强</span><span data-en>Universal Strong</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★★☆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Rogue's Legacy -->
+        <div class="mythic-card" data-category="accessory">
+          <div class="mythic-card-header">
+            <div class="mythic-card-icon accessory">💍</div>
+            <div class="mythic-card-title-wrap">
+              <h3 class="mythic-card-name">
+                <span data-zh>盗贼遗产</span>
+                <span data-en>Rogue's Legacy</span>
+              </h3>
+              <p class="mythic-card-name-en">Rogue's Legacy (Condemn)</p>
+              <span class="mythic-card-type">
+                <span data-zh>戒指</span>
+                <span data-en>Ring</span>
+              </span>
+            </div>
+          </div>
+          <div class="mythic-card-body">
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"><span data-zh>属性</span><span data-en>Stats</span></span>
+              <span class="mythic-stat-value">+<span data-zh>陷阱伤害</span><span data-en>Trap Damage</span></span>
+            </div>
+            <div class="mythic-stat-row">
+              <span class="mythic-stat-label"></span>
+              <span class="mythic-stat-value">+<span data-zh>暴击伤害</span><span data-en>Crit Damage</span></span>
+            </div>
+            <div class="mythic-special">
+              <span data-zh>使用陷阱/技能后获得移动速度加成。</span>
+              <span data-en>Gain movement speed after using traps/skills.</span>
+            </div>
+            <div class="mythic-tags">
+              <span class="mythic-tag class-tag"><span data-zh>盗贼（主要）/法师</span><span data-en>Rogue (Main)/Sorc</span></span>
+              <span class="mythic-tag"><span data-zh>任意BOSS</span><span data-en>Any Boss</span></span>
+            </div>
+            <div class="mythic-rating">
+              <span class="mythic-rating-label"><span data-zh>强度</span><span data-en>Ranking</span></span>
+              <span class="rating-stars">★★★☆☆</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Ranking Section ===== -->
+  <section class="ranking-section" id="ranking">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">📊 DROP RANKING</span>
+        <h2 class="section-title">
+          <span data-zh>神话装备刷取效率排行榜</span>
+          <span data-en>Mythic Farming Efficiency Ranking</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>根据掉落概率与刷取效率，综合评估各神话装备的最优获取途径。</span>
+          <span data-en>Comprehensive ranking of optimal farming routes based on drop rates and efficiency.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="ranking-table-wrap">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th><span data-zh>排名</span><span data-en>Rank</span></th>
+              <th><span data-zh>装备名称</span><span data-en>Item Name</span></th>
+              <th><span data-zh>最佳来源</span><span data-en>Best Source</span></th>
+              <th><span data-zh>掉率</span><span data-en>Drop Rate</span></th>
+              <th><span data-zh>刷取建议</span><span data-en>Farming Tip</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="rank-badge rank-1">1</span></td>
+              <td><strong>破碎誓言</strong> / Fractured Vow</td>
+              <td><span data-zh>彼列谎言之王</span><span data-en>Belial</span></td>
+              <td class="drop-rate">2.5%</td>
+              <td><span data-zh>击杀彼列效率最高</span><span data-en>Kill Belial for best odds</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-1">1</span></td>
+              <td><strong>祖父</strong> / The Grandfather</td>
+              <td><span data-zh>彼列谎言之王</span><span data-en>Belial</span></td>
+              <td class="drop-rate">2.5%</td>
+              <td><span data-zh>版本最强双手武器</span><span data-en>Best 2H weapon in meta</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-1">1</span></td>
+              <td><strong>虚假死亡之裹</strong> / Shroud of False Death</td>
+              <td><span data-zh>彼列谎言之王</span><span en>Belial</span></td>
+              <td class="drop-rate">2.5%</td>
+              <td><span data-zh>生存向BD必备</span><span data-en>Essential for survivability</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-1">1</span></td>
+              <td><strong>塞利格的融化之心</strong> / Melted Heart</td>
+              <td><span data-zh>彼列谎言之王</span><span data-en>Belial</span></td>
+              <td class="drop-rate">2.5%</td>
+              <td><span data-zh>术士BD核心配件</span><span data-en>Warlock build core piece</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-2">2</span></td>
+              <td><strong>安达利尔的面容</strong> / Andariel's Visage</td>
+              <td><span data-zh>安达利尔回响</span><span data-en>Andariel Echo</span></td>
+              <td class="drop-rate">0.5%</td>
+              <td><span data-zh>专属BOSS最高，其他来源极低</span><span data-en>Best from Andariel only</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-2">2</span></td>
+              <td><strong>毁灭继承者</strong> / Heir of Perdition</td>
+              <td><span data-zh>高级巢穴BOSS</span><span data-en>Tier-2 Nest Boss</span></td>
+              <td class="drop-rate">1.5%</td>
+              <td><span data-zh>暗影BD首选</span><span data-en>Best for Shadow builds</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-3">3</span></td>
+              <td><strong>泰瑞尔之力</strong> / Tyrael's Might</td>
+              <td><span data-zh>任意BOSS</span><span data-en>Any Boss</span></td>
+              <td class="drop-rate">1.0%</td>
+              <td><span data-zh>情怀装备，实用性一般</span><span data-en>Nostalgia piece, average utility</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-3">3</span></td>
+              <td><strong>阿哈瓦里昂</strong> / Ahavarion</td>
+              <td><span data-zh>任意BOSS</span><span data-en>Any Boss</span></td>
+              <td class="drop-rate">1.0%</td>
+              <td><span data-zh>万金油法杖选择</span><span data-en>Versatile staff option</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge rank-3">3</span></td>
+              <td><strong>毁灭使者</strong> / Doombringer</td>
+              <td><span data-zh>任意BOSS</span><span data-en>Any Boss</span></td>
+              <td class="drop-rate">1.0%</td>
+              <td><span data-zh>可作为过渡装备</span><span data-en>Good starter option</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">4</span></td>
+              <td><strong>无星之空戒指</strong> / Ring of Starless Skies</td>
+              <td><span data-zh>任意BOSS</span><span data-en>Any Boss</span></td>
+              <td class="drop-rate">1.0%</td>
+              <td><span data-zh>通用性强但非必备</span><span data-en>Strong but not essential</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">4</span></td>
+              <td><strong>滑稽之冠</strong> / Harlequin Crest</td>
+              <td><span data-zh>任意BOSS</span><span data-en>Any Boss</span></td>
+              <td class="drop-rate">1.0%</td>
+              <td><span data-zh>万金油头盔</span><span data-en>Versatile helmet</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">5</span></td>
+              <td><strong>盗贼遗产</strong> / Rogue's Legacy</td>
+              <td><span data-zh>任意BOSS</span><span data-en>Any Boss</span></td>
+              <td class="drop-rate">1.0%</td>
+              <td><span data-zh>特定BD可用</span><span data-en>Niche build option</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Fragment System Section ===== -->
+  <section id="fragments">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🔮 FRAGMENT SYSTEM</span>
+        <h2 class="section-title">
+          <span data-zh>神话碎片合成系统</span>
+          <span data-en>Mythic Fragment Crafting</span>
+        </h2>
+        <p class="section-desc">
+          <span data-zh>用神话碎片绕过随机掉落，100%获得你需要的装备。</span>
+          <span data-en>Use Mythic Fragments to guarantee acquisition of desired items.</span>
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="fragment-grid">
+        <div class="fragment-card">
+          <h4>📦 <span data-zh>如何获得碎片</span><span data-en>How to Obtain Fragments</span></h4>
+          <ul>
+            <li>
+              <span data-zh>每次获得神话装备时，同时掉落对应碎片</span>
+              <span data-en>Fragments drop alongside any Mythic item</span>
+            </li>
+            <li>
+              <span data-zh>分解重复的神话装备获得大量碎片</span>
+              <span data-en>Salvaging duplicate Mythics grants more fragments</span>
+            </li>
+            <li>
+              <span data-zh>彼列/高级巢穴BOSS掉落更多碎片</span>
+              <span data-en>Belial/Tier-2 bosses drop more fragments</span>
+            </li>
+            <li>
+              <span data-zh>每周可从战争计划商店购买少量碎片</span>
+              <span data-en>Weekly fragment purchase from War Plans vendor</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fragment-card">
+          <h4>⚗️ <span data-zh>赫拉迪姆方块合成</span><span data-en>Horadric Cube Crafting</span></h4>
+          <ul>
+            <li>
+              <span data-zh>打开赫拉迪姆方块（背包中的特殊道具）</span>
+              <span data-en>Open Horadric Cube (special inventory item)</span>
+            </li>
+            <li>
+              <span data-zh>放入对应数量的神话碎片</span>
+              <span data-en>Place required number of Mythic Fragments</span>
+            </li>
+            <li>
+              <span data-zh>选择你想要的神话装备</span>
+              <span data-en>Select your desired Mythic item</span>
+            </li>
+            <li>
+              <span data-zh>点击合成即可100%获得</span>
+              <span data-en>Click craft for 100% guaranteed acquisition</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fragment-card">
+          <h4>💰 <span data-zh>合成成本一览</span><span data-en>Crafting Cost Table</span></h4>
+          <div class="recipe-list">
+            <div class="recipe-item">
+              <span class="recipe-name">破碎誓言 / Fractured Vow</span>
+              <span class="recipe-cost">150 💎</span>
+            </div>
+            <div class="recipe-item">
+              <span class="recipe-name">祖父 / The Grandfather</span>
+              <span class="recipe-cost">200 💎</span>
+            </div>
+            <div class="recipe-item">
+              <span class="recipe-name">虚假死亡之裹 / Shroud</span>
+              <span class="recipe-cost">150 💎</span>
+            </div>
+            <div class="recipe-item">
+              <span class="recipe-name">安达利尔的面容 / Visage</span>
+              <span class="recipe-cost">250 💎</span>
+            </div>
+            <div class="recipe-item">
+              <span class="recipe-name">塞利格的融化之心 / Heart</span>
+              <span class="recipe-cost">150 💎</span>
+            </div>
+            <div class="recipe-item">
+              <span class="recipe-name">其他神话装备</span>
+              <span class="recipe-cost">120 💎</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fragment-card">
+          <h4>🎯 <span data-zh>优先合成推荐</span><span data-en>Priority Crafting Guide</span></h4>
+          <ul>
+            <li>
+              <span data-zh>第一优先级：安达利尔的面容（掉率极低）</span>
+              <span data-en>Priority 1: Andariel's Visage (lowest drop rate)</span>
+            </li>
+            <li>
+              <span data-zh>第二优先级：祖父（版本最强武器）</span>
+              <span data-en>Priority 2: The Grandfather (meta T0 weapon)</span>
+            </li>
+            <li>
+              <span data-zh>第三优先级：塞利格的融化之心（术士必备）</span>
+              <span data-en>Priority 3: Melted Heart of Selig (Warlock essential)</span>
+            </li>
+            <li>
+              <span data-zh>第四优先级：破碎誓言/虚假死亡（通用性强）</span>
+              <span data-en>Priority 4: Fractured Vow/Shroud (versatile)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h4>⚔️ Diablo 4: Lord of Hatred Guide</h4>
+          <p>
+            <span data-zh>本攻略站涵盖《暗黑破坏神4：憎恨之王》完整内容，助你在憎恨纪元中纵横庇护之地。所有内容均为玩家社区整理，非暴雪官方站点。</span>
+            <span data-en>Your complete guide to Diablo 4: Lord of Hatred. Everything you need to dominate Sanctuary in the Age of Hatred. Community-maintained, not affiliated with Blizzard.</span>
+          </p>
+          <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="classes.html" style="font-size:0.8rem;"><span data-zh>职业攻略</span><span data-en>Classes</span></a>
+            <a href="region.html" style="font-size:0.8rem;"><span data-zh>地区攻略</span><span data-en>Region</span></a>
+            <a href="endgame.html" style="font-size:0.8rem;"><span data-zh>终局攻略</span><span data-en>Endgame</span></a>
+            <a href="bosses.html" style="font-size:0.8rem;"><span data-zh>Boss攻略</span><span data-en>Bosses</span></a>
+            <a href="season.html" style="font-size:0.8rem;"><span data-zh>赛季攻略</span><span data-en>Season</span></a>
+            <a href="mythic.html" style="font-size:0.8rem;"><span data-zh>神话装备</span><span data-en>Mythic</span></a>
+            <a href="builds.html" style="font-size:0.8rem;"><span data-zh>BD配装</span><span data-en>Builds</span></a>
+            <a href="tips.html" style="font-size:0.8rem;"><span data-zh>实用技巧</span><span data-en>Tips</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>攻略板块</span><span data-en>Guide Sections</span></h5>
+          <ul>
+            <li><a href="classes.html"><span data-zh>职业详解</span><span data-en>Classes</span></a></li>
+            <li><a href="region.html"><span data-zh>斯科沃斯地区</span><span data-en>Skovos Region</span></a></li>
+            <li><a href="endgame.html"><span data-zh>终局系统</span><span data-en>Endgame</span></a></li>
+            <li><a href="bosses.html"><span data-zh>Boss图鉴</span><span data-en>Boss Compendium</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh>外部资源</span><span data-en>External Resources</span></h5>
+          <ul>
+            <li><a href="https://news.blizzard.com/en-us/diablo4" target="_blank" rel="noopener">Blizzard News</a></li>
+            <li><a href="https://diablo4.blizzard.com/" target="_blank" rel="noopener">Official Site</a></li>
+            <li><a href="https://maxroll.gg/diablo4" target="_blank" rel="noopener">MaxRoll.gg</a></li>
+            <li><a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 D4 Lord of Hatred Guide. All rights reserved. Diablo © Blizzard Entertainment.</p>
+        <p><span data-zh>本站为玩家攻略站，与暴雪娱乐无附属关系</span><span data-en>Fan-made guide site, not affiliated with Blizzard Entertainment</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    /* ===== Language Toggle ===== */
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      localStorage.setItem('d4guide-lang', lang);
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    /* Auto-detect browser language */
+    (function() {
+      var saved = localStorage.getItem('d4guide-lang');
+      if (saved) {
+        setLang(saved);
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().startsWith('en')) {
+          setLang('en');
+        }
+      }
+    })();
+
+    /* ===== Category Filter ===== */
+    function filterItems(category) {
+      var cards = document.querySelectorAll('.mythic-card');
+      var tabs = document.querySelectorAll('.category-tab');
+
+      tabs.forEach(function(tab) {
+        tab.classList.remove('active');
+      });
+
+      if (category === 'all') {
+        cards.forEach(function(card) {
+          card.style.display = 'block';
+        });
+        tabs[0].classList.add('active');
+      } else {
+        cards.forEach(function(card) {
+          if (card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        tabs.forEach(function(tab) {
+          if (tab.textContent.toLowerCase().includes(category) || 
+              (category === 'weapon' && tab.textContent.includes('武器')) ||
+              (category === 'armor' && tab.textContent.includes('胸甲')) ||
+              (category === 'helmet' && tab.textContent.includes('头盔')) ||
+              (category === 'accessory' && tab.textContent.includes('护身符'))) {
+            tab.classList.add('active');
+          }
+        });
+      }
+    }
+
+    /* ===== Back to Top Button ===== */
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+
+      /* Reading progress */
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = (window.scrollY / docHeight) * 100;
+      var bar = document.getElementById('reading-progress');
+      if (bar) bar.style.width = progress + '%';
+    });
+  </script>
+</body>
+</html>

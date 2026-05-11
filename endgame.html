@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>暗黑破坏神4终局系统攻略 | 战争计划·回荡之憎·赫拉迪姆方块 | Diablo 4 Endgame Guide</title>
+  <meta name="description" content="《暗黑破坏神4：憎恨之王》终局系统完全攻略。详解战争计划、回响之憎、赫拉迪姆方块、护身符符咒、战利品过滤器、苦痛XII难度全面指南。Diablo 4 Lord of Hatred endgame systems guide." />
+  <meta name="keywords" content="暗黑破坏神4,憎恨之王,终局,战争计划,回荡之憎,赫拉迪姆方块,符咒,战利品过滤器,苦痛XII,Diablo 4,Endgame,War Plans,Echoing Hatred,Horadric Cube,2026" />
+  <meta name="author" content="D4 Guide Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/endgame.html" />
+
+  <!-- ===== SEO: Open Graph ===== -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="暗黑破坏神4 终局系统完全攻略 | 战争计划·回荡之憎·赫拉迪姆方块" />
+  <meta property="og:description" content="憎恨之王最大规模终局革新：战争计划自定义玩法、回响之憎随机挑战、经典道具赫拉迪姆方块回归。" />
+  <meta property="og:url" content="https://your-domain.com/endgame.html" />
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="D4 Lord of Hatred Guide" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diablo 4 Endgame Guide: War Plans, Echoing Hatred, Horadric Cube" />
+  <meta name="twitter:description" content="Complete guide to Lord of Hatred endgame systems: War Plans, Echoing Hatred, Horadric Cube, Runes, Loot Filter, Torment XII." />
+
+  <!-- ===== SEO: Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "暗黑破坏神4：憎恨之王 终局系统完全攻略",
+    "description": "战争计划、回响之憎、赫拉迪姆方块、护身符符咒系统、战利品过滤器、苦痛难度全面指南",
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-05-07",
+    "author": {"@type": "Organization", "name": "D4 Guide Team"},
+    "about": {"@type": "VideoGame", "name": "Diablo IV: Lord of Hatred"}
+  }
+  </script>
+
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --accent-red: #c41e3a;
+      --accent-gold: #d4a017;
+      --accent-orange: #e8651a;
+      --text-primary: #e8e0d0;
+      --text-secondary: #9a9088;
+      --text-muted: #5a5058;
+      --border-color: #2a2030;
+      --glow-red: rgba(196, 30, 58, 0.4);
+      --glow-gold: rgba(212, 160, 23, 0.3);
+      --font-title: 'Georgia', 'SimSun', serif;
+      --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --radius: 8px;
+      --transition: 0.25s ease;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-orange); text-decoration: none; }
+
+    /* ===== Layout ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+
+    /* ===== Language Toggle Bar ===== */
+    .lang-toggle-bar {
+      background: rgba(10,10,15,0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+    .lang-toggle-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-mini-brand {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .lang-buttons { display: flex; gap: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #fff;
+    }
+
+    /* ===== Top Navigation ===== */
+    .top-nav {
+      background: rgba(10,10,15,0.98);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+    }
+    .top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo-icon { font-size: 1.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links li a:hover, .nav-links li a.current {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+
+    /* ===== Page Header ===== */
+    .page-hero {
+      position: relative;
+      padding: 100px 0 64px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 50%, rgba(196,30,58,0.15) 0%, transparent 70%),
+        linear-gradient(180deg, #0a0008 0%, #0a0a0f 100%);
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 15% 20%, rgba(212,160,23,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 70%, rgba(196,30,58,0.4) 0%, transparent 100%);
+      animation: twinkle 5s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle { 0% { opacity: 0.4; } 100% { opacity: 0.9; } }
+    .page-hero-inner { position: relative; z-index: 1; }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .breadcrumb a { color: var(--text-muted); }
+    .breadcrumb a:hover { color: var(--accent-gold); }
+    .page-title {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: #fff;
+      text-shadow: 0 0 40px var(--glow-red);
+      margin-bottom: 12px;
+    }
+    .page-subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto 24px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .badge {
+      background: rgba(196,30,58,0.15);
+      border: 1px solid rgba(196,30,58,0.4);
+      color: var(--text-primary);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    /* ===== Section Styles ===== */
+    .section-block {
+      border-bottom: 1px solid var(--border-color);
+      padding: 64px 0;
+    }
+    .section-block:last-child { border-bottom: none; }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: #fff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-icon { font-size: 1.5rem; }
+    .section-lead {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      max-width: 720px;
+    }
+
+    /* ===== Feature Cards ===== */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card:hover {
+      border-color: rgba(196,30,58,0.5);
+      transform: translateY(-3px);
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+      opacity: 0;
+      transition: var(--transition);
+    }
+    .feature-card:hover::before { opacity: 1; }
+    .feature-icon { font-size: 2rem; margin-bottom: 14px; }
+    .feature-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .feature-desc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; }
+    .feature-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .tag-new { background: rgba(196,30,58,0.2); color: #ff6080; border: 1px solid rgba(196,30,58,0.3); }
+    .tag-reworked { background: rgba(212,160,23,0.15); color: #e0b840; border: 1px solid rgba(212,160,23,0.3); }
+    .tag-core { background: rgba(100,180,100,0.15); color: #80d080; border: 1px solid rgba(100,180,100,0.3); }
+
+    /* ===== Detail Sections ===== */
+    .detail-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .detail-card-head {
+      padding: 20px 24px;
+      background: linear-gradient(135deg, rgba(196,30,58,0.1), rgba(0,0,0,0));
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .detail-card-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .detail-card-head h3 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .detail-card-head p { font-size: 0.8rem; color: var(--text-muted); }
+    .detail-card-body { padding: 24px; }
+
+    /* ===== War Plan Section ===== */
+    .wp-flow {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .wp-step {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .wp-step:hover { border-color: rgba(196,30,58,0.4); }
+    .wp-step-num {
+      font-size: 1.8rem;
+      font-family: var(--font-title);
+      color: var(--accent-red);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .wp-step-label { font-size: 0.85rem; color: var(--text-primary); font-weight: 600; margin-bottom: 4px; }
+    .wp-step-desc { font-size: 0.78rem; color: var(--text-muted); }
+    .wp-activities {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .wp-activity {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px 14px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .wp-activity span:first-child { font-size: 1rem; }
+    .wp-rewards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 640px) { .wp-rewards { grid-template-columns: 1fr; } }
+
+    /* ===== Echoing Hatred ===== */
+    .echo-stages {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .echo-stage {
+      display: flex;
+      gap: 16px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .echo-stage-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-red), #8b0000);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .echo-stage-body {}
+    .echo-stage-name { font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .echo-stage-desc { font-size: 0.85rem; color: var(--text-secondary); }
+    .tier-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 16px; }
+    .tier-table th {
+      padding: 10px 14px;
+      text-align: left;
+      color: var(--accent-gold);
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-color);
+      background: rgba(212,160,23,0.06);
+    }
+    .tier-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(42,32,48,0.4);
+      color: var(--text-secondary);
+    }
+    .tier-table tr:last-child td { border-bottom: none; }
+    .tier-table tr:hover { background: rgba(255,255,255,0.02); }
+
+    /* ===== Horadric Cube ===== */
+    .cube-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .cube-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .cube-card-head {
+      padding: 16px 20px 12px;
+      background: linear-gradient(135deg, rgba(212,160,23,0.08), transparent);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .cube-card-head h4 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cube-card-head p { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+    .cube-card-body { padding: 16px 20px; }
+    .cube-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    .cube-table th {
+      padding: 7px 8px;
+      text-align: left;
+      color: var(--accent-gold);
+      font-weight: 600;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid var(--border-color);
+      background: rgba(212,160,23,0.05);
+    }
+    .cube-table td {
+      padding: 8px 8px;
+      border-bottom: 1px solid rgba(42,32,48,0.4);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .cube-table tr:last-child td { border-bottom: none; }
+    .cube-table td:first-child { color: var(--text-primary); font-weight: 500; }
+
+    /* ===== Rune System ===== */
+    .rune-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+    .rune-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .rune-name { font-weight: 600; color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 4px; }
+    .rune-desc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ===== Loot Filter ===== */
+    .filter-examples {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+    @media (max-width: 640px) { .filter-examples { grid-template-columns: 1fr; } }
+    .filter-example {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+    .filter-example h4 {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .filter-example ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .filter-example li {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      padding-left: 14px;
+      position: relative;
+    }
+    .filter-example li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent-red);
+    }
+
+    /* ===== Torment Tiers ===== */
+    .torment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .torment-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px 12px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .torment-card:hover { border-color: rgba(196,30,58,0.4); }
+    .torment-card.t7plus { border-color: rgba(212,160,23,0.3); }
+    .torment-card.t10plus { border-color: rgba(196,30,58,0.4); }
+    .torment-num {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .torment-label { font-size: 0.78rem; color: var(--text-secondary); }
+
+    /* ===== Quick Nav ===== */
+    .quick-nav {
+      position: sticky;
+      top: 110px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+    }
+    .quick-nav h4 {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .quick-nav-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .quick-nav-list a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 12px;
+      border-radius: 14px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+    .quick-nav-list a:hover {
+      background: rgba(196,30,58,0.1);
+      border-color: rgba(196,30,58,0.3);
+      color: var(--text-primary);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #060608;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: var(--text-muted); }
+    .footer-col ul li a:hover { color: var(--accent-gold); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ===== Back to Top Button ===== */
+    #back-to-top {
+      position: fixed; bottom: 30px; right: 30px; width: 46px; height: 46px;
+      background: var(--accent-red); border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      color: #fff; box-shadow: 0 4px 16px rgba(196,30,58,0.4); transition: var(--transition);
+      opacity: 0; pointer-events: none; z-index: 999;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: all; }
+    #back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+    /* ===== i18n hidden by default ===== */
+    [data-en], [data-zh] { display: inline; }
+    html[data-lang="en"] [data-zh] { display: none; }
+    html[data-lang="zh"] [data-en] { display: none; }
+    [data-en-block], [data-zh-block] { display: block; }
+    html[data-lang="en"] [data-zh-block] { display: none; }
+    html[data-lang="zh"] [data-en-block] { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 2px; }
+      .nav-links li a { padding: 4px 8px; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Language Toggle Bar ===== -->
+  <div class="lang-toggle-bar">
+    <div class="container">
+      <span class="site-mini-brand">D4 LORD OF HATRED GUIDE</span>
+      <div class="lang-buttons">
+        <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Top Navigation ===== -->
+  <div class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">⚔️</span>
+        <span data-zh>暗黑4 · 憎恨之王攻略</span>
+        <span data-en>D4 Lord of Hatred Guide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="classes.html">⚔️ <span data-zh>职业</span><span data-en>Classes</span></a></li>
+        <li><a href="region.html">🗺️ <span data-zh>地区</span><span data-en>Region</span></a></li>
+        <li><a href="endgame.html" class="current">🏆 <span data-zh>终局</span><span data-en>Endgame</span></a></li>
+        <li><a href="bosses.html">💀 <span data-zh>Boss</span><span data-en>Boss</span></a></li>
+        <li><a href="season.html">📅 <span data-zh>赛季</span><span data-en>Season</span></a></li>
+        <li><a href="mythic.html">🌟 <span data-zh>神话</span><span data-en>Mythic</span></a></li>
+        <li><a href="builds.html">📋 <span data-zh>配装</span><span data-en>Builds</span></a></li>
+        <li><a href="tips.html">💡 <span data-zh>技巧</span><span data-en>Tips</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Page Hero ===== -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <p class="breadcrumb">
+        <a href="index.html"><span data-zh>首页</span><span data-en>Home</span></a> /
+        <span data-zh>终局系统攻略</span><span data-en>Endgame Systems</span>
+      </p>
+      <h1 class="page-title">
+        <span data-zh>🏆 终局系统完全指南</span>
+        <span data-en>🏆 Complete Endgame Guide</span>
+      </h1>
+      <p class="page-subtitle">
+        <span data-zh>憎恨之王带来D4史上最大规模的终局系统革新。战争计划、回响之憎、赫拉迪姆方块、护身符符咒、战利品过滤器——全面解读。</span>
+        <span data-en>Lord of Hatred delivers D4's biggest endgame overhaul ever. War Plans, Echoing Hatred, Horadric Cube, Rune system, Loot Filter — fully explained.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><span data-zh>📋 战争计划</span><span data-en>📋 War Plans</span></span>
+        <span class="badge"><span data-zh>💀 回荡之憎</span><span data-en>💀 Echoing Hatred</span></span>
+        <span class="badge"><span data-zh>⬛ 赫拉迪姆</span><span en="en">⬛ Horadric Cube</span></span>
+        <span class="badge"><span data-zh>🔴 苦痛XII</span><span data-en>🔴 Torment XII</span></span>
+        <span class="badge"><span data-zh>🔍 战利品过滤器</span><span data-en>🔍 Loot Filter</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Quick Nav ===== -->
+  <div class="container" style="padding-top: 32px;">
+    <div class="quick-nav">
+      <h4><span data-zh>快速跳转</span><span data-en>Quick Jump</span></h4>
+      <div class="quick-nav-list">
+        <a href="#warplans">📋 <span data-zh>战争计划</span><span data-en>War Plans</span></a>
+        <a href="#echoing">💀 <span data-zh>回荡之憎</span><span data-en>Echoing Hatred</span></a>
+        <a href="#cube">⬛ <span data-zh>赫拉迪姆方块</span><span data-en>Horadric Cube</span></a>
+        <a href="#runes">📿 <span data-zh>符咒系统</span><span data-en>Rune System</span></a>
+        <a href="#filter">🔍 <span data-zh>战利品过滤器</span><span data-en>Loot Filter</span></a>
+        <a href="#torment">🔥 <span data-zh>苦痛难度</span><span data-en>Torment Tiers</span></a>
+        <a href="#activities">⚔️ <span data-zh>其他终局活动</span><span data-en>Other Activities</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== War Plans ===== -->
+  <section class="section-block" id="warplans">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">📋</span>
+        <span data-zh>战争计划 War Plans</span>
+        <span data-en>War Plans</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh>自定义最多5个终局活动的"播放列表"。完成后解锁专属进度树，可修改奖励规则、调整敌人行为，实现高度个性化游戏循环。这是憎恨之王最重要的终局创新之一。</span>
+        <span data-en>Build a personal "playlist" of up to 5 endgame activities. Completing them unlocks a dedicated progression tree to modify rewards, tweak enemy behaviors, and craft a personalized farming loop.</span>
+      </p>
+
+      <!-- Flow Diagram -->
+      <div class="detail-card">
+        <div class="detail-card-head">
+          <span class="detail-card-icon">🗺️</span>
+          <div>
+            <h3><span data-zh>战争计划运作流程</span><span data-en>How War Plans Work</span></h3>
+            <p><span data-zh>泰米斯城 · 战争议会 NPC</span><span data-en>City of Temis · War Council NPC</span></p>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <div class="wp-flow">
+            <div class="wp-step">
+              <div class="wp-step-num">1</div>
+              <div class="wp-step-label"><span data-zh>选择活动</span><span data-en>Choose Activities</span></div>
+              <div class="wp-step-desc"><span data-zh>从6种活动中选择最多5个</span><span data-en>Pick up to 5 from 6 types</span></div>
+            </div>
+            <div class="wp-step">
+              <div class="wp-step-num">2</div>
+              <div class="wp-step-label"><span data-zh>完成挑战</span><span data-en>Complete Runs</span></div>
+              <div class="wp-step-desc"><span data-zh>按顺序完成选中的活动</span><span data-en>Complete them in order</span></div>
+            </div>
+            <div class="wp-step">
+              <div class="wp-step-num">3</div>
+              <div class="wp-step-label"><span data-zh>解锁进度</span><span data-en>Unlock Progress</span></div>
+              <div class="wp-step-desc"><span data-zh>完成循环解锁专属进度树</span><span data-en>Unlock a dedicated tree</span></div>
+            </div>
+            <div class="wp-step">
+              <div class="wp-step-num">4</div>
+              <div class="wp-step-label"><span data-zh>奖励调整</span><span data-en>Customize Rewards</span></div>
+              <div class="wp-step-desc"><span data-zh>修改掉落规则和敌人行为</span><span data-en>Modify loot rules & enemies</span></div>
+            </div>
+            <div class="wp-step">
+              <div class="wp-step-num">5</div>
+              <div class="wp-step-label"><span data-zh>重置循环</span><span data-en>Reset Loop</span></div>
+              <div class="wp-step-desc"><span data-zh>重置计划重新挑战获取更多奖励</span><span data-en>Reset to earn extra rewards</span></div>
+            </div>
+          </div>
+
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin-bottom:12px;">
+            <span data-zh>可选择的6种终局活动</span><span data-en>6 Available Endgame Activities</span>
+          </h4>
+          <div class="wp-activities">
+            <div class="wp-activity"><span>🌪️</span><span data-zh>地狱大军 Helltide</span><span data-en>Helltide</span></div>
+            <div class="wp-activity"><span>💀</span><span data-zh>回荡之憎 Echo Hatred</span><span data-en>Echoing Hatred</span></div>
+            <div class="wp-activity"><span>🏚️</span><span data-zh>噩梦地下城 NM Dungeons</span><span data-en>Nightmare Dungeons</span></div>
+            <div class="wp-activity"><span>🌳</span><span data-zh>低语之树 Tree of Whispers</span><span data-en>Tree of Whispers</span></div>
+            <div class="wp-activity"><span>👻</span><span data-zh>祖先召唤 Ancestral Summon</span><span data-en>Ancestral Summon</span></div>
+            <div class="wp-activity"><span>💀</span><span data-zh>巢穴 Boss Lair Boss</span><span data-en>Lair Boss</span></div>
+          </div>
+
+          <div class="wp-rewards">
+            <div>
+              <h4 style="font-family:var(--font-title);font-size:0.95rem;color:#fff;margin-bottom:10px;">
+                <span data-zh>解锁的专属内容</span><span data-en>Exclusive Unlocks</span>
+              </h4>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;">
+                <li style="font-size:0.85rem;color:var(--text-secondary);padding-left:12px;position:relative;">
+                  <span style="color:var(--accent-red);position:absolute;left:0;">▸</span>
+                  <span data-zh>专属进度树（独立于其他系统）</span>
+                  <span data-en>Dedicated progression tree</span>
+                </li>
+                <li style="font-size:0.85rem;color:var(--text-secondary);padding-left:12px;position:relative;">
+                  <span style="color:var(--accent-red);position:absolute;left:0;">▸</span>
+                  <span data-zh>奖励掉落加成（最高+50%）</span>
+                  <span data-en>Drop rate bonus (up to +50%)</span>
+                </li>
+                <li style="font-size:0.85rem;color:var(--text-secondary);padding-left:12px;position:relative;">
+                  <span style="color:var(--accent-red);position:absolute;left:0;">▸</span>
+                  <span data-zh>敌人行为自定义（伤害/生命调节）</span>
+                  <span data-en>Enemy behavior customization</span>
+                </li>
+                <li style="font-size:0.85rem;color:var(--text-secondary);padding-left:12px;position:relative;">
+                  <span style="color:var(--accent-red);position:absolute;left:0;">▸</span>
+                  <span data-zh>指定掉落池偏向（可选择主要掉落类型）</span>
+                  <span data-en>Loot pool bias selection</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-family:var(--font-title);font-size:0.95rem;color:#fff;margin-bottom:10px;">
+                <span data-zh>推荐最佳组合</span><span data-en>Recommended Combos</span>
+              </h4>
+              <div style="background:rgba(196,30,58,0.08);border:1px solid rgba(196,30,58,0.2);border-radius:6px;padding:14px;">
+                <p style="font-size:0.85rem;color:var(--text-primary);margin-bottom:8px;font-weight:600;">
+                  <span data-zh>刷神话装备组合</span>
+                  <span data-en>Mythic Farming Combo</span>
+                </p>
+                <p style="font-size:0.8rem;color:var(--text-secondary);">
+                  <span data-zh>回荡之憎 + 巢穴boss + 地狱大军</span>
+                  <span data-en>Echoing Hatred + Lair Boss + Helltide</span>
+                </p>
+              </div>
+              <div style="background:rgba(212,160,23,0.08);border:1px solid rgba(212,160,23,0.2);border-radius:6px;padding:14px;margin-top:8px;">
+                <p style="font-size:0.85rem;color:var(--text-primary);margin-bottom:8px;font-weight:600;">
+                  <span data-zh>快速升级组合</span>
+                  <span data-en>Fast Leveling Combo</span>
+                </p>
+                <p style="font-size:0.8rem;color:var(--text-secondary);">
+                  <span data-zh>噩梦地下城 + 低语之树 + 祖先召唤</span>
+                  <span data-en>NM Dungeons + Tree + Ancestral</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Echoing Hatred ===== -->
+  <section class="section-block" id="echoing">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">💀</span>
+        <span data-zh>回荡之憎 Echoing Hatred</span>
+        <span data-en>Echoing Hatred</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh>高风险终局试炼。需从日常活动积攒稀有资源"回响痕迹"解锁入场，每次挑战随机敌人与遭遇设定，专门考验极限BD。是获取祖先级装备和神话装备概率最高的活动之一。</span>
+        <span data-en>High-stakes endgame trial. Requires rare "Echoing Traces" earned from daily activities. Each run features randomized enemies and encounters designed to stress-test optimized builds.</span>
+      </p>
+
+      <div class="detail-card">
+        <div class="detail-card-head">
+          <span class="detail-card-icon">🔑</span>
+          <div>
+            <h3><span data-zh>入场条件与准备</span><span data-en>Entry Requirements & Preparation</span></h3>
+            <p><span data-zh>获取回响痕迹 · 泰米斯城活动中心</span><span data-en>Earn Echoing Traces · Temis Activity Hub</span></p>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin-bottom:12px;">
+            <span data-zh>如何获取回响痕迹</span><span data-en>How to Earn Echoing Traces</span>
+          </h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px;">
+            <li style="font-size:0.875rem;color:var(--text-secondary);padding:10px 14px;background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:6px;">
+              <span style="color:var(--accent-gold);font-weight:600;">📅</span>
+              <strong style="color:var(--text-primary);"><span data-zh>每日清算试炼</span><span data-en>Daily Reckoning Trial</span></strong> —
+              <span data-zh>完成可获得3-5个回响痕迹</span>
+              <span data-en>Complete for 3–5 Echoing Traces</span>
+            </li>
+            <li style="font-size:0.875rem;color:var(--text-secondary);padding:10px 14px;background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:6px;">
+              <span style="color:var(--accent-gold);font-weight:600;">⚔️</span>
+              <strong style="color:var(--text-primary);"><span data-zh>每周首领挑战</span><span data-en>Weekly Boss Challenge</span></strong> —
+              <span data-zh>完成可获得15-20个回响痕迹</span>
+              <span data-en>Complete for 15–20 Echoing Traces</span>
+            </li>
+            <li style="font-size:0.875rem;color:var(--text-secondary);padding:10px 14px;background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:6px;">
+              <span style="color:var(--accent-gold);font-weight:600;">🌟</span>
+              <strong style="color:var(--text-primary);"><span data-zh>斯科沃斯特有活动</span><span data-en>Skovos-Specific Events</span></strong> —
+              <span data-zh>随机事件额外奖励</span>
+              <span data-en>Random event bonus rewards</span>
+            </li>
+            <li style="font-size:0.875rem;color:var(--text-secondary);padding:10px 14px;background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:6px;">
+              <span style="color:var(--accent-gold);font-weight:600;">🎫</span>
+              <strong style="color:var(--text-primary);"><span data-zh>赛季祝福加成</span><span data-en>Season Blessing Bonus</span></strong> —
+              <span data-zh>激活"回收之瓮"可增加获取量</span>
+              <span data-en>Activate Salvage Urn to boost gains</span>
+            </li>
+          </ul>
+
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin-bottom:12px;">
+            <span data-zh>随机事件机制（每次进入随机生成）</span>
+            <span data-en>Random Event Mechanics (Generated Per Run)</span>
+          </h4>
+          <div class="echo-stages">
+            <div class="echo-stage">
+              <div class="echo-stage-num">1</div>
+              <div class="echo-stage-body">
+                <div class="echo-stage-name"><span data-zh>随机敌人组合</span><span data-en>Random Enemy Composition</span></div>
+                <div class="echo-stage-desc">
+                  <span data-zh>系统随机从斯科沃斯的敌人池中选取组合。可能全近战、高护甲精英群、或远程法爷队。挑战前观察入口处提示。</span>
+                  <span data-en>System randomly selects from Skovos enemy pool. Could be all-melee, armored elites, or ranged caster squads. Check entrance hints before entering.</span>
+                </div>
+              </div>
+            </div>
+            <div class="echo-stage">
+              <div class="echo-stage-num">2</div>
+              <div class="echo-stage-body">
+                <div class="echo-stage-name"><span data-zh>随机环境效果</span><span data-en>Random Environmental Effects</span></div>
+                <div class="echo-stage-desc">
+                  <span data-zh>中毒地面、冰冻区域、火焰池、强风推人等随机环境惩罚。要求BD有应对手段或灵活走位。</span>
+                  <span data-en>Poison ground, frozen zones, flame puddles, wind push — requires builds with countermeasures or flexible kiting.</span>
+                </div>
+              </div>
+            </div>
+            <div class="echo-stage">
+              <div class="echo-stage-num">3</div>
+              <div class="echo-stage-body">
+                <div class="echo-stage-name"><span data-zh>随机BOSS介入</span><span data-en>Random Boss Interruption</span></div>
+                <div class="echo-stage-desc">
+                  <span data-zh>深层（30层以上）会随机有BOSS介入战斗。都瑞尔、憎恨先驱、安达利尔回响都可能在关键时刻出现。</span>
+                  <span data-en>At deep levels (30+), bosses can interrupt at any time. Duriel, Hatred Vanguard, or Andariel Echo may appear at critical moments.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tier Table -->
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin-bottom:12px;margin-top:24px;">
+            <span data-zh>回荡之憎层级难度对照表</span>
+            <span data-en>Echoing Hatred Tier Difficulty</span>
+          </h4>
+          <table class="tier-table">
+            <thead>
+              <tr>
+                <th><span data-zh>层级</span><span data-en>Tier</span></th>
+                <th><span data-zh>建议BD等级</span><span data-en>Recommended BD Level</span></th>
+                <th><span data-zh>敌人强度</span><span data-en>Enemy Strength</span></th>
+                <th><span data-zh>主要奖励</span><span data-en>Main Rewards</span></th>
+                <th><span data-zh>神话概率</span><span data-en>Mythic Rate</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">1-10</strong></td>
+                <td>60-65级</td>
+                <td><span data-zh>中等</span><span data-en>Moderate</span></td>
+                <td><span data-zh>大量经验、传奇装备</span><span data-en>XP, Legendary Gear</span></td>
+                <td><span data-zh>极低</span><span data-en>Very Low</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">11-30</strong></td>
+                <td>65-70级</td>
+                <td><span data-zh>较高</span><span data-en>High</span></td>
+                <td><span data-zh>祖先级装备、经验</span><span data-en>Ancestral Gear, XP</span></td>
+                <td><span data-zh>低</span><span data-en>Low</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">31-60</strong></td>
+                <td>70级 + T4+</td>
+                <td><span data-zh>高</span><span data-en>Very High</span></td>
+                <td><span data-zh>高物等祖先装、神器材料</span><span data-en>High-iLvl Ancestral, Mats</span></td>
+                <td><span data-zh>中等</span><span data-en>Medium</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">61-100</strong></td>
+                <td>70级 + T8+</td>
+                <td><span data-zh>极高</span><span data-en>Extreme</span></td>
+                <td><span data-zh>最高物等装备、神器+神话概率</span><span data-en>Max iLvl, Mythic Rate</span></td>
+                <td><span data-zh="true">最高</span><span data-en="true">Highest</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Horadric Cube ===== -->
+  <section class="section-block" id="cube">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">⬛</span>
+        <span data-zh>赫拉迪姆方块 Horadric Cube</span>
+        <span data-en>Horadric Cube</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh>暗黑系列经典道具回归！憎恨之王版本的赫拉迪姆方块专注于制作与装备塑造，提供6大功能让玩家深度定制自己的BD。</span>
+        <span data-en>The iconic D2 artifact returns! Lord of Hatred's Horadric Cube focuses on crafting and item shaping with 6 major functions for deep build customization.</span>
+      </p>
+
+      <div class="cube-grid">
+        <!-- Function 1 -->
+        <div class="cube-card">
+          <div class="cube-card-head">
+            <h4>🎲 <span data-zh>传奇制作</span><span data-en>Legendary Crafting</span></h4>
+            <p><span data-zh>消耗材料制作随机传奇装备</span><span data-en>Craft random legendary gear from materials</span></p>
+          </div>
+          <div class="cube-card-body">
+            <table class="cube-table">
+              <thead>
+                <tr>
+                  <th><span data-zh>配方</span><span data-en>Recipe</span></th>
+                  <th><span data-zh>材料需求</span><span data-en>Materials</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span data-zh>随机传奇</span><span data-en>Random Legendary</span></td>
+                  <td><span data-zh>精华×20 + 斯科沃斯特有材料</span><span data-en>Essence×20 + Skovos mats</span></td>
+                </tr>
+                <tr>
+                  <td><span data-zh>指定部位</span><span data-en>Specific Slot</span></td>
+                  <td><span data-zh="true">+ 指定槽材料</span><span data-en="true">+ Slot-specific mats</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Function 2 -->
+        <div class="cube-card">
+          <div class="cube-card-head">
+            <h4>🔄 <span data-zh>套装转换</span><span data-en>Set Conversion</span></h4>
+            <p><span data-zh>将多余套装部件转换为其他套装</span><span data-en>Convert unwanted set pieces to other sets</span></p>
+          </div>
+          <div class="cube-card-body">
+            <table class="cube-table">
+              <thead>
+                <tr>
+                  <th><span data-zh>配方</span><span data-en>Recipe</span></th>
+                  <th><span data-zh>说明</span><span data-en>Note</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span data-zh>3件套装×2</span><span data-en>3 Set Pieces ×2</span></td>
+                  <td><span data-zh="true">转换为1件随机套装</span><span data-en="true">→ 1 random set piece</span></td>
+                </tr>
+                <tr>
+                  <td><span data-zh="5件套装</span><span data-en>5 Set Pieces</span></td>
+                  <td><span data-zh="true">转换为1件指定套装</span><span data-en="true">→ 1 targeted set piece</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Function 3 -->
+        <div class="cube-card">
+          <div class="cube-card-head">
+            <h4>⬆️ <span data-zh>装备升级</span><span data-en>Item Upgrade</span></h4>
+            <p><span data-zh>将黄色稀有装备升级为传奇品质</span><span data-en>Upgrade yellow rare items to legendary</span></p>
+          </div>
+          <div class="cube-card-body">
+            <table class="cube-table">
+              <thead>
+                <tr>
+                  <th><span data-zh>配方</span><span data-en>Recipe</span></th>
+                  <th><span data-zh>结果</span><span data-en>Result</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span data-zh>黄色装备 + 升级材料</span><span data-en>Yellow item + Upgrade mats</span></td>
+                  <td><span data-zh="true">随机传奇（保留原词缀池）</span><span data-en="true">Random legendary (same affix pool)</span></td>
+                </tr>
+                <tr>
+                  <td><span data-zh>祖先级黄色装</span><span data-en>Ancestral Yellow</span></td>
+                  <td><span data-zh="true">祖先级传奇（高物等）</span><span data-en="true">Ancestral legendary (high iLvl)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Function 4 -->
+        <div class="cube-card">
+          <div class="cube-card-head">
+            <h4>✨ <span data-zh>神话碎片合成</span><span data-en>Mythic Crafting</span></h4>
+            <p><span data-zh="true">将神话碎片合成为完整神话装备</span>
+            <span data-en="true">Combine Mythic Fragments into full Mythic gear</span></p>
+          </div>
+          <div class="cube-card-body">
+            <table class="cube-table">
+              <thead>
+                <tr>
+                  <th><span data-zh>配方</span><span data-en>Recipe</span></th>
+                  <th><span data-zh>结果</span><span data-en>Result</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span data-zh>神话碎片×50</span><span data-en>Mythic Fragments ×50</span></td>
+                  <td><span data-zh="true">随机神话装备</span><span data-en="true">Random Mythic item</span></td>
+                </tr>
+                <tr>
+                  <td><span data-zh>神话碎片×100</span><span data-en>Mythic Fragments ×100</span></td>
+                  <td><span data-zh="true">自选神话装备（1件）</span><span data-en="true">Choose your Mythic (1 piece)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Function 5 -->
+        <div class="cube-card">
+          <div class="cube-card-head">
+            <h4>♻️ <span data-zh>资源回收</span><span data-en>Resource Salvage</span></h4>
+            <p><span data-zh="true">分解多余材料获取有用材料</span>
+            <span data-en="true">Break down excess materials for useful ones</span></p>
+          </div>
+          <div class="cube-card-body">
+            <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">
+              <span data-zh="true">可将多余套装材料、远古材料等转换为精华或其他制作材料。激活"回收之瓮"祝福可提升产出量约30%。</span>
+              <span data-en="true">Convert excess set mats, ancient materials into essence or crafting mats. Activating Salvage Urn blessing boosts yield by ~30%.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Function 6 -->
+        <div class="cube-card">
+          <div class="cube-card-head">
+            <h4>📿 <span data-zh>符咒提取</span><span data-en>Rune Extraction</span></h4>
+            <p><span data-zh="true">从装备中提取符咒</span>
+            <span data-en="true">Extract Runes from socketed gear</span></p>
+          </div>
+          <div class="cube-card-body">
+            <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">
+              <span data-zh="true">将已镶嵌符咒的装备放入方块，可提取符咒并保留装备。提取成功率100%，无材料消耗。</span>
+              <span data-en="true">Place rune-socketed gear in the cube to extract runes while keeping the item. 100% success rate, no material cost.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Rune System ===== -->
+  <section class="section-block" id="runes">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">📿</span>
+        <span data-zh>护身符 &amp; 符咒系统 Amulets &amp; Runes</span>
+        <span data-en>Amulets &amp; Runes</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh="true">符咒作为战利品掉落并镶嵌于护身符，根据组合激活套装效果。稀有套装符咒提供极强加成，是后期BD优化的核心系统。</span>
+        <span data-en="true">Runes drop as loot and socket into Amulets, activating set bonuses based on combinations. Rare Set Runes provide powerful bonuses critical to late-game build optimization.</span>
+      </p>
+
+      <div class="detail-card">
+        <div class="detail-card-head">
+          <span class="detail-card-icon">🧿</span>
+          <div>
+            <h3><span data-zh>护身符系统说明</span><span data-en>Amulet System</span></h3>
+            <p><span data-zh="true">6个符咒槽 · 组合激活套装效果</span><span data-en="true">6 Rune Sockets · Combination Set Effects</span></p>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin-bottom:12px;">
+            <span data-zh="true">8种主要符咒类型</span><span data-en="true">8 Major Rune Types</span>
+          </h4>
+          <div class="rune-grid">
+            <div class="rune-card">
+              <div class="rune-name">⚔️ <span data-zh="true">力量之符</span><span data-en="true">Rune of Power</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">+15%所有元素伤害，镶嵌3个激活：+30%攻击速度</span>
+                <span data-en="true">+15% all element damage. 3 socketed: +30% attack speed</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">🛡️ <span data-zh="true">防御之符</span><span data-en="true">Rune of Defense</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">+20%护甲，镶嵌3个激活：+25%所有抗性</span>
+                <span data-en="true">+20% armor. 3 socketed: +25% all resistances</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">💨 <span data-zh="true">速度之符</span><span data-en="true">Rune of Speed</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">+10%移动速度，镶嵌3个激活：+20%资源获取</span>
+                <span data-en="true">+10% movement speed. 3 socketed: +20% resource generation</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">❤️ <span data-zh="true">生命之符</span><span data-en="true">Rune of Life</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">+500生命值，镶嵌3个激活：+生命偷取</span>
+                <span data-en="true">+500 life. 3 socketed: +life steal</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">✨ <span data-zh="true">技能之符</span><span data-en="true">Rune of Skill</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">+3主要技能等级，镶嵌3个激活：-15%技能冷却</span>
+                <span data-en="true">+3 main skill levels. 3 socketed: -15% skill cooldown</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">💎 <span data-zh="true">暴击之符</span><span data-en="true">Rune of Crit</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">+10%暴击率，镶嵌3个激活：+50%暴击伤害</span>
+                <span data-en="true">+10% crit rate. 3 socketed: +50% crit damage</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">🌑 <span data-zh="true">诅咒之符</span><span data-en="true">Rune of Curse</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">攻击附带诅咒，镶嵌3个激活：诅咒效果+50%</span>
+                <span data-en="true">Attacks apply curse. 3 socketed: +50% curse effect</span>
+              </div>
+            </div>
+            <div class="rune-card">
+              <div class="rune-name">🔥 <span data-zh="true">元素之符</span><span data-en="true">Rune of Elements</span></div>
+              <div class="rune-desc">
+                <span data-zh="true">随机元素附加伤害，镶嵌3个激活：元素伤害交替</span>
+                <span data-en="true">Random element damage. 3 socketed: alternating elements</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin:20px 0 12px;">
+            <span data-zh="true">稀有套装符咒（最高品质）</span><span data-en="true">Rare Set Runes (Highest Quality)</span>
+          </h4>
+          <div style="background:rgba(212,160,23,0.08);border:1px solid rgba(212,160,23,0.25);border-radius:8px;padding:20px;">
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px;">
+              <span data-zh="true">套装符咒极为稀有，需从折磨难度或彼列boss处获取。套装效果远超普通符咒。</span>
+              <span data-en="true">Set Runes are extremely rare and drop from Torment difficulties or Belial. Set effects far outweigh normal runes.</span>
+            </p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div>
+                <p style="font-size:0.82rem;color:var(--accent-gold);font-weight:600;margin-bottom:4px;">🌟 <span data-zh="true">套装：憎恨碎片</span><span data-en="true">Set: Hatred Fragments</span></p>
+                <p style="font-size:0.78rem;color:var(--text-secondary);"><span data-zh="true">3件：+50%对憎恨生物伤害<br>6件：攻击有机率召唤憎恨精灵</span><span data-en="true">3pcs: +50% dmg vs Hatred enemies<br>6pcs: Chance to summon Hatred Wraith on hit</span></p>
+              </div>
+              <div>
+                <p style="font-size:0.82rem;color:var(--accent-gold);font-weight:600;margin-bottom:4px;">🌟 <span data-zh="true">套装：斯科沃斯精华</span><span data-en="true">Set: Skovos Essence</span></p>
+                <p style="font-size:0.78rem;color:var(--text-secondary);"><span data-zh="true">3件：+30%移动速度<br>6件：击杀回复生命+资源</span><span data-en="true">3pcs: +30% movement speed<br>6pcs: Kill restores life + resources</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Loot Filter ===== -->
+  <section class="section-block" id="filter">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">🔍</span>
+        <span data-zh>战利品过滤器 Loot Filter</span>
+        <span data-en>Loot Filter</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh="true">千呼万唤始出来！玩家社区期盼多年的战利品过滤器终于实装。自定义地面物品显示方式，大幅提升刷宝效率，减少视觉杂乱。</span>
+        <span data-en="true">After years of community requests, the Loot Filter is finally here! Customize ground item display to massively improve farming efficiency and reduce visual clutter.</span>
+      </p>
+
+      <div class="detail-card">
+        <div class="detail-card-head">
+          <span class="detail-card-icon">⚙️</span>
+          <div>
+            <h3><span data-zh="true">过滤器配置指南</span><span data-en="true">Filter Configuration Guide</span></h3>
+            <p><span data-zh="true">设置菜单 > 界面 > 战利品过滤器</span><span data-en="true">Settings Menu > Interface > Loot Filter</span></p>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <div class="filter-examples">
+            <div class="filter-example">
+              <h4>🟢 <span data-zh="true">预设过滤器</span><span data-en="true">Preset Filters</span></h4>
+              <ul>
+                <li><span data-zh="true">全部显示（默认）</span><span data-en="true">Show All (default)</span></li>
+                <li><span data-zh="true">稀有以上（隐藏白装/蓝装）</span><span data-en="true">Rare+ (hide white/blue)</span></li>
+                <li><span data-zh="true">传奇以上（仅显示传说/神话）</span><span data-en="true">Legendary+ (only legendaries)</span></li>
+                <li><span data-zh="true">自定义（完全自定义规则）</span><span data-en="true">Custom (fully custom rules)</span></li>
+              </ul>
+            </div>
+            <div class="filter-example">
+              <h4>🎯 <span data-zh="true">自定义规则示例</span><span data-en="true">Custom Rule Examples</span></h4>
+              <ul>
+                <li><span data-zh="true">物品等级≥800 高亮金色</span><span data-en="true">Item Level ≥800 → highlight gold</span></li>
+                <li><span data-zh="true">含"献祭伤害"词缀 → 高亮红色</span><span data-en="true">Has "Sacrifice Dmg" → highlight red</span></li>
+                <li><span data-zh="true">术士可用且含核心词缀 → 高亮紫色</span><span data-en="true">Warlock-usable + core affix → highlight purple</span></li>
+                <li><span data-zh="true">物品等级≤700 → 隐藏</span><span data-en="true">Item Level ≤700 → hide</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 style="font-family:var(--font-title);font-size:1rem;color:#fff;margin:20px 0 12px;">
+            <span data-zh="true">推荐配置（不同职业/阶段）</span><span data-en="true">Recommended Configurations</span>
+          </h4>
+          <table class="tier-table">
+            <thead>
+              <tr>
+                <th><span data-zh="true">场景</span><span data-en="true">Scenario</span></th>
+                <th><span data-zh="true">建议配置</span><span data-en="true">Recommended Setup</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span data-zh="true">快速升级（1-60级）</span><span data-en="true">Fast Leveling (1-60)</span></td>
+                <td><span data-zh="true">稀有以上 + 仅显示武器/护甲</span><span data-en="true">Rare+ + Weapons/Armor only</span></td>
+              </tr>
+              <tr>
+                <td><span data-zh="true">刷传奇（60-70级）</span><span data-en="true">Legendary Farming (60-70)</span></td>
+                <td><span data-zh="true">传奇以上 + 物等800+高亮</span><span data-en="true">Legendary+ + iLvl 800+ highlight</span></td>
+              </tr>
+              <tr>
+                <td><span data-zh="true">刷神话（70级 + T8+）</span><span data-en="true">Mythic Farming (70 + T8+)</span></td>
+                <td><span data-zh="true">全部显示 + 仅高亮神话/高物等祖先装</span><span data-en="true">Show All + Mythic/High iLvl Ancestral highlight</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Torment Tiers ===== -->
+  <section class="section-block" id="torment">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">🔥</span>
+        <span data-zh>苦痛难度系统 Torment Tiers</span>
+        <span data-en>Torment Tiers</span>
+      </h2>
+      <p class="section-lead">
+        <span data-zh="true">新增8个苦痛层级，使总难度达到Torment XII（12层）。更高难度意味着更高掉落率和更好物品等级，是终局玩家的主要挑战目标。</span>
+        <span data-en="true">8 new Torment tiers added, reaching Torment XII (12 total). Higher tiers mean better drop rates and item levels — the primary goal for endgame players.</span>
+      </p>
+
+      <div class="torment-grid">
+        <div class="torment-card">
+          <div class="torment-num">T I</div>
+          <div class="torment-label"><span data-zh="true">苦痛 I</span><span data-en="true">Torment I</span></div>
+        </div>
+        <div class="torment-card">
+          <div class="torment-num">T II</div>
+          <div class="torment-label"><span data-zh="true">苦痛 II</span><span data-en="true">Torment II</span></div>
+        </div>
+        <div class="torment-card">
+          <div class="torment-num">T III</div>
+          <div class="torment-label"><span data-zh="true">苦痛 III</span><span data-en="true">Torment III</span></div>
+        </div>
+        <div class="torment-card">
+          <div class="torment-num">T IV</div>
+          <div class="torment-label"><span data-zh="true">苦痛 IV</span><span data-en="true">Torment IV</span></div>
+        </div>
+        <div class="torment-card">
+          <div class="torment-num">T V</div>
+          <div class="torment-label"><span data-zh="true">苦痛 V</span><span data-en="true">Torment V</span></div>
+        </div>
+        <div class="torment-card">
+          <div class="torment-num">T VI</div>
+          <div class="torment-label"><span data-zh="true">苦痛 VI</span><span data-en="true">Torment VI</span></div>
+        </div>
+        <div class="torment-card t7plus">
+          <div class="torment-num">T VII</div>
+          <div class="torment-label"><span data-zh="true">苦痛 VII</span><span data-en="true">Torment VII</span></div>
+        </div>
+        <div class="torment-card t7plus">
+          <div class="torment-num">T VIII</div>
+          <div class="torment-label"><span data-zh="true">苦痛 VIII</span><span data-en="true">Torment VIII</span></div>
+        </div>
+        <div class="torment-card t7plus">
+          <div class="torment-num">T IX</div>
+          <div class="torment-label"><span data-zh="true">苦痛 IX</span><span data-en="true">Torment IX</span></div>
+        </div>
+        <div class="torment-card t7plus">
+          <div class="torment-num">T X</div>
+          <div class="torment-label"><span data-zh="true">苦痛 X</span><span data-en="true">Torment X</span></div>
+        </div>
+        <div class="torment-card t10plus">
+          <div class="torment-num" style="color:var(--accent-red);">T XI</div>
+          <div class="torment-label"><span data-zh="true">苦痛 XI</span><span data-en="true">Torment XI</span></div>
+        </div>
+        <div class="torment-card t10plus">
+          <div class="torment-num" style="color:var(--accent-red);">T XII</div>
+          <div class="torment-label"><span data-zh="true">苦痛 XII</span><span data-en="true">Torment XII</span></div>
+        </div>
+      </div>
+
+      <div class="detail-card" style="margin-top:24px;">
+        <div class="detail-card-head">
+          <span class="detail-card-icon">📊</span>
+          <div>
+            <h3><span data-zh="true">难度推荐对照表</span><span data-en="true">Difficulty Recommendation Chart</span></h3>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <table class="tier-table">
+            <thead>
+              <tr>
+                <th><span data-zh="true">难度</span><span data-en="true">Difficulty</span></th>
+                <th><span data-zh="true">适合阶段</span><span data-en="true">Best For</span></th>
+                <th><span data-zh="true">物品等级范围</span><span data-en="true">Item Level Range</span></th>
+                <th><span data-zh="true">掉落加成</span><span data-en="true">Drop Bonus</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">T I - T III</strong></td>
+                <td><span data-zh="true">练级、刷基础传奇</span><span data-en="true">Leveling, Basic Legendaries</span></td>
+                <td>650-780</td>
+                <td>+10% - +30%</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">T IV - T VI</strong></td>
+                <td><span data-zh="true">70级起步、刷祖先装</span><span data-en="true">Fresh 70, Ancestral Farming</span></td>
+                <td>780-880</td>
+                <td>+30% - +60%</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--accent-gold);">T VII - T IX</strong></td>
+                <td><span data-zh="true">刷神话、高物等祖先装</span><span data-en="true">Mythic Farming, High iLvl</span></td>
+                <td>880-920</td>
+                <td>+60% - +100%</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--accent-red);">T X - T XII</strong></td>
+                <td><span data-zh="true">极限挑战、刷彼列掉落</span><span data-en="true">Extreme Challenge, Belial Loot</span></td>
+                <td>920-925</td>
+                <td>+100% - +150%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Other Activities ===== -->
+  <section class="section-block" id="activities">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-icon">⚔️</span>
+        <span data-zh="true">其他终局活动简述</span><span data-en="true">Other Endgame Activities</span>
+      </h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏚️</div>
+          <div class="feature-title"><span data-zh="true">噩梦地下城 Nightmare Dungeons</span><span data-en="true">Nightmare Dungeons</span></div>
+          <div class="feature-desc">
+            <span data-zh="true">通过完成普通地下城解锁。难度由地下城等级决定，词缀系统增加随机挑战。憎恨之王新增了斯科沃斯特有词缀。</span>
+            <span data-en="true">Unlocked by completing normal dungeons. Difficulty scales with dungeon level. New Skovos-specific affixes added in Lord of Hatred.</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌳</div>
+          <div class="feature-title"><span data-zh="true">低语之树 Tree of Whispers</span><span data-en="true">Tree of Whispers</span></div>
+          <div class="feature-desc">
+            <span data-zh="true">40秒循环奖励活动。完成各种目标获取低语币，可兑换奖励袋。憎恨之王版本提升了奖励池并增加了斯科沃斯专属奖励。</span>
+            <span data-en="true">40-second loop activity. Complete objectives for Whisper coins to redeem reward bags. Lord of Hatred improved the reward pool with Skovos-exclusive rewards.</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌪️</div>
+          <div class="feature-title"><span data-zh="true">地狱大军 Helltide</span><span data-en="true">Helltide</span></div>
+          <div class="feature-desc">
+            <span data-zh="true">斯科沃斯限时事件，需收集腐蚀碎片开启箱子。憎恨之王增加了更高难度的地狱狂潮版本，并提升了神话装备在箱子中的掉率。</span>
+            <span data-en="true">Timed event in Skovos, requires Corrupted Fragments to open chests. Lord of Hatred added higher-difficulty Helltide variants and improved Mythic chest rates.</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👻</div>
+          <div class="feature-title"><span data-zh="true">祖先召唤 Ancestral Summon</span><span data-en="true">Ancestral Summon</span></div>
+          <div class="feature-desc">
+            <span data-zh="true">召唤池挑战，随机出现强力祖先敌人。击败后获得祖先精华和稀有材料。是刷取神话碎片的重要途径。</span>
+            <span data-en="true">Summoning pool challenge with random powerful Ancestral enemies. Defeating them grants Ancestral Essence and rare materials — key for Mythic Fragment farming.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h4>⚔️ Diablo 4: Lord of Hatred Guide</h4>
+          <p>
+            <span data-zh="true">本攻略站涵盖《暗黑破坏神4：憎恨之王》完整内容，助你在憎恨纪元中纵横庇护之地。</span>
+            <span data-en="true">Your complete guide to Diablo 4: Lord of Hatred. Everything you need to dominate Sanctuary in the Age of Hatred.</span>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh="true">攻略板块</span><span data-en="true">Guide Sections</span></h5>
+          <ul>
+            <li><a href="classes.html"><span data-zh="true">职业详解</span><span data-en="true">Classes</span></a></li>
+            <li><a href="region.html"><span data-zh="true">斯科沃斯地区</span><span data-en="true">Skovos Region</span></a></li>
+            <li><a href="endgame.html"><span data-zh="true">终局系统</span><span data-en="true">Endgame</span></a></li>
+            <li><a href="bosses.html"><span data-zh="true">Boss图鉴</span><span data-en="true">Bosses</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><span data-zh="true">其他板块</span><span data-en="true">Other Sections</span></h5>
+          <ul>
+            <li><a href="season.html"><span data-zh="true">赛季系统</span><span data-en="true">Season</span></a></li>
+            <li><a href="mythic.html"><span data-zh="true">神话装备</span><span data-en="true">Mythic</span></a></li>
+            <li><a href="builds.html"><span data-zh="true">BD配装</span><span data-en="true">Builds</span></a></li>
+            <li><a href="tips.html"><span data-zh="true">实用技巧</span><span data-en="true">Tips</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 D4 Lord of Hatred Guide. All rights reserved. Diablo © Blizzard Entertainment.</p>
+        <p><span data-zh="true">本站为玩家攻略站，与暴雪娱乐无附属关系</span><span data-en="true">Fan-made guide site, not affiliated with Blizzard Entertainment</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    /* ===== Language Toggle ===== */
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      localStorage.setItem('d4guide-lang', lang);
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    (function() {
+      var saved = localStorage.getItem('d4guide-lang');
+      if (saved) {
+        setLang(saved);
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().startsWith('en')) {
+          setLang('en');
+        }
+      }
+    })();
+
+    /* ===== Back to Top Button ===== */
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
